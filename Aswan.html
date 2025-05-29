@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Aswan Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Aswan Governorate</title>
+        <link rel="icon" href="Aswan Images/aswan logo.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="index.html" class="logo"> <img class="Logo" src="Aswan Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br>أســــــــــــــــــــــــــوان</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            تعتبر محافظة أسوان الواقعة جنوب مصر من أهم المحافظات بالجمهورية المصرية، حيث تشتهر بموقعها المميز على ضفاف نهر النيل والمناظر الخلّابة التي تتمتع بها والمواقع الأثرية المميزة الموجودة على أرضها، بالإضافة إلى مناخها الدافئ والجزر النباتية المميزة فيها. كانت أسوان تعرف باسم "سونو" في عصور المصريين القدماء ومعناها السوق حيث كانت مركزا تجاريا للقوافل القادمة من وإلى النوبة ثم أطلق عليها في العصر البطلمي اسم "سين" وسماها النوبيون "يبا سوان"، وعرفت أيضًا باسم بلاد الذهب لأنها كانت بمثابة كنز كبير أو مقبرة لملوك النوبة الذين عاشوا فيها آلاف السنين. وكانت حدود أسوان تمتد قديما قبل الهجرة من أسنا شرقا إلى حدود السودان جنوبا وكان سكانها من النوبين ولكن بعد الفتح الإسلامي لبلاد النوبة استقرت فيها بعض قبائل العرب.
+                    </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــه أســــــوان</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة أســـــوان</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Aswan Images/aswan logo.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p> يعبر شعار المحافظة عن اسمها مرسوم بعدة مكونات، وهي ترس الصناعة وأبراج الكهرباء المولدة من محطات الكهرباء بالسد العالي وخزان أسوان يتوسط أرضية العلم. لون الشعار أصفر ذهبي وأرضية العلم باللون الأزرق نسبة لمياه نهر النيل وبحيرة ناصر. شعار محافظة أسوان هو تجسيد بصري دقيق يجمع بين عناصر الصناعة والطاقة والموارد المائية، كلها متحدة في إطار من الألوان التي تعكس قيمة وأهمية هذه المحافظة العريقة في قلب صعيد مصر. إنه يروي قصة التنمية والرخاء والاعتماد على الموارد الذاتية التي تتميز بها أسوان. </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Aswan Images/simple.jpg" class="Figure1">
+        <h1> مـعــبــد أبـــو ســمــبــل</h1>
+        <p id="SecondParagraph">
+            يعد معبد أبو سمبل الكبير، الواقع في النوبة بالقرب من الحدود الجنوبية لمصر، من بين المعالم الأكثر روعة في مصر، بناه الملك رمسيس الثاني من الأسرة التاسعة عشرة تم قطعه كاملاً في الجبل، حوالي عام ١٢٦٤ قبل الميلاد. يشتهر المعبد بتماثيله الأربعة الضخمة جالسة والتي تزين واجهته، والتي انهار أحدها بسبب زلزال قديم ولا تزال بقاياه على الأرض.
+            تقف تماثيل الملك الضخمة على جانبي الصالة الرئيسية المؤدية إلى قدس الأقداس، حيث يجلس أربعة آلهة بصفتهم معبوديين.                       </p>
+    </section>
+    <section class="Blob2">
+        <img src="Aswan Images/adfoo.jpg" class="Figure2">
+        <h1>مـعــبــد إدفــــــو</h1>
+        <p>يعد معبد حورس من أكمل المعابد المصرية القديمة التي تقع على الضفة الغربية لنهر النيل بمدينة إدفو. استغرق تشييد المعبد حوالي ١٨٠ عام منذ عهد الملك بطلميوس الثالث (٢٤٦ - ٢٢١ق.م) وذلك عام ٢٣٧ق. م، حتى اكتمل بنائه في عهد الملك بطلميوس الثاني عشر (٨٠ - ٥١ق.م) عام ٥٧ق.م. مازال المعبد محتفظًا بكل عناصره المعمارية والزخرفية الخلابة، حيث ظل مدفون تحت الرمال لعدة سنوات حتى قام عالم الآثار الفرنسي "أوجست مارييت" عام ١٨٦٠م بتنظيفه وترميم بعض أجزاءه.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Aswan Images/fila.jpg" class="Figure1">
+        <h1>مـعــبــد فــيلة</h1>
+        <p id="ThirdParagraph">في القرن الرابع الميلادي، نقش الكاهن "اسمت-اخوم" آخر نص هيروغليفي على معبد فيلة الذي تحول لاحقًا إلى كنيسة، مما أدى إلى محو العديد من نقوشه. وبجانب معبد إيزيس، يوجد معبد حتحور الذي بناه بطلميوس السادس وأغسطس. كما لا تزال مقصورة تراجان ذات الأعمدة الرائعة قائمة. وكانت إيزيس المعبودة الرئيسية، حيث كان الإمبراطور يقدم لها القرابين ولأوزير وحورس.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Aswan Images/ambo.png" class="Figure2">
+        <h1>مـعــبــد كــوم إمــبـــو</h1>
+        <p id="FourthParagraph">اسم الموقع "كوم أمبو" يعني "التل الذهبي"، حيث "كوم" بالعربية و"أمبو" مشتقة من المصرية القديمة "نوبت" (ذهب). المعبد مكرس للإله سوبك (التمساح) وحورس الأكبر (الصقر). بُني المعبد الحالي في العصر اليوناني الروماني على أنقاض معبد أقدم من عصر الدولة الحديثة، وأول ملك موثق فيه هو بطلميوس السادس، بينما أكمل بطلميوس الثاني عشر معظم زخرفته.
+            
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Aswan Images/sd.jpg" class="Figure1">
+        <h1>الـــســد الـــعالـــــي</h1>
+        <p id="SixthParagraph">يُعد السد العالي "أعظم مشروع هندسي في القرن العشرين" وأهم منشأ مائي في مصر، حيث نظم الري وحمى البلاد من الجفاف والفيضانات لعقود. يمثل السد قدرة المصريين على البناء والعمل بإصرار وعزيمة، وترويض الطبيعة الصخرية في الجنوب. اتُخذ قرار بنائه عام ١٩٥٣م، ووُضع تصميمه عام ١٩٤٥م تحت إشراف المهندس موسى عرفة والدكتور حسن زكي بمساعدة شركات عالمية، وتم توقيع اتفاقية البناء عام ١٩٥٨م. 
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Aswan Images/nuba musuem.jpg" class="Figure2">
+        <h1>مــتـحــف الـــنوبــــة</h1>
+        <p id="FifthParagraph"> نشأت فكرة متحف النوبة خلال حملة اليونسكو لإنقاذ آثار النوبة عام ١٩٦٠م، ليضم تراث النوبة المتنوع. اُفتتح متحف النوبة عام ١٩٩٧م بتصميم معماري متميز من ثلاث طوابق يعكس العمارة التقليدية المحلية النوبية، كما تم تكسية جدرانه بالحجر الرملي والجرانيت الوردي المستوحى من طبيعة المنطقة الصخرية المحيطة به، فاستحق الحصول على جائزة أغاخان للعمارة الإسلامية كأفضل مبنى معماري شُيد عام ٢٠٠١م.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Aswan Images/eziz.jpg" class="Figure1">
+            <h1>مـعــبــد إيــزيــس </h1>
+            <p id="EighthParagraph">
+                يقع معبد إيزيس على الضفة الشرقية لمحافظة أسوان، تم تشييد المعبد جزئيًا في عهدي الملك بطلميوس الثالث والملك بطلميوس الرابع، وتم تحويله فيما بعد إلى كنيسة على الأرجح للقديسة مريم. ويعد المعبد من أهم الاكتشافات الآثرية المحفوظة بحالة جيدة حتى الآن منذ العثور عليه في عام 1871، حيث ما زال يقف المعبد شامخًا بجدرانه الأربعة وسقفه ذو الألواح الجرانيتية المميزة. 
+            </p> 
+              </section>
+    <section class="Blob2">
+        <img src="Aswan Images/dir.jpg" class="Figure2">
+        <h1>ديـــر الأنــبا ســمــعــان</h1>
+        <p id="SeventhParagraph">
+            واحد من الامثلة الرائعة على الهندسة المعمارية القبطية في مصر والذي استخدم كمكان عبادة لعدد من الأديان في مصر. بُني هذا المبنى في القرن العاشر الميلادي ويمتاز المبنى والهيكل الأصلي بنمط العمارة على النمط البازلكي الأرثوذكسي، كما انه هناك العديد من التعديلات على الطراز العربي الجميل، وقديماً عاش في هذا المكان حوالي 100 من الرهبان بالإضافة الى حوالي 300 من الزائرين.
+        </p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> مـحـمــد حـسـيــن طـنـطــاوي</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p>عـبــاس مـحـمــود العـقـاد</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> حـسـيــن عـبــده خــلــيــــل</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مـحـمــود عـبــد الـرازق شـيـكـابـالا</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="index.html" class="logo"> <img class="Logo" src="Aswan Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> الــمشير/ محمد حسين طنطاوي</div>
+                    <div class="swal-header2"> (٣١ أكتوبر  ١٩٣٥ ـ ٢١ ستمبر ٢٠٢١) </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+عسكري وسياسي مصري ذو جذور مصرية نوبية، شغل سابقاً منصب القائد العام للقوات المسلحة ووزير الدفاع والإنتاج الحربي ومثل رأس الدولة المصرية بصفته رئيس المجلس الأعلى للقوات المسلحة خلال الفترة (فبراير 2011 - يونيو 2012). تخرج في الكلية الحربية المصرية سنة 1956م، ثم كلية القادة والأركان. شارك في حرب 1967 وحرب الاستنزاف وحرب أكتوبر 1973 حيث كان قائد وحدة مقاتلة بسلاح المشاة. وبعد الحرب حصل على نوط الشجاعة العسكري ثم عمل في عام 1975 ملحقا عسكريا لمصر في باكستان ثم في أفغانستان. تدرج في المناصب حتى أصبح وزير الدفاع والقائد العام لـلقوات المسلحة في عام 1991م وحصل على رتبة المشير في 1993.
+تولى رئاسة مصر بصفته رئيس المجلس الأعلى للقوات المسلحة بعد تنحي الرئيس السابق حسني مبارك في 11 فبراير 2011 وظل حتى قيام الرئيس المنتخب بأداء اليمين الدستوري وتسلم منصبه في 1 يوليو 2012. أُحيل للتقاعد بقرار جمهوري من الرئيس السابق محمد مرسي في 12 أغسطس 2012، ومنح قلادة النيل وعين مستشاراً لرئيس الجمهورية
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> الأديب والمفكر/ عباس محمود العقاد</div>
+                    <div class="swal-header2">     (  يونيو  ١٨٨٩  - مارس  ١٩٦٤)  </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+أديب وكاتب وسياسي ومفكر مصري، عرف بالموسوعية ثقافة وتأليفا
+خاض مساجلات أدبية وسياسية كثيرة كان أشهرها مع مصطفى الرافعي وطه حسين وزكي مبارك، وأصدر مع المازني كتابا ينتقد أحمد شوقي
+تجاوزت كتبه المائة، ونشر آلاف المقالات الصحفية طبعت بعضها "الهيئة المصرية العامة للكتاب" في مجلدين كبيرين، وأصدر تسعة دواوين سنوات 1916-1950.
+منحته الرئاسة المصرية جائزة الدولة التقديرية في الآداب
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> المستشار/ حسين عبده خليل</div>
+                    <div class="swal-header2">     (يناير ١٩٤٤ ــــ فبراير ٢٠٢١)      </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+التحق المستشار حسين عبده خليل للعمل بهيئة قضايا الدولة عام 1973 ثم: :[4]
+•	تدرج وظيفياً في وظيفة مندوب مساعد بالهيئة بموجب قرار رئيس الجمهورية رقم 349 لسنة 1973 الصادر في 22 مارس 1973.
+•	تم ترقيته إلى درجة مندوب بالهيئة بموجب قرار رئيس الجمهورية رقم 106 لسنة 1975 اعتبارا من 22 يناير 1975.
+•	ثم رُقى إلى درجة محام بالهيئة بموجب قرار رئيس الجمهورية رقم 212 لسنة 1976 اعتبارا من 23 فبراير 1976.
+•	ثم تم ترقيته إلى درجة نائب بالهيئة بموجب قرار رئيس الجمهورية رقم 436 لسنة 1978 اعتبارا من 29 أغسطس 1978.
+•	كما رُقى المستشار حسين حمزة إلى درجة مستشار مساعد من الفئة ب بالهيئة بموجب قرار رئيس الجمهورية رقم 366 لسنة 1982 اعتبارا من 22 يونيو 1982.
+•	ثم ترقى إلى درجة مستشار مساعد من الفئة أ بالهيئة بموجب قرار رئيس الجمهورية رقم 317 لسنة 1986 اعتبارا من 26 يونيو 1986.
+•	ورُقى إلى درجة مستشار بالهيئة بموجب قرار رئيس الجمهورية رقم 269 لسنة 1990 اعتبارا من 2 إبريل 1990.
+•	ثم رقى إلى درجة وكيل بالهيئة بموجب قرار رئيس الجمهورية رقم 261 لسنة 1995 اعتبارا من 29 يونيو 1995.
+•	ثم تم ترقيته إلى درجة نائب رئيس هيئة قضايا الدولة بالهيئة بموجب قرار رئيس الجمهورية رقم 229 لسنة 1996 اعتبارا من 29 يونيو 1996.
+                    <div class="swal-paragraph">
+
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  محمود عبدالرازق شيكابالا</div>
+                    <div class="swal-header2"> (  مارس عام ١٩٨٦ - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+شيكابالا، المعروف بموهبته الاستثنائية، يُعتبر من أبرز اللاعبين في تاريخ كرة القدم المصرية. يتمتع بأسلوب لعب مميز وقدرة على التسجيل وصناعة الألعاب.
+يمثل رمزًا للفخر والتفاني في نادي الزمالك
+يعد من بين أفضل لاعبي كرة القدم المصرية في التاريخ حيث نال لقب "أفضل لاعب في مصر" في الكثير من الاستفتاءات الرسمية والودية في مناسبات ومواسم كروية مختلفة
+ويتميز أسلوب لعبه بالمراوغة والاختراق صناعة الألعاب ويساهم في الهجوم وإحراز الأهداف وقوة التسديد علي المرمى من بعيد بالقدم اليسرى
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

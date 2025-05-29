@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Egyptian Folklore Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        
+        <title>Egyptian Folklore</title>
+        <link rel="icon" href="Egyptian Folklore Images/Website Logo.png">
+    </head>
+<body>
+    <div class="BackGround">
+        <header>
+            <nav>
+                <ul class="Sidebar">
+                    <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                    <li> <a class="Hover" href="index.html"><b>الرئــيـــســيـــة</b></a></li>
+                    <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                    <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                    <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+                </ul>
+                <ul>
+                  <li> <a href="index.html" class="logo"> <img class="Logo" src="Egyptian Folklore Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+                    <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+                    <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+                    <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                    <li class="hideOnMobile"> <a class="Hover" href="index.html"><b>الرئــيـــســيـــة</b></a></li>
+                    <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="Welcome" data-sr-id="welcome">
+            <h2 class="Welcome-Text"> الفـــلــكــلـــــور <br>  المــــــــصـــــــــــــــــــري</h2>
+        </section>
+    </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.Sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.Sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1> الفـلـكـلـــور المـصـــري، مــرآة روحـنـــا الشـعـبـيـــة وجـذور حـضـارتـنــا المـمـتــدة آلاف السـنـيـــن </h1>
+        </section>
+    </section>
+    <main class="First-Section" data-sr-id="First-section">
+        <div class="Grid-Container">
+        <a href="#secondsection" class="Box" id="BoxOne" style="grid-area: Box-1"><h1>المــأكـــولات والمــشــروبـــات</h1></a>
+        <a href="#thirdsection" class="Box" id="BoxTwo" style="grid-area: Box-2"><h1>المــلابـــس التـقـلـيـديـــة</h1></a>
+        <a href="#fourthsection" class="Box" id="BoxThree" style="grid-area: Box-3"><h1>الاسـتـعـراضـــات الشـعـبـيـــة</h1></a>
+        <a href="#fifthsection" class="Box" id="BoxFour" style="grid-area: Box-4"><h1>العــادات والتـقـالـيـــد</h1></a>
+        <a href="#sixthsection" class="Box" id="BoxFive" style="grid-area: Box-5"><h1 id="fifth">الأمـثـال والأغـانــي الشـعـبـيـــة</h1></a>
+        </div>
+    </main>
+
+            
+    <section class="Information_Container2" data-sr-id="info-container">
+        <section class="Information2" id="secondsection">
+            <h1> المــأكـــولات والمــشــروبـــات </h1>
+        </section>
+    </section>
+
+    <main class="Second-Section-Style">
+        <main class="Second-Section">
+         <div class="List">
+            <div class="Item">
+                <img src="Egyptian Folklore Images/Koshari.jpeg">
+                  <div class="Content">
+                    <div class="Title">  الكــشــري المــصـــري </div>
+                    <div class="Description"> 
+                         من أشهر الأكلات الشعبية المصرية، يتكوّن من مزيج من الأرز والمكرونة والعدس، ويُزين بالبصل المحمر ويُقدم مع صلصة الطماطم والدقة الحارة. يتميز ببساطته وطعمه المميز، ويُعتبر وجبة مشبعة ومحبوبة بين كل فئات الشعب خاصة لكونه أكلة منخفضة الكلفة عالية القيم الغذائية.
+                    </div>
+                </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Mlokhia.jpeg">
+              <div class="Content">
+                <div class="Title"> المـلـوخـيــة المـصـريــة </div>
+                <div class="Description"> 
+                    واحدة من الأكلات المصرية الأصيلة، تتكون من أوراق الملوخية المفرومة وتُطهى مع مرق الدجاج أو اللحم وتُقدم مع الأرز. يتميز طعمها بالخفة والمذاق المميز، وغالبًا تُقدم مع الثوم المحمر وتعتبر وجبة غنية وشعبية في معظم المنازل المصرية.
+                </div>
+              </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Fesikhandringa.jpeg">
+              <div class="Content">
+                <div class="Title"> الفـسـيــخ والرنـجـــة </div>
+                <div class="Description"> 
+                    هما من الأكلات الشعبية المصرية الأكثر شهرة، ويُعتبران من الأطعمة المميزة في عيد الفطر. الفسيخ هو سمك مملح ومحفوظ بطريقة خاصة، بينما الرنجة هي سمك مملح مدخن. يُقدمان عادة مع البصل والطماطم والخيار، ويتميزان بطعمهما القوي والمميز.
+                </div>
+              </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Feteer.png">
+              <div class="Content">
+                <div class="Title"> الفـطـيــر المـشـلـتــت </div>
+                <div class="Description"> 
+                    الفطير المشلتت هو من أشهر الحلويات والمخبوزات المصرية التقليدية، ويتكون من طبقات من العجين المحشو بالزبدة أو السمن. يتميز بقوامه الهش وطعمه الغني، ويُقدم غالبًا مع العسل أو الجبن. يعتبر من الوجبات الشهية التي تُقدّم في المناسبات والعزائم وخاصة في صعيد مصر.
+                </div>
+              </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/OmAli.png">
+              <div class="Content">
+                <div class="Title"> أم عــلــــي </div>
+                <div class="Description"> 
+                    واحدة من أشهر الحلويات المصرية، تُصنع من رقائق العيش أو الفطير مع الحليب والسكر والمكسرات، وتُخبز في الفرن حتى تصبح ذهبية. تتميز بطعمها الغني والدسم، وتُقدم دافئة كحلوى شهية في المناسبات والعزائم.
+              </div>
+            </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Meshabk.jpg">
+              <div class="Content">
+                <div class="Title"> المــشــبــــك </div>
+                <div class="Description"> 
+                    هو نوع خاص من الحلوى يتميز بمذاق ونكهة فريدة، وله شهرة كبيرة في مدينة دمياط التي تتميز بصناعته، إذ يُعَدّ من الحلويات التقليدية التي تُحضّر بشكل تقليدي وتقدمها الكثير من الأسر في المناسبات المختلفة.
+              </div>
+          </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Sous.jpeg">
+              <div class="Content">
+                <div class="Title">  مشـــروب العــرقــســـوس </div>
+                <div class="Description"> 
+                    من أشهر المشروبات التقليدية في مصر، خاصة في شهر رمضان. يشتهر العرقسوس بفوائده الصحية، خصوصًا في ترطيب الجسم وتحسين الهضم، وغالبًا يُباع في الشوارع بواسطة البائعين الذين يرتدون زياً مميزًا وينادون بصوتهم الخاص لجذب الناس.
+                </div>
+              </div>
+          </div>
+          <div class="Item">
+            <img src="Egyptian Folklore Images/Breakfast.jpeg">
+              <div class="Content">
+                <div class="Title"> الفــطــــار المــصــــري </div>
+                <div class="Description"> 
+                  الفطار المصري الشعبي بسيط ومشبع، وأشهر أطباقه الفول المدمس والطعمية، مع الجبنة البيضاء أو القريش، والبيض، والخيار والطماطم، ويُقدم مع الخبز البلدي. غالبًا يرافقه شاي بالحليب أو شاي سادة، ويتميز بجمع العائلة على مائدة واحدة في جو دافئ وتقليدي.
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+                 <!-- Thumbnail -->
+        <div class="Thumbnail">
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              الســيــاحـــة <br> الدينية
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              الســيــاحـــة <br> العلاجية
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              الســيــاحـــة <br> الترفيهية
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              الســيــاحـــة <br> البيئية
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              الســيــاحـــة <br> الرياضية
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              ســيــاحـــة <br> السفاري
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+          <img src="Egyptian Folklore Images/Clothes.jpg">
+          <div class="Content">
+            <div class="Title">
+              ســيــاحـــة <br> اليخوت
+            </div>
+          </div>
+        </div>
+        <div class="Item">
+        <img src="Egyptian Folklore Images/Clothes.jpg">
+        <div class="Content">
+          <div class="Title">
+            ســيــاحـــة <br> المؤتمرات
+          </div>
+        </div>
+        </div>
+        </div>
+                 <!-- Arrows -->
+        <div class="Arrows">
+          <button id="Prev"> < </button>
+          <button id="Next"> > </button>        
+        </div>
+                 <!-- Timer-->
+        <div class="Time"></div>
+     </main>
+    </main>
+             <!--Script For The Image Slider-->
+    <script>
+      let nextDom = document.getElementById('Next');
+      let prevDom = document.getElementById('Prev');
+      let SecondSectionDom = document.querySelector('.Second-Section');
+      let listItemDom = document.querySelector('.Second-Section .List');
+      let thumbnailDom = document.querySelector('.Second-Section .Thumbnail');
+  
+      nextDom.onclick = function(){
+        showSlider('Next');
+      }
+      prevDom.onclick = function(){
+        showSlider('Prev')
+      }
+      let timeRunning = 3000;
+      let timeAutoNext = 15000;
+      let runTimeOut;
+      let runAutoRun = setTimeout(() =>{
+        nextDom.click();
+      }, timeAutoNext);
+      function showSlider(type){
+        let itemSlider = document.querySelectorAll('.Second-Section .List .Item');
+        let itemThumbnail = document.querySelectorAll('.Second-Section .Thumbnail .Item');
+  
+        if(type === 'Next'){
+          listItemDom.appendChild(itemSlider[0]);
+          thumbnailDom.appendChild(itemThumbnail[0]);
+          SecondSectionDom.classList.add('Next');
+        }else{
+          let positionLastItem = itemSlider.length - 1;
+          listItemDom.prepend(itemSlider[positionLastItem]);
+          thumbnailDom.prepend(itemThumbnail[positionLastItem]);
+          SecondSectionDom.classList.add('Prev');
+        }
+  
+        clearTimeout(runTimeOut);
+      runTimeOut = setTimeout(() =>{
+        SecondSectionDom.classList.remove('Next');
+        SecondSectionDom.classList.remove('Prev');      
+      }, timeRunning)
+  
+      clearTimeout(runAutoRun);
+      runAutoRun = setTimeout(() =>{
+        nextDom.click();
+      }, timeAutoNext)
+      }
+  
+    </script>
+        
+        <section class="Information_Container3" data-sr-id="info-container">
+            <section class="Information3" id="thirdsection">
+                <h1> المــلابــــس التــقــلــيــديــــة </h1>
+            </section>
+        </section>
+
+        <main class="Third-Section" data-sr-id="Third-section">
+            <section class="Overlay">
+            <div class="Grid-Container2">
+            <div class="Box2" id="BoxOne2" style="grid-area: Box-1"></div>
+            <div class="Box2" id="BoxTwo2" style="grid-area: Box-2"></div>
+            <div class="Box2" id="BoxThree2" style="grid-area: Box-3"><h1>المــلابــــس التــقــلــيــديــــة <br><br> <span> الملابس التقليدية في مصر متنوعة وتعكس عادات كل منطقة. في صعيد مصر وأسوان، كان الرجال يرتدون الجلابية والعمامة، بينما كانت النساء يرتدين الجلابيات المطرزة مع الشيلان الملونة، وكان البرقع جزءًا أساسيًا من زي المرأة، ويُعتبر رمزًا للزينة والوقار. أما في الإسكندرية والمناطق الساحلية، كانت الملابس أبسط وأخف، مع اعتماد النساء على الأوشحة بدلاً من البرقع. بشكل عام، تمثل الملابس التقليدية جزءًا من الهوية المصرية وتظل حاضرة في المناسبات التراثية. </span></h1></div>
+            <div class="Box2" id="BoxFour2" style="grid-area: Box-4"></div>
+            </div>
+            
+            <div class="Stack-Behind"></div>
+        </section>
+        </main>
+        
+        
+    <section class="Information_Container3" data-sr-id="info-container">
+        <section class="Information3" id="fourthsection">
+            <h1> الاستـعـراضــات والريـاضــات الشـعـبـيـــة </h1>
+        </section>
+    </section>
+    <main class="Fourth-Section" data-sr-id="Fourth-section">
+        <div class="Grid-Container3">
+        <div class="Box3" id="BoxOne3" style="grid-area: Box-1"><h1>سبــاقــات الهــجـــن</h1> <p>سباقات مخصصة للجمال، رياضة عربية أصيلة يشتهر إقامتها في شمال سيناء.</p> <img src="Egyptian Folklore Images/Camel.png"></div>
+        <div class="Box3" id="BoxTwo3" style="grid-area: Box-2"><h1>التـــنـــــورة</h1> <p>رقصة دائرية صوفية مشهورة، تعتمد على الدوران بحركات فنية جميلة.</p> <img src="Egyptian Folklore Images/Tanoura.jpeg"></div>
+        <div class="Box3" id="BoxThree3" style="grid-area: Box-3"><h1>التــحــطــيــب</h1> <p>استعراض قتالي بالعصي، نشأ في صعيد مصر ويعتبر جزءًا هامُا من الفن التراثي .</p> <img src="Egyptian Folklore Images/Tahteeb.jpeg"></div>
+        <div class="Box3" id="BoxFour3" style="grid-area: Box-4"><h1>الرقـــص النــوبـــي</h1> <p>استعراضات موسيقية راقصة من تراث بلاد النوبة بأزياء ملونة ومبهجة.</p> <img src="Egyptian Folklore Images/Nooby.jpeg"></div>
+        <div class="Box3" id="BoxFive3" style="grid-area: Box-5"><h1>الرقـــص الشــرقـــي</h1> <p>هو أحد أقدم الفنون الشعبية في مصر، يتميز بحركات الجسم المرنة والإيقاعية.</p> <img src="Egyptian Folklore Images/Sharqi.jpeg"></div>
+        <div class="Box3" id="BoxSix3" style="grid-area: Box-6"><h1>الرقـــص البـــدوي</h1> <p>رقصة دائرية صوفية مشهورة، تعتمد على الدوران بحركات فنية جميلة.</p> <img src="Egyptian Folklore Images/Badawy.jpeg"></div>
+        </div>
+    </main>
+
+            
+    <section class="Information_Container3" data-sr-id="info-container">
+        <section class="Information3" id="fifthsection">
+            <h1> العــــادات والتـــقـــالـــيــــــد </h1>
+        </section>
+    </section>
+
+    <main class="Fifth-Section" data-sr-id="Fifth-section">
+        <section class="Overlay2">
+        <div class="Grid-Container4">
+        <div class="Box4" id="BoxOne4" style="grid-area: Box-1"></div>
+        <div class="Box4" id="BoxTwo4" style="grid-area: Box-2"></div>
+        <div class="Box4" id="BoxThree4" style="grid-area: Box-3"></div>
+        <div class="Box4" id="BoxFour4" style="grid-area: Box-4"><h1>العــــادات والتــقــالــيــــد<br><br> <span>العادات والتقاليد في مصر غنية وتعكس روح المجتمع. في عيد شم النسيم، يخرج الناس إلى الحدائق ويتناولون الفسيخ والبصل والبيض الملون، احتفالًا بقدوم الربيع. في حفلات الزواج، تستمر عادة "الحنة" حيث تتزين العروس وتُقام سهرات غنائية. بعد ولادة الطفل، تُقام "السبوع"، حيث توزع الحلوى وتُنشد الأهازيج، وتُقرع الأواني لطرد الأرواح الشريرة. هذه الطقوس، رغم تطور المجتمع، ما زالت حاضرة في الريف والحضر، وتمثل مزيجًا من الفولكلور والمعتقدات الشعبية، مما يجعلها جزءًا أصيلًا من الهوية الثقافية المصرية.</span></h1></div>
+        </div>
+        
+        <div class="Stack-Behind"></div>
+    </section>
+    </main>
+
+                
+    <section class="Information_Container3" data-sr-id="info-container">
+        <section class="Information3" id="sixthsection">
+            <h1> الأمـثـال والأغـانــي الشـعـبـيـــة </h1>
+        </section>
+    </section>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            جزء كبير من التراث الثقافي، وهي عبارة عن جمل قصيرة أو عبارات بسيطة تعبر عن مواقف أو حكم تعلمها الناس من تجاربهم اليومية. <br> وبالنسبة للأغاني الشعبية، فمصر كانت من أوائل البلاد اللي شكلت وجدان العالم العربي بالموسيقى، خصوصًا من بداية القرن العشرين.
+        </b>
+        </p>
+    </section>
+
+    <main class="Sixth-Section" data-sr-id="Sixth-section">
+        <div class="Grid-Container5">
+        <div class="Box5" id="BoxOne5" style="grid-area: Box-1"><h1> "الجواب بيبان من عنوانه" <br> (يقال عن الأشياء التي لها علامات واضحة من البداية) <br> <br> "اللي اختشوا ماتوا" <br> (يقال عندما يقوم احدهم بعمل شيء خاطئ ولا يشعر بالذنب) <br> <br> "على قد لحافك مد رجليك" <br> (بمعنى انه يجب على المرء أن يتكيف أو يعيش على قدر إمكانياته) </h1></div>
+        <div class="Box5" id="BoxTwo5" style="grid-area: Box-2"></div>
+        <div class="Box5" id="BoxThree5" style="grid-area: Box-3"><h1> الليلة الكبيرة - سيد مكاوي <br> من أشهر الأغاني التي تُغنى في الأفراح والمناسبات السعيدة، وتُعبر عن بهجة الفرح والاحتفال، وكانت تُستعمل في الزفة <br> <br> سالمة يا سلامة - سيد درويش  <br> تتحدث الأغنية عن مشاعر المصريين بالغربة أثناء بعدهم عن بلدهم، وعن رضاهم بالحياة سواءً كانوا أغنياء أو فقراء، وعن صبرهم ومثابرتهم في الحرب وسعيهم للسلام. <br> <br> بص على الحلاوة - الريس متقال القناوي <br> الأغنية تمثل أيقونة في التراث المصري الريفي، وتمزج بين الإيقاع البلدي البسيط والكلمات العامية الجميلة التي تحتفي بالجمال والمودة والعلاقات الاجتماعية.</h1></div>
+        <div class="Box5" id="BoxFour5" style="grid-area: Box-4"></div>
+        </div>
+    </main>
+
+
+    <footer data-sr-id="footer">
+        <div class="footer-content">
+            <h3> <a href="index.html" class="logo"> <img class="Logo" src="Egyptian Folklore Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+            <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+              <br>
+              <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+            <div class="Row">
+                <div class="Column">
+                </div>
+                <div class="Social">
+                    <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+              <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+            </div>
+        </div>
+    </footer>  
+    
+    <a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+    
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('#BoxOne', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+    ScrollReveal().reveal('#BoxTwo', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+    ScrollReveal().reveal('#BoxThree', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+    ScrollReveal().reveal('#BoxFour', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                
+    ScrollReveal().reveal('#BoxFive', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Information2', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Information3', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+            
+    ScrollReveal().reveal('#BoxOne2', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                
+    ScrollReveal().reveal('#BoxTwo2', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                    
+    ScrollReveal().reveal('#BoxThree2', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                        
+    ScrollReveal().reveal('#BoxFour2', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+                
+    ScrollReveal().reveal('#BoxOne3', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                    
+    ScrollReveal().reveal('#BoxTwo3', {
+        distance: '100px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 400,
+        easing: 'ease-in-out'
+    });
+                        
+    ScrollReveal().reveal('#BoxThree3', {
+        distance: '100px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+                    
+    ScrollReveal().reveal('#BoxSix3', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                        
+    ScrollReveal().reveal('#BoxFive3', {
+        distance: '100px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 400,
+        easing: 'ease-in-out'
+    });
+                            
+    ScrollReveal().reveal('#BoxFour3', {
+        distance: '100px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+
+
+    ScrollReveal().reveal('#BoxOne4', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                
+    ScrollReveal().reveal('#BoxTwo4', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                    
+    ScrollReveal().reveal('#BoxThree4', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+                        
+    ScrollReveal().reveal('#BoxFour4', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+            
+    ScrollReveal().reveal('#BoxOne5', {
+        distance: '50px',
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 400,
+        easing: 'ease-in-out'
+    });
+                
+    ScrollReveal().reveal('#BoxTwo5', {
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 500,
+        easing: 'ease-in-out'
+    });
+                
+    ScrollReveal().reveal('#BoxThree5', {
+        distance: '50px',
+        reset: true,
+        origin: 'left',
+        duration: 1000,
+        delay: 400,
+        easing: 'ease-in-out'
+    });
+                    
+    ScrollReveal().reveal('#BoxFour5', {
+        reset: true,
+        origin: 'right',
+        duration: 1000,
+        delay: 500,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

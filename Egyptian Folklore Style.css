@@ -1,0 +1,1079 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5DBC0;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+/*Style for Navigation Bar*/
+
+nav{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    background-color: rgba(247, 242, 234, 0.238);
+    backdrop-filter: blur(3px);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 85px;
+}
+nav a{
+    font-family: "Cairo", sans-serif;
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#080808;
+    font-size: 23px;
+    font-style: bold;
+    transition:0.6s;
+    font-weight: 500;
+}
+nav a.Hover:hover{
+    background-color: aliceblue;
+    opacity: 0.8;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.Sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 45vh;
+    z-index: 999;
+    background-color: rgba(244, 237, 225, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display:none;
+}
+.Sidebar li{
+    width: 100%;
+}
+.Sidebar a{
+    width: 75%;
+    font-size: 25px;
+/*    direction: rtl; */
+    font-family: "Cairo", sans-serif;
+}
+.Menu-Button{
+    display:none;
+}
+@media(max-width:1230px){
+    .hideOnMobile{
+        display: none;
+    }
+    .Menu-Button{
+        display: block;
+    }
+}
+@media(max-width:500px){
+    .Sidebar{
+        width: 100%;
+    }
+}
+
+.Welcome{
+    direction: rtl;
+    display: flex;
+    position: relative;
+    color:whitesmoke;
+    padding:15% ;
+    text-align: justify;
+    box-shadow: 0px 4px 8px black;
+    margin-bottom: 15px;
+}
+.Welcome h2{
+    color:#E5DBC0;
+    line-height: 210%;
+    direction: rtl;
+    font-size:3vw;
+    margin-left:2%;
+    margin-right: 2%;
+    position: absolute;
+    bottom:10px;
+    right:0px;
+    font-family: "Alexandria", sans-serif;
+}
+.BackGround{
+    background-image: url('Egyptian\ Folklore\ Images/Tile 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Style for The Informatic Section*/
+.Information_Container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Information{
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    width:85%;
+    font-size: max(1rem, 1.6cqi);
+    font-weight: 100;
+    position: absolute;
+    font-family: "Alexandria", sans-serif;
+    color:#412E20;
+    border-bottom: 5px solid #A39378;
+    background-color: #E5DBC0;
+}
+.Information > h1{
+padding-bottom: 0.5vw;
+}
+.First-Section{
+    padding-top: 6vw;
+    background-color: #E5DBC0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Grid-Container{
+    gap: 25px;
+    display: grid;
+    grid-template-columns: 650px 650px;
+    grid-template-rows: 220px 220px 220px;
+    grid-template-areas:
+    "Box-2 Box-1"
+    "Box-4 Box-3"
+    "Box-5 Box-5"
+
+}
+.Grid-Container > a{
+    text-decoration: none;
+    color:#412E20;
+}
+.Box{
+    border-radius: 25px;
+    direction: rtl;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #E5DBC0;
+    transition:0.9s;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all 1.5s ease 0.2s;
+    filter:brightness(85%);
+}
+.Box:hover{
+    transform: scale(1.07);
+    filter:brightness(100%);
+}
+.Box > h1{
+    line-height: 250%;
+    margin-bottom: 0.5vw;
+    direction: rtl;
+    font-size: 1.4vw;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(183, 179, 172, 0.5);
+    border-radius: 15px;
+    width: 60%;
+    transition: all 1.5s ease 0.2s;
+}
+h1#fifth{
+    width: 30%;
+}
+#BoxOne{
+    background-image: url('Egyptian\ Folklore\ Images/Food.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 46, 32);
+}
+#BoxOne:hover{
+    transform: scale(1.05);
+}
+
+#BoxTwo{
+    background-image: url('Egyptian\ Folklore\ Images/Clothes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 46, 32);
+}
+#BoxTwo:hover{
+    transform: scale(1.05);
+}
+
+#BoxThree{
+    background-image: url('Egyptian\ Folklore\ Images/Sports.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 46, 32);
+}
+#BoxThree:hover{
+    transform: scale(1.05);
+}
+
+#BoxFour{
+    background-image: url('Egyptian\ Folklore\ Images/Henna.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 46, 32);
+}
+#BoxFour:hover{
+    transform: scale(1.05);
+}
+
+#BoxFive{
+    background-image: url('Egyptian\ Folklore\ Images/Saying.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 46, 32);
+}
+#BoxFive:hover{
+    transform: scale(1.05);
+}
+
+.Information_Container2{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3vw;
+}
+.Information2{
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    width:65%;
+    font-size: max(1rem, 1.6cqi);
+    font-weight: 100;
+    position: absolute;
+    font-family: "Alexandria", sans-serif;
+    color:#412E20;
+    border-bottom: 5px solid #A39378;
+    background-color: #E5DBC0;
+}
+.Information2 > h1{
+padding-bottom: 0.5vw;
+}
+
+.Second-Section-Style{
+    padding-top: 8vw;
+    text-align: left;
+}
+main.Second-Section{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.Second-Section .List .Item{
+    position:absolute;
+    inset: 0 0 0 0;
+}
+.Second-Section .List .Item img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(60%);
+}
+.Second-Section .List .Item .Content{
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    direction: rtl;
+    position: absolute;
+    top: 55%;
+    width: 1150px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    color:white;
+    text-shadow: 0 5px 10px #0004;
+}
+.Second-Section .List .Item .Content .Title,
+.Second-Section .List .Item .Content .Topic{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.2em;
+}
+.Second-Section .List .Item .Content .Topic{
+    color:#FCC9AA;
+}
+.Second-Section .List .Item .Content .Description{
+    padding-top:30px;
+    text-align: center;
+    font-size: 1.55em;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+/*Style for The Thumbnail*/
+.Thumbnail{
+    opacity: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.Thumbnail .Item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.Thumbnail .Item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter:brightness(85%);
+}
+.Thumbnail .Item .Content{
+    color:#FCC9AA;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.Thumbnail .Item .Content .Title{
+    line-height: 22px;
+    font-family: "Alexandria", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+/*Style for The Arrows*/
+.Arrows{
+    position: absolute;
+    top: 90%;
+    right: 33%;
+    width: 300px;
+    max-width: 30%;
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+.Arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border:none;
+    font-family: monospace;
+    color:#fff;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+    z-index:100;
+    cursor: pointer;
+}
+.Arrows button:hover{
+    background-color: #eee;
+    color:#555;
+}
+.Second-Section .List .Item:nth-child(1){
+    z-index: 1;
+}
+.Second-Section .List .Item:nth-child(1) .Title,
+.Second-Section .List .Item:nth-child(1) .Topic,
+.Second-Section .List .Item:nth-child(1) .Description{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.Second-Section .List .Item:nth-child(1) .Title{
+    animation-delay: 1.2s;
+
+}
+.Second-Section .List .Item:nth-child(1) .Topic{
+    animation-delay: 1.4s;
+    
+}
+.Second-Section .List .Item:nth-child(1) .Description{
+    animation-delay: 1.6s;
+    
+}
+/*Effect for Next Click*/
+.Second-Section.Next .List .Item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom:50px;
+    border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.Second-Section.Next .Thumbnail .Item:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+@keyframes showThumbnail{
+    to{
+        width: 150px;
+    }
+}
+.Second-Section.Next .Thumbnail{
+    transform: translateX(150px);
+    animation: transformThumbnail 0.5s linear 1 forwards;
+}
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+/*Effect for Prev Click*/
+.Second-Section.Prev .List .Item:nth-child(2){
+    z-index: 2;
+}
+.Second-Section.Prev .List .Item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
+@keyframes outImage{
+    to{
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+.Second-Section.Prev .Thumbnail .Item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+.Second-Section.Prev .List .Item:nth-child(2) .Title,
+.Second-Section.Prev .List .Item:nth-child(2) .Topic,
+.Second-Section.Prev .List .Item:nth-child(2) .Description{
+    animation: contentOut 1.5s linear 1 forwards;
+}
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+
+    }
+}
+.Second-Section.Next .Arrows button,
+.Second-Section.Prev .Arrows button{
+    pointer-events: none;
+}
+/*Timer*/
+.Time{
+    width: 0%;
+    height: 15px;
+    background-color:#FCC9AA;
+    position:absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.Second-Section.Next .Time,
+.Second-Section.Prev .Time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+@keyframes timeRunning{
+    to{
+        width:0;
+    }
+}
+/*Responsive Image Slider*/
+@media screen and (max-width: 678px){
+    .Second-Section .List .Content{
+        padding-right: 0;
+    }
+    .Second-Section .List .Item .Content .Title{
+        font-size: 30px;
+    }
+}
+
+.Third-Section{
+    padding-bottom: 33vw;
+    padding-top: 10vw;
+    background-color: #E5DBC0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.Overlay{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Grid-Container2{
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "Box-2 Box-1"
+    "Box-4 Box-3"
+    "Box-5 Box-3"
+
+}
+
+.Box2{
+    border-radius: 25px;
+    direction: rtl;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #E5DBC0;
+    transition:0.9s;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 1.5s ease 0.2s;
+}
+.Box2:hover{
+    filter:brightness(100%);
+}
+.Box2 > h1{
+    line-height: 113%;
+    margin-bottom: 0.5vw;
+    padding-top: 1.5vw;
+    direction: rtl;
+    font-size: 2.4vw;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(183, 179, 172, 0.5);
+    border-radius: 25px;
+    transition: all 1.5s ease 0.2s;
+}
+.Box2 > h1 >span {
+    padding-top: 90px;
+    font-size: 1.385vw;
+    font-weight: 400;
+}
+#BoxOne2{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Clothes 1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxOne2:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxTwo2{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Clothes 2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxTwo2:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxFour2{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Clothes 3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxFour2:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxThree2{
+    margin-top: 65px;
+    background-color: rgb(65, 46, 32);
+}
+
+.Stack-Behind{
+height: 600px;
+width:600px;
+background-color: burlywood;
+}
+
+
+.Information_Container3{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Information3{
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+    width:65%;
+    font-size: max(1rem, 1.6cqi);
+    font-weight: 100;
+    position: absolute;
+    font-family: "Alexandria", sans-serif;
+    color:#412E20;
+    border-bottom: 5px solid #A39378;
+    background-color: #E5DBC0;
+}
+.Information3 > h1{
+padding-bottom: 0.5vw;
+}
+
+.Fourth-Section{
+    padding-bottom: 2vw;
+    padding-top: 10vw;
+    background-color: #E5DBC0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Grid-Container3{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 600px 600px;
+    grid-template-areas:
+    "Box-3 Box-2 Box-1"
+    "Box-6 Box-5 Box-4"
+
+}
+.Box3{
+    border-radius: 25px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(183, 179, 172, 0.5);
+    transition:0.9s;
+    align-items: center;
+    transition: all 1.5s ease 0.2s;
+    border: 2px solid rgb(65, 46, 32);
+}
+.Box3 > h1{
+    margin-top: 20px;
+    line-height: 250%;
+    margin-bottom: 0.5vw;
+    direction: rtl;
+    font-size: 1.4vw;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(183, 179, 172, 0.6);
+    border-radius: 25px;
+    width: 60%;
+}
+.Box3 > p{
+    margin-top: 15px;
+    line-height: 250%;
+    margin-bottom: 0.5vw;
+    direction: rtl;
+    font-size: 1.36vw;
+    font-family: "Alexandria", sans-serif;
+    width: 80%;
+}
+.Box3 > img{
+    border-radius: 15px;
+    margin-top: 15px;
+    height: 300px;
+    width:320px
+}
+
+
+.Fifth-Section{
+    padding-bottom: 33vw;
+    padding-top: 10vw;
+    background-color: #E5DBC0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.Overlay2{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Grid-Container4{
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "Box-2 Box-1"
+    "Box-4 Box-3"
+    "Box-4 Box-5"
+
+}
+
+.Box4{
+    border-radius: 25px;
+    direction: rtl;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #E5DBC0;
+    transition:0.9s;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 1.5s ease 0.2s;
+}
+.Box4:hover{
+    filter:brightness(100%);
+}
+.Box4 > h1{
+    line-height: 113%;
+    margin-bottom: 0.5vw;
+    padding-top: 1.5vw;
+    direction: rtl;
+    font-size: 2.4vw;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(183, 179, 172, 0.5);
+    border-radius: 25px;
+    transition: all 1.5s ease 0.2s;
+}
+.Box4 > h1 >span {
+    padding-top: 90px;
+    font-size: 1.385vw;
+    font-weight: 400;
+}
+#BoxOne4{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Tradition2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxOne4:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxTwo4{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Tradition1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxTwo4:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxThree4{
+    filter:brightness(85%);
+    background-image: url('Egyptian\ Folklore\ Images/Tradition3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border: 1px solid rgb(65, 46, 32);
+}
+#BoxThree4:hover{
+    filter:brightness(100%);
+    transform: scale(1.05);
+}
+
+#BoxFour4{
+    margin-top: 65px;
+    background-color: rgb(65, 46, 32);
+}
+
+.Stack-Behind{
+height: 600px;
+width:600px;
+background-color: burlywood;
+}
+
+.TheStory{
+    padding-top: 8.6vw;
+    padding-bottom: 0.6vw;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.TheStory p{
+    color:#412E20;
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+    font-size: 1.35vw;
+    padding-left:20px;
+    text-align: center;
+    padding: 10px 0 ;
+}
+
+.Sixth-Section{
+    background-color: #E5DBC0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Grid-Container5{
+    padding-bottom: 2vw;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:
+    "Box-2 Box-1 Box-1 Box-1"
+    "Box-3 Box-3 Box-3 Box-4"
+
+}
+.Box5{
+    border-radius: 25px;
+    direction: rtl;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #E5DBC0;
+    align-items: flex-start;
+}
+
+.Box5 > h1{
+    line-height: 250%;
+    margin-bottom: 0.5vw;
+    direction: rtl;
+    font-size: 1.1vw;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(183, 179, 172, 0.5);
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    border: 2px solid rgb(65, 46, 32);
+}
+
+#BoxOne5{
+background-color: white;
+}
+
+#BoxTwo5{
+    background-image: url('Egyptian\ Folklore\ Images/Sayings.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    
+}
+
+#BoxThree5{
+background-color: white;
+}
+#BoxThree5 > h1{
+    font-size: 0.9vw;
+    }
+
+#BoxFour5{
+    background-image: url('Egyptian\ Folklore\ Images/Songs.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+
+
+/*Style for The Footer Section*/
+footer{
+    background:#957b2e;
+    height: auto;
+    width:100vw;
+    color:white;
+    background-Image: url("Egyptian\ Folklore\ Images/Tile 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-content{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align: center;
+box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+background-color: rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(2.4px);
+}
+.footer-content p{
+    font-family: "Alexandria", sans-serif;
+    direction: rtl;
+    max-width:700px;
+    margin: 10px auto;
+    line-height: 33px;
+    font-size: 15px;
+    color:#FCC9AA;
+    font-weight:600;
+}
+.footer-content p span{
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    color:#FCC9AA;
+    font-weight:600;
+}
+.Column p{
+    color: #291c13;
+    margin-bottom: -40px;
+}
+.Social{
+    padding-top: 10px;
+}
+.Social i {
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 0 20px;
+    transition:0.3s;
+}
+.Social i:hover{
+    color: #F8C69A;
+    transform: scale(1.2);
+}
+.footer-bottom{
+    background: #000;
+    margin-top:25px;
+    width: 100vw;
+    text-align:center;
+}
+.footer-bottom p {
+    color:#eee;
+text-align: center;
+font-size: 18px;
+word-spacing: 2px;
+text-transform:capitalize;
+}
+.footer-bottom p a{
+    direction: rtl;
+color: whitesmoke;
+font-size: 16px;
+text-decoration: none;
+}
+@media (max-width: 500px){
+    .Footer-Menu ul{
+        display:inline;
+    }
+    .Footer-Menu ul li{
+margin-bottom: 20px;
+    }
+}
+
+
+
+.up-btn {
+    transition:0.9s;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #291c13;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .up-btn:hover {
+    transform: scale(1.1);
+    background-color: #F8C69A;
+  }
+
+  .up-btn{
+    animation-name: BtnAppear;
+    animation-timeline: scroll(y);
+  }
+  
+  @keyframes BtnAppear{
+    0%{
+        opacity:0;
+        display:none;
+        position: fixed;
+    }
+    3%{
+    opacity:0;
+    display:none;
+    }
+    3.5%{
+    opacity:1;
+    display:block;
+    }
+    100%{
+        opacity:1;
+        display:block;
+        position: fixed;
+    }
+  }
