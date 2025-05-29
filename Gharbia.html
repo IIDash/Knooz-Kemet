@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Gharbia Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Gharbia Governorate</title>
+        <link rel="icon" href="Gharbia Images/Gharbia Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Gharbia Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br>الـغــــــربــــــيـــــــــــة</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            محافظة الغربية لها تاريخ طويل كمنطقة زراعية حيوية في قلب الدلتا. اكتسبت اسمها وأهميتها الإدارية والدينية بشكل خاص في العصور الإسلامية، وتطورت لتصبح مركزاً صناعياً هاماً في العصر الحديث، مع احتفاظ مدينتي طنطا والمحلة الكبرى بأهميتهما الدينية والصناعية على التوالي. ويرتبط اسم مدينة طنطا، عاصمة المحافظة، ارتباطاً وثيقاً بالسيد أحمد البدوي، فمنذ القرن الثالث عشر الميلادي وبفضل مقامه الشهير، اشتهرت المدينة وذاع صيتها كمركز ديني رئيسي في الدلتا. وقد أصبح مسجده وميدانه، المعروف بالجامع الأحمدي، ليس فقط مركزاً للزيارة الدينية ولكن أيضاً محوراً للحياة الاجتماعية والاقتصادية في المدينة. ويُعد المولد السنوي الذي يُقام احتفاءً به من أكبر التجمعات الدينية والشعبية في مصر، جاذباً ملايين الزوار، مما رسخ مكانة المحافظة ومنحها شهرة واسعة عبر العصور.
+
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة الـغـــربـــيـــــة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة الـغـــربـــيـــــة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Gharbia Images/Gharbia Icon.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>
+            تتخذ محافظة الغربية شعاراً مميزاً عبارة عن ترس ذهبي، في إشارة إلى القاعدة الصناعية القوية بالمحافظة، وأشهرها مصانع الغزل والنسيج العريقة بمدينة المحلة الكبرى. يتوسط هذا الترس صورة لقبة ومئذنة المسجد الأحمدي الشهير (مسجد سيدي أحمد البدوي) بمدينة طنطا. ويرمز هذا الشعار إلى النهضة الصناعية والمعالم الأثرية والدينية التي تفخر بها المحافظة. كما يعكس هذا التصميم الفريد ببراعة كيف تتشابك الحداثة مع الأصالة، وهما الركيزتان الأساسيتان اللتان تشكلان هوية ونسيج الحياة في الغربية.
+        </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Gharbia Images/Second Place.jpg" class="Figure1">
+        <h1>الســبــيـــل الأحــمـــدي</h1>
+        <p> السبيل الأحمدى بطنطا هو من المعالم الأثرية التى تمتاز بشهرتها الدينية. يقع السبيل الأحمدى فى الجهة الجنوبية الغربية للمسجد الأحمدى ويمتاز بالزخارف الإسلامية على جدرانة وكذلك الشبابيك المصنوعة من الخشب وذات زخرفة تبين مدى إبداع الفن الإسلامى، وقد بنى السبيل الخديوى عباس حلمى ١٣٢٠هـ. </p>
+    </section>
+    <section class="Blob2">
+        <img src="Gharbia Images/First Place.jpg" class="Figure2">
+        <h1>المــســجـــد الأحــمـــدي</h1>
+        <p> المسجد الأحمدي بطنطا، أو جامع السيد البدوي، هو مسجد تاريخي كبير يعود للقرن الثالث عشر ويضم ضريح السيد أحمد البدوي. يُقام فيه مولدان سنويان يجذبان الآلاف، ويتميز بعمارته الإسلامية ومقتنياته الأثرية. وهو من أهم المعالم السياحية والآثار الإسلامية في منطقة وسط الدلتا.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Gharbia Images/Fourth Place.jpg" class="Figure1">
+        <h1>سـبـيــل عـلــي بـك الـكـبـيــر</h1>
+        <p id="ThirdParagraph">من أهم معالم مدينة طنطا الأثرية، أنشأه على بك الكبير، أحد ملوك مصر من عصور المماليك في الفترة من ١١٨٣ – ١١٨٥هـ كوقف إسلامى،  يقع السبيل في الجزيرة الوسطى بشارع الجلاء بمدينة طنطا ملحقا بالحديقة المتحفية، ويتميز بالطراز الإسلامي في البناء ويظهر ذلك أيضاُ بالنقوش والزخارف الإسلامية.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Gharbia Images/Third Place.jpg" class="Figure2">
+        <h1>مــســجــــد المــتــولـــي </h1>
+        <p id="FourthParagraph">هو مسجد تاريخي في مدينة المحلة الكبرى أنشأه أحمد بن علي بن يوسف الطريني خلال القرن التاسع الهجري في العصر المملوكي الجركسي. تبلغ مساحته فدانين وهو بذلك أكبر مساجد المحلة ومن أكبر مساجد محافظة الغربية، يتبع عمارة المسجد نظام الإيوان والأروقة، وبالمسجد منبر خشبي مطعم بالعاج والصدف.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Gharbia Images/Sixth Place.jpg" class="Figure1">
+        <h1> كنيسة الشهيد أبانوب </h1>
+        <p id="SixthParagraph"> كنيسة الشهيد أبانوب بسمنود التي تعتبر بحسب العقيدة المسيحية المحطة الخامسة لمريم العذراء ويسوع أثناء الهرب الى مصر من الرومان، حيث قضت فيها السيدة مريم العذراء والسيد المسيح مدة ١٧ يوما قبل استكمال رحلتهم المقدسة، والرحلة بأكملها مسجلة في القائمة التمثيلية للتراث الثقافي غير المادي للانسانية في اليونسكو.  </p>
+    </section>
+    <section class="Blob2">
+        <img src="Gharbia Images/Fifth Place.jpg" class="Figure2">
+        <h1> كنيسة الشهيدة رفقة </h1>
+        <p id="FifthParagraph"> من أقدم كنائس المحافظة ويأتى اليها الزوار من جميع محافظات الجمهورية بل يأتى اليها وفود اجنبية من جنسيات مختلفة من جميع دول العالم. وتعتبر الكنيسة الواحدة من الكنائس الأثرية، حيث تجمع بين النظام البزيليكى والنظام البيزنطى، والوحيدة الأثرية فى الكرازة باسم القديسة رفقة وأولادها، والتى تحظى باحتضان أجساد ١٥ شهيدًا. </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Gharbia Images/Eighth Place.jpg" class="Figure1">
+            <h1> مـركـز طـنـطــا الثـقـافـــي </h1>
+            <p id="EighthParagraph">
+                 يعد المركز الثقافى بمدينة طنطا واحدا من أهم وأكبر المنشآت الثقافية التابعة للهيئة العامة لقصور الثقافة بمحافظة الغربية وهو منارة ثقافية وفنية لأهالى الدلتا بصفة عامة وطنطا بصفه خاصة، حيث يقدم ذلك الصرح الحضاري مادة دسمة من الفنون المختلفة للمبدعين وأيضا رعاية للمواهب المختلفة في جميع مجالات الفنون.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Gharbia Images/Seventh Place.jpg" class="Figure2">
+        <h1> مــتــحــــف آثـار طـنـطــا </h1>
+        <p id="SeventhParagraph">
+            يضم المتحف عددًا كبيرًا من القطع الأثرية المهمة.
+             كما يعرض المتحف مجموعات أثرية يصل عددها إلى ألفان وخمس قطعة أثرية، من بينهم ألف ومائتان وثمانية قطعة عملة. تغطي تلك الآثار تاريخ مصر من عصور ما قبل التاريخ، مرورًا بالعصور المصرية القديمة، واليونانية الرومانية، والقبطية والإسلامية، وصولاً للعصر الحديث. 
+        </p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> سـمـيـرة مـوسـى</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> محـمـود خـلـيـل الحـصـرى</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>مـحـمـد صـلاح</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مـصـطـفـى كـامـل</p></div>
+    </section>
+   
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Gharbia Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> سـمـيـرة مـوسـى</div>
+                    <div class="swal-header2">(٣ مـارس ١٩١٧- ٥ اغـسـطـس ١٩٥٢ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    عالمة ذرة مصرية، وُلدت في قرية "سنبو الكبرى" بمركز زفتى بمحافظة الغربية. تُعد أول عالمة ذرة مصرية وعربية، ولقّبت بـ"ميس كوري الشرق". كانت تسعى لتسخير الذرة لخدمة السلام، وقد اغتيلت في الولايات المتحدة عام 1952 في ظروف غامضة. 
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> الـشـيـخ مـحـمـود خـلـيل الحـصـري</div>
+                    <div class="swal-header2"> ( ١٧ سبتمبر ١٩١٧- ٢٤ نوفمبر ١٩٨٠ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    واحد من كبار قراء القرآن الكريم في مصر والعالم الإسلامي. وُلد في قرية "شبرا النملة" التابعة لمركز طنطا، وامتاز بصوته القوي وأسلوبه المميز، وكان أول من سجل المصحف المرتل كاملًا بصوته
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـحـمـد صـلاح</div>
+                    <div class="swal-header2"> ( ١٥ يونيو ١٩٩٢ - إلى الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    نجم كرة القدم العالمي، وُلد في قرية "نجريج" التابعة لمركز بسيون بالغربية. يلعب حاليًا في نادي ليفربول الإنجليزي ومنتخب مصر الوطني، ويُعتبر من أفضل اللاعبين في تاريخ الكرة المصرية والعالمية
+                    </div>
+                
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            }); 
+        }
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  مـصـطـفـى كـامـل</div>
+                    <div class="swal-header2"> (    ١٤ أغسطس ١٨٧٤ - ١٠ فبراير ١٩٠٨  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    زعيم سياسي وطني، وُلد في قرية "كتامة" التابعة لمركز بسيون بالغربية. أسس الحزب الوطني، وكان من أبرز الشخصيات التي نادت بالاستقلال عن الاحتلال البريطاني، واشتهر بعبارته: "لو لم أكن مصريًا لوددت أن أكون مصريًا".
+                    </div>
+                
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            }); 
+        }
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

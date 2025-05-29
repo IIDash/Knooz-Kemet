@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Qena Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Qena Governorate</title>
+        <link rel="icon" href="Qena Images/Qena Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Qena Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> قــــــــــــنـــــــــــــــــــــا</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            إحدى محافظات الوجه القبلي وأكثر محافظات الصعيد شهرة وأهمية، تحتضن ثروة أثرية وتاريخية عظيمة تعود لعصور ما قبل التاريخ مرورًا بعصور الدولة القديمة والوسطى والحديثة وحتى العصور المتأخرة، ويُشتق اسمها من الكلمة العربية "قني" بمعنى "المحتضنة" في إشارة إلى موقعها الجغرافي الفريد عند ثنية نهر النيل التي تبدو كذراعين يحتضنان ما بداخلهما، وتضم مدنًا تاريخية عريقة مثل قفط، ومعابد شهيرة كمعبد دندرة المخصص لعبادة الإلهة حتحور، وتتميز بتنوعها الثقافي والعرقي، وتراثها الصعيدي الأصيل الغني بالعادات والتقاليد، فضلًا عن كونها مركزًا زراعيًا وصناعيًا بارزًا يعتمد على زراعة قصب السكر والصناعات الحرفية التقليدية، مما يجعلها إحدى ركائز التنمية في صعيد مصر.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة قـــــنــــــا</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة قـــــنــــــا</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Qena Images/Qena Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>
+            شعار المحافظة يجسد تكامل مقوماتها الطبيعية والتاريخية والاقتصادية، حيث ترمز الخطوط الزرقاء إلى نهر النيل شريان الحياة الذي يروي أراضيها الزراعية الخصبة، بينما تجسد بوابة معبد دندرة وسط الشعار عمقها الحضاري وتاريخها السياحي الممتد لآلاف السنين، ويحيط بها ترس يعبر عن نشاطها الصناعي المتنوع الذي يشمل مصانع الألومنيوم والسكر والغزل والنسيج والورق، مما يجعل من الشعار تعبيرًا بصريًا متكاملًا عن مكانة قنا كإحدى أهم محافظات صعيد مصر في الزراعة والصناعة والسياحة.
+            </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Qena Images/kft.jpg" class="Figure1">
+        <h1>  مــديــنـــة قـفــط </h1>
+        <p>من أقدم المدن حيث بناها الملك قفطاي في عصر الإضمحلال الأول قبل الميلاد ثم زادت أهميتها في عصر الدولة الحديثة وكانت مورد أساسي ودعم في حرب أحمس ضد الهكسوس وكانت ممرا لطريق القوافل وتشتهر بالتجارة والصناعة من قديم الأزل وسكنها العرب من بعد الفتح الإسلامي. وبمدينة قفط تم اكتشاف معبد الإله مين إله الخصوبة عند القدماء. وكانت تعتبر قفط بوابة الطرق المؤدية إلى البحر الحمر ومدينة القصير وطرق الحج البرية القديمة.
+            
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Qena Images/dandra.jpg" class="Figure2">
+        <h1>مـعـبـد دنــدرة المـركــب</h1>
+        <p>واجهة قنا السياحية الأولى ومقصد للسائحين من مختلف العالم، فرغم مرور آلاف السنين إلا أن المعبد ما زال يحتفظ بألوان نقوشه الزاهية ليعد واحد من أجمل معابد العالم. بنى المعبد بدقة عالية جعلت عمارته محتفظة بكافة معالمها، وشيد لعبادة إلهة الحب والجمال والأم والسعادة وكذلك الخصوبة عند القدماء المصريين، وما زال المعبد قبلة الزائرين إلى المحافظة للاستمتاع بحضارة القدماء صيفًا وشتاء، حيث يستقبل عشرات الزوار يوميا.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Qena Images/abdelrman mous.png" class="Figure1">
+        <h1>مسجد عبد الرحيم القناوي</h1>
+        <p id="SixthParagraph">
+            بُني المسجد  في العصر الأيوبي خلال حكم الملك العادل شقيق القائد الشهير صلاح الدين الأيوبي، ليكون منارة دينية وعلمية في صعيد مصر، وقد خضع المسجد عبر العصور الإسلامية المتعاقبة للعديد من عمليات الترميم والتوسعة والتجديد، حتى أصبح أحد أكبر وأشهر المساجد في جنوب مصر من حيث المساحة والقيمة الروحية والتاريخية، ويُعد مزارًا دينيًا مهمًا يقصده الزائرون من مختلف المحافظات، وقد نُسب إلى العالم الجليل والقطب الصوفي عبد الرحيم بن أحمد القناوي.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Qena Images/palace.jpg" class="Figure2">
+        <h1> قصر الأمير يوسف كمال</h1>
+        <p id="FifthParagraph">يقع على ضفاف نهر النيل، يتكون القصر من 9 وحدات معمارية فريدة، أقيمت على مساحة 10 أفدنة، وتضم الوحدات المعمارية للقصر "قصر السلاملك، القصر، قاعة الطعام، المطبخ، الفسقية، ضريح الشيخ عمران، المئذنة، قاعة الدرس، السبيل"، وتعد وحدات القصر التسع مزيجًا من الطرازين الأوروبى والإسلامى. كما أن للقصر أربع واجهات خزف من الخارج، فيما يتكون القصر من الداخل من دورين وبدروم ودور مسحور وسطح والدور الأرضى ويوجد بالقصر أسانسير خشبى صنعه الأمير خصيصًا لوالدته المريضة بالقلب.</p>
+    </section>
+</main>
+
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> عـبـدالبـاســط عـبـدالصـمــد</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p>  مـنــى مـكــرم عـبـيــد</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> عـمــر سـلـيـمـان</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> أحـمــد بـديــر</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Qena Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> عبدالباسط  الصمد </div>
+                    <div class="swal-header2">                (   ١ يناير ١٩٢٧  -٣٠ نوفمبر ١٩٨٨   )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+عُيّن قارئًا لمسجد الإمام الشافعي سنة 1952م، ثم لمسجد الإمام الحسين سنة 1958م خلفًا للشيخ محمود علي البنا. ترك للإذاعة ثروة من التسجيلات، إلى جانب المصحفين المرتل والمجود، ومصاحف مرتلة لبلدان عربية وإسلامية. جاب بلاد العالم سفيرًا لكتاب الله، وكان أول نقيب لقراء مصر سنة 1984م                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> منى مكرم عبيد </div>
+                    <div class="swal-header2"> (٢٠ مارس ١٩٤٣  - الآن) </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+أستاذة العلوم السياسية بالجامعة الأمريكية بالقاهرة وشغلت مناصب عديدة، منها خبيرة للبنك الدولي لمنطقة الشرق الأوسط وشمال أفريقيا، لها أيضًا مؤلفات عديدة بالإنجليزية والعربية والفرنسية، وحصلت على وسام جوقة الشرف برتبة ضابط من الرئيس الفرنسي ساركوزي وذلك لدعمها للعلاقات المصرية الفرنسية. وكانت عضوة بعدد من الأحزاب المصرية منها الوفد، والغد، والمصري الديمقراطي الاجتماعي                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">   عمر محمود سليمان </div>
+                    <div class="swal-header2"> (٢ يوليو ١٩٣٦  -  ١٩ يوليو ٢٠١٢ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+قائد عسكري وسياسي ظل يشغل منصب رئيس المخابرات العامة حتى تم تعيينه نائباً لرئيس الجمهورية في 29 يناير 2011 وحتى 11 فبراير 2011 خلال أحداث ثورة 25 يناير                    </div>
+                 
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> أحمد بدير </div>
+                    <div class="swal-header2"> (   ١ مايو ١٩٤٥  - الآن )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+اثرى أحمد بدير الفن المصري بالعديد من الأفلام والمسلسلات التلفيزيونية والإذاعية والمسرحيات والتي تزيد في مجملها عن 220 عمل                    </div>
+                 
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

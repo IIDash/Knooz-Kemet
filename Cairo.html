@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Cairo Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Cairo Governorate</title>
+        <link rel="icon" href="Cairo Images/Cairo Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Cairo Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br>القـــــــاهــــــــــــــــرة</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            عاصمة جمهورية مصر العربية، وأحد أعرق مدن العالم، حملت اسمها ١٨ مدينة أخرى حول العالم. تُعرف بألقاب عديدة مثل قاهرة المعز، المدينة المحروسة، وحاضرة الدنيا. بدأت مسيرتها الحضارية منذ عهد الفراعنة باسم "أون"، رمز وحدة الشمال والجنوب. تقع استراتيجيًا على الضفة الشرقية للنيل، وتضم أهم مقرات الحكم حتى انتقالها للعاصمة الإدارية. رغم كونها أكبر مدن مصر سكانًا، إلا أنها أصغرها مساحة كمحافظة. وتُعد القاهرة متحفًا مفتوحًا يضم آثارًا فرعونية ويونانية ورومانية وقبطية وإسلامية، مما جعلها كما وصفها ابن خلدون: "أوسع من كل ما يُتخيَّل فيها". وقيل ان السبب في تسميتها بهذا الاسم هو تبركًا بالكوكب القاهر المعروف باسم كوكب المريخ وهو القول الأكثر شيوعًا بين المؤرخين.
+                        
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن  مــحــافــظــة القـــاهـــــرة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار  مــحــافــظــة القـــاهـــــرة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Cairo Images/Cairo Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>شعار محافظة القاهرة يجسد في تصميمه الجامع الأزهر الشريف كرمز ديني وثقافي يتوسطه ويعلوه ثلاث مآذن بارزة وقبة تعكس عراقة الطراز الإسلامي، وتحيط به أشعة شمس مشرقة ترمز إلى دور القاهرة كمنارة للعلم والدين تشع بنورها إلى العالم أجمع، بينما تحت الجامع تُكتب كلمة "القاهرة" بخط عربي هندسي مميز يعكس الأصالة والهوية، وكل ذلك داخل إطار على شكل محراب يعزز الطابع الروحي والمعماري الإسلامي، ليعبّر الشعار بأكمله عن مكانة القاهرة كعاصمة دينية وثقافية وتاريخية لمصر والعالم العربي والإسلامي.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Cairo Images/Tower.png" class="Figure1">
+        <h1>بـــرج القـــاهـــــرة</h1>
+        <p>يعد البرج من أبرز معالم القاهرة. تم بناء البرج على شكل زهرة اللوتس التى كانت مقدسة عند قدماء المصريين ويصل ارتفاعه إلى ١٨٧ مترًا وهو أعلى من الهرم الأكبر بالجيزة بحوالي ٤٣ مترًا. يتكون البرج من ١٦ طابقاً ويقف على قاعدة من أحجار الجرانيت الأسواني التي استخدمها المصريون القدماء في بناء معابدهم ومقابرهم. </p>
+    </section>
+    <section class="Blob2">
+        <img src="Cairo Images/Salah.jpg" class="Figure2">
+        <h1>قــلـعـة صــلاح الـديـن </h1>
+        <p id="ThirdParagraph"> بدأ صلاح الدين في تشييد القلعة فوق جبل المقطم في موقع "قبة الهواء"، وأكمل بناءها السلطان الكامل بن العادل، وكان الملك الكامل أول من سكنها. القلعة تتميز بموقع استراتيجي يسيطر على القاهرة والفسطاط، وتمثل حصنًا دفاعيًا مهمًا. حُفرت بها بئر مذهلة عمقها ٩٠ مترًا لتوفير الماء وقت الحصار.  </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Cairo Images/Majra.png" class="Figure1">
+        <h1>ســور مــجــرى الـعـيـون</h1>
+        <p id="SixthParagraph">سور مجرى العيون أو قناطر قلعة القاهرة أو قناطر المماليك. هو نظام قنوات مائية في العصور الوسطى في القاهرة، مصر. تم تصميمه وبنائه لأول مرة خلال العصر الأيوبي، أي في عهد صلاح الدين وخلفائه، ولكن تم إعادة تشييده لاحقًا من قبل العديد من السلاطين المماليك لتوسيع توافر المياه لقلعة القاهرة.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Cairo Images/Khan.jpg" class="Figure2">
+        <h1>خــــان الخــلــيــلـــي</h1>
+        <p id="FourthParagraph">أحد شياخات حي وسط القاهرة، ويتمتع بجذب سياحي كبير بالنسبة لزوار القاهرة ومصر بشكل عام حيث يبلغ عمر هذا الحي العتيق ٦٠٠ عام، ويعد واحدًا من أقدم الأسواق في أنحاء المحروسة والشرق الأوسط، وما زال محتفظًا بمعماره القديم منذ عصر المماليك ويتميز بوجود أسواق وبازارات ومحلات ومطاعم شعبية. </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Cairo Images/Abdeen Palace.jpg" class="Figure1">
+        <h1>قــصــــر عــابــديـــن</h1>
+        <p>هو تحفة معمارية شاهدة على فترة حكم الخديوي إسماعيل الزاهرة. بُني هذا الصرح الشامخ عام ١٨٦٣هـ، ليكون مركزًا للحكم ورمزًا لفخامة عصره. وقد اكتسب اسمه المميز نسبة إلى عابدين بك، القائد العسكري البارز في عهد محمد علي باشا، والذي كان يمتلك قصرًا صغيرًا في الموقع نفسه قبل أن يُقام هذا القصر الفخم. </p>
+    </section>
+    <section class="Blob2">
+        <img src="Cairo Images/Baron.jpg" class="Figure2">
+        <h1>قــصــــر البــــارون</h1>
+        <p id="FifthParagraph">هو عبارة عن تحفة معمارية وقصر أسطوري لا تغيب الشمس عن حجراته، شيده المليونير البلجيكي "البارون إدورارد امبان" عند قدومه من الهند إلى مصر بعد افتتاح قناة السويس. حيث قام ببنائه على طراز العمارة الهندية ويتكون القصر من سبع غرف مليئة بالمقتنيات الثمينة وساعة فريدة يوجد مثلها واحدة فقط فى لندن .
+            
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Cairo Images/Opera.jpg" class="Figure1">
+            <h1>دار الأوبــرا المـــصــريـــة</h1>
+            <p id="EighthParagraph"> هي الصرح الثقافي الأبرز في مصر وأحد أهم مراكز الفنون في العالم العربي. حيث تضم مجمعًا متكاملًا للفنون، يشمل عدة مسارح وقاعات للعروض الموسيقية والمسرحية، إلى جانب قاعات للمعارض التشكيلية، ومراكز ثقافية متعددة، ومتاحف توثق التراث الفني المصري والعالمي، مما يجعلها مركزًا نابضًا بالحياة الثقافية والإبداعية، ومنارة للفنون الكلاسيكية والمعاصرة.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Cairo Images/Museum.jpg" class="Figure2">
+        <h1>المـتـحــــف المـــصري </h1>
+        <p id="SeventhParagraph">يعتبر المتحف المصري من أوائل المتاحف في العالم التي أسست لتكون متحفًا عامًا على عكس المتاحف التي سبقته، يضم المتحف أكثر من ١٨٠ ألف قطعة أثرية أهمها المجموعات الأثرية التي عثر عليها في مقابر الملوك والحاشية الملكية للأسرة الوسطى في دهشور عام ١٨٩٤م، ويضم المتحف الآن أعظم مجموعة أثرية في العالم تعبر عن جميع مراحل التاريخ المصري القديم.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> نــجــيـــب مـحـفـــوظ </p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> طــلــعـــت حـــرب </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> بــلــيـــغ حـمـــدي  </p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p>لـطـفـيـــة النـــادي </p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Cairo Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>  
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">نــجــيـــب مـحـفـــوظ </div>
+                    <div class="swal-header2">(11 ديـسـمـبــر 1911م – 30 أغـسـطــس 2006م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ كاتب مصري. يُعد أول مصري وعربي حائز على جائزة نوبل في الأدب. كتب نجيب محفوظ منذ الثلاثينات واستمر حتى 2004.  تتشابك مسيرة نجيب محفوظ الأدبية مع تاريخ الرواية الحديثة في مصر والعالم العربي. في مطلع القرن العشرين، خطت الرواية العربية خطواتها الأولى في مجتمع وثقافة اكتشفت هذا النوع الأدبي من خلال ترجمة الروايات الأوروبية من القرن التاسع عشر. ومع ذلك، بالنسبة لنجيب محفوظ، فإن مجتمعًا قويًا وقديمًا مثل المجتمع المصري، بعد أن حافظ على التقاليد القديمة أثناء التحديث، يمكنه أن يستوعب ويدمج، دون خوف، بعض جوانب الثقافة الغربية. لأن هذا الكاتب استمع قبل كل شيء، في عمله، إلى هذا الشعب المصري، وإلى مغامراته الحميمة وتاريخه.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">طــلــعـــت حـــرب </div>
+                    <div class="swal-header2">(25 نـوفـمـبــر 1867م - 13 أغـسـطــس 1941م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+اقتصادي ومفكر مصري، كان عضوًا بمجلس الشيوخ المصري، وهو مؤسس بنك مصر ومجموعة الشركات التابعة له، يعد أحد أهم أعلام الاقتصاد في تاريخ مصر ولقب بـ "أبو الاقتصاد المصري" فقد عمل على تحرير الاقتصاد المصري من التبعية الأجنبية وساهم في تأسيس بنك مصر والعديد من الشركات العملاقة التي تحمل اسم مصر مثل شركة مصر للغزل والنسيج ومصر للطيران ومصر للتأمين ومصر للمناجم والمحاجر ومصر لصناعة وتكرير البترول ومصر للسياحة وستديو مصر وغيرها.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">بـلـيـغ حـمـدي </div>
+                    <div class="swal-header2"> (7 أكـتـوبــر 1931م – 12 سـبـتـمـبــر 1993م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    هو ملحن ومغني وموسيقار مصري، يعتبر أحد أبرز الموسيقيين المصريين والعرب. قام بتأليف وتلحين العديد من الأغاني الناجحة للعديد من المطربين العرب، خاصة خلال فترة الستينيات والسبعينيات، كما وضع الموسيقى التصويرية لمجموعة مهمة من الأفلام والمسرحيات والمسلسلات التليفزيونية والإذاعية. قام بتلحين أشهر أغاني المغنية وردة الجزائرية 
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">لـطـفـيـــة النـــادي </div>
+                    <div class="swal-header2">(29 أكتوبر 1907م - 2002م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+وتعد أول امرأة من قارة أفريقيا تحصل على إجازة الطيران في عام 1933م، وكان رقمها 34 أي لم يتخرج قبلها على مستوى المملكة المصرية سوى 33 طيارًا فقط جميعهم من الرجال، وبذلك تصبح أول فتاة مصرية عربية أفريقية تحصل على هذه الإجازة. علاوة على ذلك، تعد لطفية أول امرأة مصرية تقود طائرة بين القاهرة والإسكندرية، وثاني امرأة في العالم تقود طائرة منفردة؛ إذ تمكنت من الطيران بمفردها بعد ثلاث عشرة ساعة من الطيران المزدوج مع "مستر كارول"، كبير معلمي الطيران بالمدرسة في مطار ألماظة، فتعلمت في 67 يومًا. وقد تلقت الصحافة الدعوة لحضور الاختبار العملي لأول طيارة «كابتن» مصرية في أكتوبر 1933.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

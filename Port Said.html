@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Port Said Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Port Said Governorate</title>
+        <link rel="icon" href="Port Said Images/Port-Said Logo.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Port Said Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> بــــورســــعــــيـــــــد </h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+بورسعيد تُعد من أجمل وأغنى المحافظات المصرية، بفضل موقعها الجغرافي الفريد وثروتها السمكية الغنية، إلى جانب معالمها السياحية المتنوعة وطابعها المعماري الأوروبي المميز الذي يزين شوارعها. بدأ إنشاء المدينة على يد الخديوي سعيد في يوم الإثنين ٢٥ إبريل عام ١٨٥٩، عندما أعلن فرديناند ديلسبس بدء حفر قناة السويس، ما منح بورسعيد منذ نشأتها دورًا محوريًا في التجارة العالمية. وفي عام ١٨٧٠، كانت المدينة تضم ثلاثة أحواض رئيسية على الشاطئ الغربي للقناة: حوض التجارة للمراكب المحلية، والترسانة التي تضم ورش القناة، وحوض شريف المخصص للسفن التجارية الكبيرة. شهدت بورسعيد تطورًا كبيرًا في مجالات الاقتصاد والزراعة والصناعة، واحتضنت أحد أهم اكتشافات الغاز الطبيعي في مصر وهو حقل "ظُهر"، بالإضافة إلى افتتاح عدد من الأنفاق الحديثة التي تربطها بشرق التفريعة، وتُسهم في تعزيز شبكات النقل وتسهيل حركة التجارة، مما يعزز مكانة بورسعيد كمركز لوجستي واقتصادي متكامل على مستوى مصر والمنطقة.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة  بـــورســــعـــيـــد</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة  بـــورســــعـــيـــد</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Port Said Images/Port-Said Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>
+            شعار محافظة بورسعيد عبارة عن علم يمتاز باللون الاحمر مزين بغصنين من أغصان الزيتون يتوسطهما هلب. يرجع سبب اتخاذ هذه الراية شعاراً لمحافظة بورسعيد إلى قصة الصبي البورسعيدي حسن حمود صاحب الـ 16 عام كان في أحدى المظاهرات ضد الاحتلال الإنجليزي، حيث كان يعتلي أكتاف بعض المتظاهرين، ضد الإنجليز للمطالبة برفع حظر التجوال التي كانت حينها تفرضه قوات الاحتلال أطلق الاحتلال الإنجليزي الرصاص على صدر الصبي البورسعيدي كان يرتدي قميص أبيض ملطخ بالدماء وأصبح لونه أحمر، فخلعه المتظاهرون عنه واتخذوا منه شعاراً لبورسعيد. يرمز شعار أغصان الزيتون في راية بورسعيد إلى السلام والصمود والشجاعة أما الهلب فيرمز إلى أنها مدينة ساحلية، ولأنها تعد ميناء بحري.
+        </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Port Said Images/nasr.jpg" class="Figure1">
+        <h1>	مـــتـــحــــف النــــصــــــر</h1>
+        <p>يقع متحف النصر أسفل النصب التذكاري بميدان الشهداء في قلب مدينة بورسعيد، وافتتحه الرئيس جمال عبد الناصر عام ١٩٥٩م خلال احتفالات عيد النصر. يضم المتحف مقتنيات نادرة تخلد نضال وصمود الشعب البورسعيدي خلال العدوان الثلاثي عام ١٩٥٦م، من بينها أسلحة وملابس ومجسمات تحاكي بطولات المقاومة الشعبية. وقد أُغلق المتحف خلال فترة حرب الاستنزاف لأسباب أمنية، ثم أُعيد افتتاحه بعد نصر أكتوبر المجيد ليصبح من أبرز معالم المدينة، وشاهدًا دائمًا على تضحيات أبنائها في سبيل الوطن.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Port Said Images/harby.jpeg" class="Figure2">
+        <h1>	المـــتـــحــــف الحـــربـــــي</h1>
+        <p>
+            أُنشئ متحف بورسعيد الحربي عام ١٩٦٤م ليكون شاهدًا على بطولات وصمود الشعب البورسعيدي خلال العدوان الثلاثي عام ١٩٥٦م، وليخلّد التضحيات التي سُطّرت بدماء الأبطال. ويتميز المتحف بحديقة عرض مكشوف فريدة تضم مجموعة من الأسلحة المستخدمة في حربي ١٩٥٦ و١٩٧٣، إلى جانب مدافع نادرة من عصر محمد علي، مما يعكس تطور السلاح عبر العصور. ويضم المتحف أيضًا مقتنيات هامة مثل أسلحة إسرائيلية تم الاستيلاء عليها، وأفلامًا وثائقية نادرة تُعرض للزوار لتوثيق الأحداث وإحياء الذاكرة الوطنية.
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Port Said Images/poor.png" class="Figure1">
+        <h1>  ضــاحــيـــة بـــورفــــؤاد</h1>
+        <p id="FourthParagraph">تحتل تلك الضاحية الجميلة مكانة كبيرة فى قلوب محبى الهدوء والإستجمام، وهى من أكثر الأماكن السياحية جذبا لأهالى بورسعيد ومرتاديها حيث ينفسون فيها عن أنفسهم بفضل ما تمتاز به المنطقة من الهدوء والمناظر الطبيعية الخلابة والمساحات الخضراء وجمال الشاطئ الخلاب، ولا يفوتك التمتع بأجمل جولاتك بركوب المعدية أثناء الذهاب إليها للتمتع برؤية البواخر المتواجدة بقناة السويس.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Port Said Images/fnar.jpeg" class="Figure2">
+        <h1>  	فــنـــار بــورســعــيـــد</h1>
+        <p id="ThirdhParagraph">فنار بورسعيـد القـديـم أو منـارة بورسعيد ويعد واحدا من أهم المعالم السياحية والأثرية فى مدينة بورسعيد فى مصر حيث يمثل نموذجا فريدا لتطور عمارة القرن التاسع عشر بالمدينة.
+            كما يعتبر هذا الفنار أول منارة بنيت بالخرسانة المسلحة فى العالم، وقد أشرف على بنائه المهندس الفرنسى الشهير فرنسوا كونييه، وما يميزه ليس فقط أسبقيته فى مادة البناء، ولكن أيضا استمراره وثباته طوال هذا الوقت. </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Port Said Images/delbses.png" class="Figure1">
+        <h1> 	قـــاعــده تــمــثــال دیـــلـــیـــســـیـــبـــس</h1>
+        <p id="FifthParagraph">تُعد من أكثر المعالم السياحية جذبًا للسياح، ويتميز بتصميمه الرائع الجميل وموقعه المميز عند الحاجز الغربي لمدخل قناة السويس، مما يُكسبه أهمية سياحية وتاريخية كبيرة، ويجعله نقطة جذب لزوار المدينة الراغبين في التعرف على إرث قناة السويس ومَن شارك في حفرها. </p>
+    </section>
+    <section class="Blob2">
+        <img src="Port Said Images/hyaa.jpg" class="Figure2">
+        <h1> 	مــبــنــى هـــيــئــة<br> قــنــاة الـــســويـــس</h1>
+        <p id="SixthParagraph">أحد أهم المعالم الأثرية في بورسعيد، ويجذب أعدادًا كبيرة من السياح وأهالي المدينة. كان في الأصل قصرًا شيّده الخديوي إسماعيل ليكون أول مبنى على شاطئ القناة ويُخصص لاستقبال الملوك والرؤساء. لاحقًا، استخدمته بريطانيا كمقر لقيادة جيشها في الشرق الأوسط، حتى أعلن الرئيس جمال عبد الناصر استقلاله بعد جلاء الاحتلال.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Port Said Images/romany.jpg" class="Figure1">
+        <h1> الــكـــاتــدرائـــيـــة الـــرومـــانـــيـــة</h1>
+        <p id="EighthParagraph">تتميز الكاتدرائية الكاثوليكية باحتوائها على مقتنيات نادرة ذات طابع ديني وتاريخي، أبرزها جزء من صليب المسيح وصخرة الجلجثة، والستر الحريري المرتبط بالحرب العالمية الثانية، ما يمنحها مكانة خاصة لدى الحجاج المسيحيين.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Port Said Images/lotfy.png" class="Figure2">
+        <h1> 	مــســجــد <br> عــبــد الرحــمــن لــطــفــى  </h1>
+        <p id="SeventhParagraph"> وهو من أقدم المساجد فى بورسعيد ويعتبر تجسيدا لتاريخ الطراز الإسلامى العريق، فتم بناؤه وفقا لطراز إسلامى رفيع المستوى ويمتاز بمكان رائع بالقرب من  مدخل قناة السويس وذو إطلالة رائعة على البحر المتوسط .</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p>  عـبـد الرحـمــن شـكــري  </p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> فـايـزة أبــو النـجــا </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>مـحـمــد زيــدان </p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مـحـمــود يـاسـيــن </p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Port Said Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  عـبـد الرحـمــن شـكــري   </div>
+                    <div class="swal-header2">(12 أكـتـوبــر 1886م -15 ديـسـمـبــر 1958م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ شاعر مصري من الرواد في تاريخ الأدب العربي الحديث، فهو ثالث ثلاثة من أعمدة مدرسة الديوان التي وضعت مفهوماً جديداً للشعر في أوائل القرن الميلادي الماضي، أما صاحباه فهما العقاد والمازني.
+
+كان عبد الرحمن شكري شاعراً مجدداً ومفكراً أصيلاً حريصاً على اللغة العربية الفصحى، كما كان ناقداً لعبت آراؤه النقدية دوراً كبيراً في الأدب العربي الحديث، ووجهته نحو وجهة تجديدية بناءة.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  فـايـزة أبــو النـجــا </div>
+                    <div class="swal-header2"> (12 نـوفـمـبــر 1951م - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ هي المستشار الحالي لرئيس جمهورية مصر العربية لشئون الأمن القومي. شغلت سابقاً منصب وزيرة دولة للشؤون الخارجية في وزارة عاطف عبيد، ثم وزيرة التعاون الدولي في وزارتي أحمد نظيف الأولى والثانية ثم وزيرة التخطيط والتعاون الدولي في وزارات أحمد شفيق وعصام شرف وكمال الجنزوري الثانية. في الخامس من نوفمبر لعام ٢٠١٤م أصدر الرئيس المصري عبد الفتاح السيسي قراراً جمهورياً بتعيينها مستشاراً لرئيس الجمهورية لشئون الأمن القومي، لتصبح السيدة الأولى في مصر التي تتولى هذا المنصب.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـحـمــد زيــدان </div>
+                    <div class="swal-header2"> (11 ديـسـمـبــر 1981م - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+هو لاعب كرة قدم مصري سابق، ولد في بورسعيد وبدأ مشواره الكروي مع النادي المصري البورسعيدي في موسم 1998-1999م ولعب لعدة أندية ألمانية مثل فيردر بريمن وماينز 05 وهامبورغ وبوروسيا دورتموند. وعلى الصعيد الدولي، حاز زيدان على لقب كأس الأمم الأفريقية مرتين مع منتخب مصر في 2008 و2010.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـحـمــود يـاسـيــن </div>
+                    <div class="swal-header2"> (2 يـونـيــو 1941م - 14 أكـتـوبــر 2020م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ ممثل مصري. كان ممثلًا مبدعًا في كل من السينما والتلفزيون المصريين، حيث عُرف بلعبه لأدوارا درامية ونفسية ورومانسية، وقد جسّد أيضًا أدوارًا بارزة في المسلسلات ذات الطابع الديني والتاريخي.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

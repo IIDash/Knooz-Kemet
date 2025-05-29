@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Beni-Suef Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Beni-Suef Governorate</title>
+        <link rel="icon" href="Beni-Suef Images/Beni-Suef Icon.png">
+    </head>
+<body>
+<div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Beni-Suef Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+                <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+                <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+                <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> بـــــــنـــــــــــي ســــــــويــــــــــــف</h2>
+    </section>
+</div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+        تُعد محافظة بنى سويف أولى محافظات إقليم شمال الصعيد هذا الإقليم الذي يربط شمال مصر بجنوبها وشرقها بغربها، ومن هذه الانتماءات المحورية تكونت شخصيتها الجغرافية والسكانية والحضارية والاقتصادية حيث أن هذا الوقع البؤري شكل لها عامل قرب جغرافي لكثير من محافظات مصر مما يحقق لها إمكانية وصول عالية على مستوى محافظات الجمهورية وساعد على ذلك شبكة النقل والمواصلات الموجودة بالمحافظة وهذا العامل مهم في العمليات الاقتصادية. وتعتبر محافظة بني سويف متحفا تاريخيا لكل العصور، فكانت عاصمة مصر القديمة في عهد الأسرتين التاسعة والعاشرة الفرعونيتين (٢٢٤٠ ء ٢١٠٠ق.م ) ، كانت تسمى (بوفيسيا) وتعد المحافظة احدى أقدم المدن المقدسة في مصر القديمة التي لعبت دورا رائدا في الحضارة المصرية وكانت مقرا للملك نيسويت، وهو أحد ملوك مصر القديمة، قبل توحيد القطرين الشمالي والجنوبي لمصر بواسطة الملك مينا (نارمر)، استمرت في لعب هذا الدور المهم خلال العصرين اليوناني والروماني.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة بــنـــي ســـويـــــف</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة بــنـــي ســـويـــــف</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Beni-Suef Images/Beni-Suef Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>يدل شعار محافظة بنى سويف على  العديد من المعاني والاسرار الخاصة بالمحافظة. ويشير شعار المحافظة الى ماضيها العريق والمجسد في صورة "هرم ميدوم"، كما يحتفى هذا الشعار بحاضرها المزدهر، حيث تمثل سنبلة القمح النشاط الزراعي، كما ترمز المدخنة الى النشاط الصناعي. وفى الوقت ذاته يتنبأ هذا الشعار بمستقبل المحافظة، حيث يطالعك هذا الشعار في اسفل جزء منه بانسياب نهر النيل، يعلوه كوبرى بنى سويف، الذى يمتد ليربط طرفي المحافظة على ضفتي النيل.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Beni-Suef Images/Second Place.jpg" class="Figure1">
+        <h1>منــطـقـــة آثــار المــضـــل</h1>
+        <p>عثر بها على مجموعة كبيرة من الحلي والأقمشة المحلاة بالنقوش القبطية كما عثر بها على كتاب "مزامير النبي داود" باللغة القبطية والمدون علي جلد غزال باللهجة البهنساوية ونقل إلى المتحف القبطي بالقاهرة. وعثر أثناء الحفر في المنطقة على أساسات كنيسة قديمة.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Beni-Suef Images/First Place.jpg" class="Figure2">
+        <h1>منــطـقـــة آثــار إهنــاسـيـــا</h1>
+        <p>كانت إهناسيا عاصمة الإقليم العشرين قبل توحيد القرنين،  كما كانت عاصمة لمصر في عصر الأسرتين التاسعة والعاشرة الفرعونيتين، وعثر بها علي مجموعة من المقابر من عصر الأسرة 22 بها نقوش مختلفة، ولاتزال بقايا أعمدة المعبد الروماني موجودة حتى الآن بالمنطقة.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Beni-Suef Images/Third Place.jpeg" class="Figure1">
+        <h1>محميــة كهـف وادي سنـور</h1>
+        <p id="ThirdParagraph">من الأماكن الفريدة التي يرجع تاريخها الى ٦٥ مليون سنه (عصر الأيوسين الأوسط ) ويعتبر الكهف ظاهرة فريدة من نوعها في مصر بل في العالم، وتظهر في الكهف نتوءات كلسيه تمثل صواعد وهوابط منها الشفاف كالزجاج ومنها الأبيض كالثلج ومنها ما يشبه الأنابيب الزجاجية الطويلة ومنها ما يشبه الشعب.  ويمتد الكهف مسافة حوالي ٧٠٠م واتساعه حوالي ١٥م وعمقه حوالي ١٥م .</p>
+    </section>
+    <section class="Blob2">
+        <img src="Beni-Suef Images/Fourth Place.jpg" class="Figure2">
+        <h1>متـحــف آثــار بنــي سـويـــف</h1>
+        <p id="FourthParagraph">صُمم المتحف على هيئة هرم ميدوم وهو يضم مجموعة من أجمل الآثار التى ترجع إلى العصور الفرعونية واليونانية والقبطية والإسلامية والعصر الحديث وهى عبارة عن تماثيل حجرية وبرونزية وفخارية وأوان مختلفة الأشكال والمواد والأحجار والتوابيت واللوحات والعملات الفضية والذهبية والأقمشة التى تمثل التاريخ المصرى القديم.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Beni-Suef Images/Sixth Place.jpg" class="Figure1">
+        <h1>منــطـقـــة آثــار مــيـــدوم</h1>
+        <p id="SixthParagraph">هرم ميدوم، الواقع في منطقة تضم معبدًا جنائزيًا وطريقًا صاعدًا ومصاطب الأمراء، يحمل اسمًا هيروغليفيًا (مرـ تم) بمعنى "محبوب إله الشمس أتون عند الغروب". بدأ بناء الهرم الملك حوني، آخر ملوك الأسرة الثالثة، وأكمله الملك سنفرو، مؤسس الأسرة الرابعة. كان الهرم مكونًا من سبع درجات، بقي منها أربع فقط بارتفاع ٤٥ مترًا.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Beni-Suef Images/Fifth Place.jpeg" class="Figure2">
+        <h1>واحـــة مــيـــدوم</h1>
+        <p id="FifthParagraph">تقع واحة ميدوم بجوار هرم ميدوم بالواسطى على مساحة ١٠ أفدنة تحيط بها غابات شجرية. وهي تحتوي على: حدائق للأطفال، ملاعب تنس، ملعب كرة قدم، استراحة لكبار الزوار، فرن بلدي لعمل الفطير المشلتت والذي يعتبر من أشهى الأكلات المعروفة بالمنطقة، وملاعب مجهزة لإقامة العديد من المسابقات الرياضية مثل مسابقات الطيران الشراعي.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Beni-Suef Images/Eighth Place.jpg" class="Figure1">
+            <h1>مـئـذنــة الجـامــع الكـبـيـــــر</h1>
+            <p id="EighthParagraph">يرجع تاريخ هذه المئذنة إلى العصر الفاطمي، ويصل ارتفاعها إلى ١٤ مترًا وهى عبارة عن مبنى ثماني الشكل مكون من أربعة طوابق تحليها زخارف من الجص إلى جانب الزخارف الهندسية على شكل أشعة الشمس.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Beni-Suef Images/Seventh Place.jpg" class="Figure2">
+        <h1>ديـــر الحـــمــــــام</h1>
+        <p id="SeventhParagraph">يرجع دير الحمام إلى القرن الرابع الميلادي وينسب إلى القديس الأنبا أبو إسحق ويقع الدير شمال غرب بنى سويف بالقرب من قرية اللاهون، والدير عبارة عن حوض واسع به هيكل رئيس للسيدة العذراء وآخر لمارجرجس.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> الدكــتــور/ بـطـرس غـالــي</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> الســيــدة/ جـيـهــان الســادات</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>البــابــا/ كـيـرلــس الخــامـــس</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> الدكــتــور/ عــلـــي جـمـعـــة </p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Beni-Suef Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> بـــطـــــرس غـــالــــي </div>
+                    <div class="swal-header2">(١٤ نـوفـمـبــر ١٩٢٢ - ١٦ فـبـرايـــر ٢٠١٦)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    سياسي ودبلوماسي مصري، شغل منصب الأمين العام السادس للأمم المتحدة بين عامي 1992 و 1996. كما شغل منصب وزير الخارجية بالإنابة في مصر بين عامي 1977 و 1979 قبل أن يصبح أمينًا عامًا. تولى قيادة الأمم المتحدة خلال فترة شهدت عدة أزمات عالمية، مثل تفكك يوغوسلافيا والإبادة الجماعية في رواندا.
+                    </div>
+                    <div class="swal-paragraph">
+                    <div class="swal-header3">حــيــاتـــه وانــجــازاتـــه</div>
+                    وُلد بطرس بطرس غالي لعائلة قبطية مسيحية، وكان أكاديميًا متخصّصًا في القانون الدولي والعلاقات الدولية، تلقى تعليمه في جامعة القاهرة من عام 1949 حتى 1979. بدأ مسيرته السياسية في فترة حكم الرئيس أنور السادات، الذي عينه وزيرًا للخارجية بالإنابة في عام 1977. في هذا المنصب، ساهم بطرس غالي في التفاوض على اتفاقيات كامب ديفيد ومعاهدة السلام بين مصر وإسرائيل بين السادات ورئيس الوزراء الإسرائيلي مناحيم بيغين. استمر في منصبه حتى أوائل عام 1991، عندما تولى منصب نائب وزير الخارجية لبضعة أشهر.
+                    <br> <br>
+                    انتخب بطرس غالي أمينًا عامًا للأمم المتحدة من قبل الجمعية العامة للأمم المتحدة في عام 1991، وبدأ فترة ولايته في عام 1992 خلفًا لخافيير بيريز دي كويار. وكانت فترة ولايته مليئة بالأزمات الدولية الكبرى، مثل الحرب الأهلية الصومالية، والحرب الأهلية الرواندية، والحرب الأهلية الأنغولية، وحروب يوغوسلافيا. وقد تعرض لانتقادات بسبب عدم تحرك الأمم المتحدة في مواجهة الأزمات في أنغولا ورواندا، كما أدى فشل بعثة حفظ السلام في البوسنة إلى تدخل حلف الناتو. في عام 1996، ترشح بطرس غالي لولاية ثانية كأمين عام للأمم المتحدة، لكنه واجه معارضة شديدة من الولايات المتحدة التي استخدمت حق النقض (الفيتو) في مجلس الأمن الدولي ضد ترشحه.
+                    <br> <br>
+                    بعد مغادرته الأمم المتحدة، شغل بطرس غالي منصب الأمين العام للمنظمة الدولية للناطقين بالفرنسية بين عامي 1997 و 2002، ثم أصبح رئيسًا لمنظمة مركز الجنوب، وهو مركز فكري مخصص للدول النامية.
+                    <br> <br>
+                    توفي في 16 فبراير 2016 وجاء الإعلان عن وفاة غالي في بداية جلسة مجلس الأمن لبحث الأزمة الإنسانية في اليمن، وقد وقف أعضاء المجلس دقيقة في صمت حدادا على غالي.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> جـــيــهــــان الســــادات </div>
+                    <div class="swal-header2"> (٢٩ أغــســطـــس ١٩٣٣ - ٠٩ يـولـيـــو ٢٠٢١)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    باحثة وسيدة مجتمع مصرية. وهي زوجة الرئيس المصري الراحل محمد أنور السادات، كانت أول سيدة أولى في تاريخ الجمهورية المصرية تخرج إلى دائرة العمل العام. وهي مُحاضرة جامعية في جامعة القاهرة سابقا وأستاذ زائر في الجامعة الأمريكية بالقاهرة، ومحاضرة في جامعة ولاية كارولينا الجنوبية. كان لجيهان السادات مبادرات اجتماعية ومشاريع إنمائية، فقد أسست جمعية الوفاء والأمل وكانت من مشجعات تعليم المرأة وحصولها على حقوقها في المجتمع المصري في ذلك الوقت.
+                    </div>
+                    <div class="swal-paragraph">
+                    <div class="swal-header3">حــيــاتـــها وانــجــازاتـــها</div>
+                    ولدت جيهان صفوت رؤوف لأب مصري يعمل أستاذ جامعي ويحمل الجنسية البريطانية وأم بريطانية تدعي جلاديس تشارلز كوتريل. والدها صفوت رؤوف كان طبيبا جراحا، وتزوج من الإنجليزية غلاديس كوتريل التي كانت تعمل مدرسة للموسيقى، وكانت ابنة تشارلز هنري كوتريل، مأمور شرطة مدينة شيفيلد بإنجلترا.
+                    نشأت جيهان مسلمة حسب رغبة والدها، لكنها التحقت أيضًا بمدرسة ثانوية مسيحية للبنات في العاصمة المصرية القاهرة.
+                    <br> <br>
+                    حصلت جيهان على بكالوريوس الأدب العربي من جامعة القاهرة عام 1977. كما حصلت على الماجستير في الأدب المقارن من جامعة القاهرة عام 1980. ثم نالت درجة الدكتوراه في الأدب المقارن عام 1986، من كلية الآداب جامعة القاهرة تحت إشراف الدكتورة العالمة سهير القلماوي. وعملت محاضرة جامعية في جامعة القاهرة وأستاذا زائرا في الجامعة الأمريكية بالقاهرة، ومحاضرة في جامعة ولاية كارولينا الجنوبية.
+                    <br> <br>
+                    التقت مع أنور السادات للمرة الأولى في السويس لدى قريب لها صيف عام 1948 وكانت في الخامسة عشرة من عمرها ووقعت جيهان في غرام السادات وقررت الزواج منه رغم أنه كان متزوجاً ولديه 3 بنات. بالفعل تزوجته جيهان في 29 مايو 1949 وذلك مبكراً قبل أن يصبح رئيساً للجمهورية عندما كان ضابطا صغيرا. أنجبت منه ثلاث بنات وهن لبنى ونهى وجيهان وولد واحد وهو جمال، علما بأنه كان متزوج من قبلها إقبال ماضي وأنجب منها ثلاث بنات قبل أن ينفصلا وهن راوية ورقية وكاميليا.
+                    <br> <br>
+                    شاركت جيهان زوجها الرئيس أنور السادات كل الأحداث الهامة التي شهدتها مصر بدء من ثورة 23 يوليو وحتى اغتياله عام 1981. وهي أول سيدة أولى في تاريخ جمهورية مصر العربية تخرج إلى دائرة العمل العام لتباشر العمل بنفسها بين صفوف الشعب المصري. كان لها أدوار هامة في مصر ومشروعات لم تقام إلا على يد السيدة جيهان على رأسها مشروع تنظيم الأسرة ودعم الدور السياسي للمرأة وعدلت بعض القوانين على رأسها قانون الأحوال الشخصية الذي لا يزال يعرف في مصر حتى الآن بقانون جيهان، أسست جمعية الوفاء والأمل وكانت من مشجعات تعليم المرأة وحصولها على حقوقها في المجتمع المصري في الفترة ما بين 1970م إلى 1981م.
+                    <br> <br>
+                    في 9 يوليو 2021، توفيت جيهان السادات عن عمر ناهز 88 عاما، وأقيمت جنازتها بمنطقة المنصة أمام النصب التذكاري للجندي المجهول في منطقة مدينة نصر، شرقي القاهرة، بحضور الرئيس عبد الفتاح السيسي وعدد من المسؤولين.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> البــابــا كـيـرلـــس الخــامــــس </div>
+                    <div class="swal-header2"> (٢٩ سـبـتـمبــر ١٨٢٤ - ٠٧ أغــســطـــس ١٩٢٧)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    يعتبر البابا كيرلس الخامس البطريرك رقم 112 فى تاريخ الكنيسة، أطول بطريرك جلوسًا على كرسى مارمرقس، فقد بذل أقصى جهده فى النهوض بشعبه لأرقى مستوى، كما اهتم بطبع الكتب الكنسية ورحل بسلام بعد أن قضى على كرسى البطريركية 52 سنة و9 أشهر و6 أيام، وذلك فى اليوم الأول من شهر مسرى سنة 1643 ش.
+                    </div>
+                    <div class="swal-paragraph">
+                    <div class="swal-header3">حــيــاتـــه وانــجــازاتـــه</div>
+                    وُلد يوحنا بقرية تزمنت التابعة لبني سويف سنة 1824 م، وترهب سنة 1844 م بدير البراموس باسم الراهب يوحنا البراموسي، وعُرِف باسم يوحنا الناسخ.
+                    <br> <br>
+                    بابا الإسكندرية لاثنين وخمسين سنة وتسعة أشهر، اعتبارا من 1 تشرين الثاني / نوفمبر 1874 وحتى وفاته. أطول مدة لبابا في تاريخ الكنيسة القبطية الأرثوذكسية. فترة بابويته كانت حقبة من التجديد للكنيسة القبطية الأرثوذكسيه واستمر في العمل الذي بدأه البابا كيرلس الرابع (1854 ء 1861) في إصلاح التعليم. من رجال الكنيسة القبطية خلال فترة بابويته القديس الأنبا إبرام الأسقف، وحبيب جرجس.
+                    <br> <br>
+                    في بداية تولّيه البابوية وجد خلاف بينه وبين أعضاء المجلس الملي العام وكان وكيل المجلس الملي العام في ذلك الوقت بطرس باشا غالي الذي أصبح رئيس وزراء مصر في وقت لاحق لكن النزاع انتهى في صالح البابا كيرلس الخامس. هذا الاختلاف على الرغم من أن أعضاء المجلس العام المصلين انتخبوه ليصبح البابا القبطي وخلافا لتوقعات المجلس أمضى الجزء الأكبر من حياته البابوية على طرفي نقيض مع المجلس لاعتراضه على تدخل المجلس في أمور الكنيسة. كما أكمل بناء الكاتدرائية المرقسية بالأزبكية.
+                    <br> <br>
+                    وشارك البابا كيرلس الخامس فى الجمعية الوطنية، وفى التوقيع على اللائحة الوطنية سنة 1879م، وساند أحمد عرابى ورجاله فى موقفهم ضد الأحتلال، وكان عضواً بمجلس شورى القوانين 1883م، وازدانت الكنيسة فى عصره بالقديسين والعلماء منهم: الأب العظيم رجل الوداعة والبر والإحسان الأنبا ابرآم مطران كرسي الفيوم والجيزة ( تذكاره بالسنكسار تحت اليوم الثالث من مسرى) وبلغت فضائله حدًا بعيدًا من الذيوع والانتشار وبلغ من تناهيه في الإحسان علي الفقراء وذوى الحاجات أنه لم يكن يدخر نقودًا بل كان كل ما يقدمه له أهل الخير يوزعه علي المحتاجين.
+                    <br> <br>
+                    توفي مع سعد زغلول في نفس السنة ونفس الشهر (7 أغسطس 1927)، وكان البابا قد بلغ السادسة والتسعين من عمره، وزادت عليه الأمراض، وتم تجنيزه ودفنه في مقبرة البطاركة مقبرة القديس استفانوس المجاورة للكنيسة المرقسية الكبرى.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> عـــلـــــي جــمــعـــــة </div>
+                    <div class="swal-header2"> (  ٠٣ مــــــــــارس ١٩٥٢ - الآن )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    عالم دين مصري شافعي أزهري، وعضو هيئة كبار العلماء بالأزهر. والشيخ الحالي للطريقة الصديقية الشاذلية. وقد شغل منصب مفتي الديار المصرية خلال الفترة من 2003 إلى 2013. اختير ضمن أكثر خمسين شخصية مسلمة تأثيرًا في العالم لإثني عشر عامًا على التوالي حسب تقييم المركز الملكي للبحوث والدراسات الإسلامية بعمّان في الأردن. وله العديد من المقالات والمؤلفات المنشورة.
+                    </div>
+                    <div class="swal-paragraph">
+                    <div class="swal-header3">حــيــاتـــه وانــجــازاتـــه</div>
+                    ولد فضيلته ببني سويف بصعيد مصر في يوم الإثنين 7 من جمادى الآخرة 1371هـ (الموافق 3 من مارس1952م). ونشأ في أسرة طيبة صالحة حيث تربى على مكارم الأخلاق والديانة والعفة، وبدأ تلقي العلم النظامي منذ كان في الخامسة من عمره فحصل على الشهادة الابتدائية سنة 1963م، والإعدادية سنة 1966م من مدينة بني سويف، كما بدأ حفظ القرآن الكريم في سن العاشرة وأتمه قراءة على الشيوخ في سنة 1969م، وكان مُغرمًا بالقراءة والاطلاع مما كان له أثر كبير على تنمية ملكاته الفكرية المختلفة.
+                    <br> <br>
+                    ثم انتقل فضيلته إلى القاهرة فحصل فيها على الشهادة الثانوية عام 1969م، ثم التحق بكلية التجارة بجامعة عين شمس حتى تخرج فيها حاصلا على درجة البكالوريوس في مايو عام 1973م.
+                    <br> <br>
+                    ثم التحق فضيلته بكلية الدراسات الإسلامية والعربية بجامعة الأزهر الشريف عام 1975م، فبدأ في تلقي العلوم الشرعية واللغوية على كبار الشيوخ، نذكر منهم: الشيخ محمد محمود فرغلي، عميد كلية الشريعة والقانون الأسبق، والشيخ السيد صالح عوض، عميد كلية الشريعة والقانون الأسبق، والشيخ علي أحمد مرعي، عميد كلية الشريعة والقانون الأسبق، والشيخ إبراهيم أبو الخشب، أستاذ الأدب بالأزهر.
+                    <br> <br>
+                    كما حفظ المتون العلمية في التجويد، والحديث، واللغة، والفقه، والفرائض، وجَدَّ في الطلب والقراءة على الشيوخ حتى تخرج في  عام 1979م، ثم أكمل مرحلة الدراسات العليا بكلية الشريعة والقانون ، حتى نال درجة التخصص (الماجستير) في سنة 1985م بدرجة ممتاز، ثم حصل على درجة العَالِمية (الدكتوراه) بمرتبة الشرف الأولى سنة 1988م.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

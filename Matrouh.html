@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Matrouh Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Matrouh Governorate</title>
+        <link rel="icon" href="Matrouh Images/Matrouh Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Matrouh Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> مــــــــــطـــــــــــــــــروح</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            محافظة مطروح هي إحدى محافظات مصر الحدودية و تعتبر المحافظة ثاني أكبر محافظات الجمهورية من حيث المساحة بعد الوادي الجديد. ولمطروح أهمية اقتصادية كبرى في المجال الزراعى حيث هناك العديد من المحاصيل مثل الزيتون والبلح فى سيوة والتين على طول الساحل الشمالى والقمح والشعير الأخضر في الحمام والضبعة وبرانى ومرسى مطروح. كما تتمتع محافظة مطروح بسواحل ساحرة تمتد على البحر الأبيض المتوسط، تجعلها وجهة سياحية مميزة بفضل شواطئها الرملية البيضاء ومياهها الفيروزية الخلابة، مثل شاطئ العوام وميناء الحشيش ورأس جميلة. كما تزخر مطروح بالعديد من المعالم السياحية الأخرى مثل حمام كليوباترا وقلعة شالي بواحة سيوة والمقابر الرومانية، مما يجعلها نقطة جذب للزوار من داخل مصر وخارجها.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة مـــــطـــــــروح</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة مـــــطـــــــروح</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Matrouh Images/Matrouh Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>يرمز شعار المحافظة إلى ثرواتها المتنوعة وآفاقها التنموية. فالترس يعكس الثروة المعدنية والصناعية، والغزال القافز والشمس يمثلان البيئة الصحراوية وحيواناتها النادرة. النخيل يشير إلى تمور سيوة، وبرج التعدين إلى حقول البترول والصناعات التعدينية. الأرض بلونها تعبر عن الصحراء والشواطئ وإمكانيات الاستثمار، وأمواج البحر ترمز لجمال السواحل وإمكانياتها السياحية. أخيرًا، غصن الزيتون يحيط بالشعار دلالة على أهمية محصول الزيتون والسلام والاستقرار في المحافظة.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Matrouh Images/Siwa.jpg" class="Figure1">
+        <h1>واحـــة ســـيــوة</h1>
+        <p>تعتبر واحة سيوة منتجع طبيعي للاستشفاء لما يميزها من مناخ جاف طوال العام و طبيعة رمالها الساخنة التي لها من الخواص ما يجعلها قادرة على علاج الكثير من الأمراض الروماتيزمية وآلام المفاصل وآلام العمود الفقري.     
+    
+             و لذلك كانت الواحة منذ القدم قبله لطالبي العلاج، وما زال يقصدها الكثيرون حتى يومنا هذا.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Matrouh Images/Cleopatra.jpg" class="Figure2">
+        <h1> شـــاطــــــىء كــيــلــوبــاتــرا</h1>
+        <p> يعد واحدا من أبرز المعالم الطبيعية في مدينة مرسى مطروح، وهو أيضاً أحد أروع الخلجان المطلة على البحر الأبيض المتوسط.
+            إذ يتيمز شاطئ كليوباترا في مرسى مطروح بتشكيلاته الصخرية الضخمة وأمواجه العالية، لتتيح للزائر الحصول على حمام طبيعى وفى نفس الوقت تساعده على الاسترخاء والاستمتاع بأشعة الشمس.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Matrouh Images/Agiba.jpg" class="Figure1">
+        <h1>شــاطــىء عــجــيــبــة</h1>
+        <p id="ThirdParagraph">يعد شاطئ عجيبة بمرسى مطروح أحد أروع الشواطئ في المحافظة ومن أجمل الواجهات البحرية في مصر، ويتميز بطبيعته الفريدة ومياهه الفيروزية النقية، كما يتميز بتشكيلاته الصخرية الغريبة والفريدة، ويعتبر واحدا من افضل الاماكن السياحية فى مدينة مرسى مطروح.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Matrouh Images/Salt Cave.jpg" class="Figure2">
+        <h1>كــهــف الــمــلــح</h1>
+        <p id="FourthParagraph">يوجد الكهف فى القرية البدوية على بعد سبعة كيلومترات من غرب المدينة واشتهر هذا الكهف بالملح الذى يساعد على اخراج الطاقة السلبية واحلال الطاقة الايجابية مكانها، كما يستخدم لعلاج كثير من الامراض كالتهاب الجيوب الانفية وحساسية الربو وبعض الامراض الجلدية .</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Matrouh Images/Ramsis.jpg" class="Figure1">
+        <h1>مــعــبــد رمــســيــس الــثــانــي</h1>
+        <p id="SixthParagraph">يقع على بُعد ٢٤كم جنوب مدينة مرسى مطروح، ويعود إلى زمن الأسرة السادسة والعشرين (١٢٠٠ قبل الميلاد). يُعرف هذا الموقع باسم "أم الرَخَم" وقد اكتشفه عالم الآثار المصري لبيب حبش عام ١٩٤٢. ويضم الموقع بعض النقوش الهيروغليفية الرائعة التي تشير إلى الفرعون المصري القديم.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Matrouh Images/Dead Cave.jpg" class="Figure2">
+        <h1>مــنــطــقــة جــبــل الــمــوتــى</h1>
+        <p id="FifthParagraph"> توجد بها عدة مقابر منحوتة في الصخر أربعة منها تحوى مناظر ملونة هي مقابر س آمون- ني برباتحوتو إيزيس ومقبرة التمساح وأغناها بالرسوم مقبرة آمون. وتم اكتشافه عن طريق الصدفة عام ١٩٤٤م أثناء الحرب العالمية الثانية عندما لجأ أهالي سيوة للاحتماء بالجبل فاكتشفوا المقابر به.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Matrouh Images/Romel.jpeg" class="Figure1">
+            <h1>مــتــحـــف كــهـــف رومــيـــل</h1>
+            <p id="EighthParagraph">ترجع اصول متحف روميل الى العصر اليونانى الرومانى حيث يكمن فى كهف بداخل الجبل على شكل نصف دائرة وله بوابتان على جانبي الجبل، وسمى بهذا الاسم نسبة الى القائد الالمانى "روميل".</p>
+    </section>
+    <section class="Blob2">
+        <img src="Matrouh Images/Romanian.jpg" class="Figure2">
+        <h1>مــقــابــر الــدفــن الــرومـانــيــة</h1>
+        <p id="SeventhParagraph">توجد المقابر بمنطقة عجيبة على بعد ٢٥ كيلو مترا غرب مدينة مرسى مطروح والتى بناها الرومانين اثناء حكمهم لمصر وعليه اختارو هذا المكان لما يتسم به من جمال الطبيعة الخلابة من حوله.</p>
+    </section>
+</main>
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Matrouh Images/Amid.jpg" class="Figure1">
+            <h1>مــحــمــيـة الــعــمــيــد الطــبــيــعــيــــة</h1>
+            <p id="EighthParagraph">تقع المحمية فى الصحراء فأهم مايميزها هى الكثبان الرملية والمستنقعات والمسطحات الملحية والوديان والمنخفضات، ويوجد بالمحمية ١٧٠ نوعا من النباتات التى تتحمل البيئة الصحراوية.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Matrouh Images/Alamin.jpeg" class="Figure2">
+        <h1>مــتــحــف الــعــلــمــيــن الــحــربــي</h1>
+        <p id="SeventhParagraph">من أشهر المتاحف فى محافظة مطروح والذى يعرض به أشهر الأسلحة التى استخدمتها دول المحور والحلفاء، طرفا النزاع بالحرب العالمية الثانية، وبعض الخرائط والمعدات الحربية.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> عــلــى حــمــيــدة</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> مـحـمــود الزيــات</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Matrouh Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> عــلــى حــمــيــدة</div>
+                    <div class="swal-header2">( ١٧ ابريل ١٩٤٨ - ١١ فبراير ٢٠٢١  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+
+علي حميدة هو مطرب مصري شهير وُلد في مرسى مطروح عام 1965، وهو من أبناء قبيلة أولاد علي الشهيرة. يُعد حميدة من أبرز الفنانين في أواخر الثمانينيات، حيث حققت أغنيته الشهيرة "لولاكي" التي صدرت عام 1988 نجاحًا كبيرًا على مستوى الوطن العربي، وأصبحت من أبرز الأغاني في تلك الفترة. بالإضافة إلى صوته المميز، امتاز بأسلوبه الذي دمج فيه الإيقاعات البدويّة مع الموسيقى الغربية، مما أضاف له طابعًا خاصًا.
+
+عُرف حميدة بتقديم أغانٍ رومانسية تحمل طابعًا مختلفًا، وقد ترك بصمة كبيرة في الساحة الفنية، حيث واصل مشواره الفني حتى وفاته في عام 2021. يُعد حميدة من الشخصيات التي ساعدت في تسليط الضوء على الثقافة البدوية من خلال الفن، وما زال اسمه مرتبطًا بالفن البدوي العصري.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">محمود الزيات</div>
+                    <div class="swal-header2"> (١٦ مايو ١٩٤٥ - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    سياسي مخضرم وبرلماني قدير كان يتمتع باحترام كبير بين قبائل مطروح، وعرف بقدرته على عرض مشاكل المحافظة وحلولها المقترحة بلغة عربية فصيحة أمام كبار المسؤولين والرؤساء. كما كان واجهة مشرفة لقبائل مطروح، وساهم بفاعلية في جلب مشاريع تنموية مهمة للمحافظة، مثل مد برنامج الغذاء العالمي لحفر الآبار والسدود، ومد خط المياه الرئيسي من العلمين إلى مطروح.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'bottom',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

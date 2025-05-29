@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Giza Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Giza Governorate</title>
+        <link rel="icon" href="Giza Images/Giza Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Giza Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> الجـــــــــــيـــــــــــــــزة </h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            تُعتبر محافظة الجيزة من المحافظات العريقة في مصر، وتشتهر بامتلاكها العديد من المعالم الأثرية والتاريخية مثل أهرامات الجيزة وأبو الهول، إلى جانب معابد ومواقع أثرية تعود لعصور الفراعنة والبطالمة والرومان. كما تضم الجيزة المتحف المصري الكبير، أحد أكبر المتاحف الأثرية في العالم، والذي يعرض كنوزًا فرعونية نادرة أبرزها المجموعة الكاملة لتوت عنخ آمون. وتتميز الجيزة بتنوعها الجغرافي الذي يشمل مناطق زراعية على ضفاف النيل، ومراكز حضرية كبرى بالإضافة إلى قرى ريفية تحافظ على الطابع المصري الأصيل. ويجمع اقتصاد المحافظة بين الزراعة والسياحة والصناعة والخدمات، مما يمنحها مكانة بارزة في التراث المصري القديم والمعاصر، ودورًا محوريًا في التنمية الاقتصادية والثقافية في مصر.</b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة  الـــجـــيـــزة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة  الـــجـــيـــزة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Giza Images/Giza Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+       <p>يدل شعار محافظة الجيزة على عبق التاريخ وعظمة الحضارة المصرية القديمة، فتتخذ المحافظة شعارا يتم فيه تمثيل الأهرامات التي تعد رمزًا للحضارة المصرية القديمة، ويعزز مكانتها الأكاديمية عبر جامعة القاهرة التي تمثل رمزًا للعلم والمعرفة، بينما يرمز نهر النيل إلى العطاء والنماء المستمر، في حين يشير إلى الطابع الزراعي المميز للمحافظة والتطور العمراني المستمر الذي يشهد تحديثًا ونموًا متزايدًا في جميع المجالات.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Giza Images/pyramids.jpg" class="Figure1">
+        <h1>	أهــــرامــــات الــجـــيـــزة </h1>
+        <p>أهرامات الجيزة هي من أشهر وأقدم المعالم الأثرية في العالم، تقع على هضبة الجيزة غرب نهر النيل. تم بناؤها في العصور الفرعونية وتشمل ثلاثة أهرامات رئيسية: هرم خوفو الأكبر، الذي ظل أطول بناء صنعه الإنسان لمدة طويلة، هرم خفرع الذي يضم تمثال أبو الهول الشهير، وهرم منقرع الأصغر. تمثل الأهرامات إنجازًا معماريًا عظيمًا وتعد من عجائب الدنيا السبع الباقية.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Giza Images/elhool.webp" class="Figure2">
+        <h1>	 تــمــثــال أبــو الــهــول</h1>
+        <p>
+            تمثال أبو الهول هو من أكبر التماثيل في العالم، ويتميز بجسد أسد ورأس إنسان مع غطاء رأس ملكي. نُحت من كتلة واحدة من الحجر الجيري، ويُعتقد أن بناءه استغرق عدة سنوات بمساعدة مئات العمال. يُرجح أن الملك خفرع هو من أمر ببنائه خلال الأسرة الرابعة، بينما يرى بعض الباحثين أنه يعود إلى دجيدف رع لتكريم والده الملك خوفو. </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Giza Images/sqara.jpg" class="Figure1">
+        <h1>   هــــرم ســـقـــارة</h1>
+        <p id="ThirdParagraph"> هرم زوسر المدرج في سقارة هو أول هرم بُني في مصر القديمة، شُيد للملك زوسر بواسطة الوزير إمحوتب. يتميز الهرم بحجمه الكبير واستخدامه للعديد من المواد من الحجر والطين. يقع وسط مجمع أثري محاط بجدار حجري ويحتوي على مدخل رئيسي وعدد من المداخل الوهمية. من الداخل، يحتوي الهرم على ممرات معقدة وحجرة دفن محاطة بأروقة، وتوجد صالات عرض مبطنة بالبلاط الأزرق حيث دُفنت ثيران أبيس.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Giza Images/monhny.jpg" class="Figure2">
+        <h1> 	   الـــهــرم الـــمــنـــحـــنــي   </h1>
+        <p id="FourthParagraph"> الهرم المنحني هو أحد الأهرامات التي بناها الملك سنفرو، ويتميز بتغيير زاوية بنائه نتيجة لمشكلة هندسية. بدأ البناء بزاوية كبيرة، لكن تم تعديلها بسبب الحمل الزائد في الأحجار، مما أثر على استقرار الهيكل. على الرغم من هذه التعديلات، تم بناء هرم آخر بالقرب منه، وهو الهرم الأحمر. يعتبر الهرم المنحني حلقة وصل بين الهرم المدرج للملك زوسر في سقارة والأهرامات المكتملة في الجيزة.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Giza Images/GEM.jpg" class="Figure1">
+        <h1> الـــمـــتـــحــف الــمــصــري الـكــبــيــر</h1>
+        <p id="FifthParagraph">
+            المتحف المصري الكبير هو أكبر متحف مخصص لحضارة واحدة في العالم. يقع بالقرب من أهرامات الجيزة ويشمل أكثر من مئة ألف قطعة أثرية تعود إلى عصور مختلفة، من ما قبل التاريخ حتى العصور اليونانية والرومانية، ومن أبرز مقتنياته مجموعة كاملة من كنوز الملك توت عنخ آمون التي تُعرض لأول مرة مجمعة.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="Giza Images/aboseer.jpg" class="Figure2">
+            <h1> 	    مــنــطــة أبــو صـــيـــر الأثــريـــة</h1>
+            <p id="EighthParagraph">  منطقة أبو صير الأثرية تقع جنوب محافظة الجيزة بين سقارة والجيزة، وتُعد من أهم مواقع دفن ملوك الأسرة الخامسة. تضم عدة أهرامات لملوك مثل ساحورع وني أوسر رع، ومعابد شمسية مهمة، وكانت مركزًا دينيًا مخصصًا لعبادة الإله أوزوريس. تشتهر ببقايا معمارية مميزة تجمع بين الأهرامات والمعابد والمقابر الملكية.</p>
+    </section>
+    
+   
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Giza Images/Orman.jpg" class="Figure1">
+        <h1>  حــديــقـــة الأورمــان</h1>
+        <p id="SixthParagraph">أنشأها الخديوي إسماعيل، وتمتاز بتنوع نباتاتها ومساحتها الواسعة. كما أسس حديقة الحيوان التي تُعد من أقدم وأكبر حدائق الحيوان في البلاد، وتضم معالم مثل جبلاية القلعة والمتحف الحيواني. كما أسس الدكتور حسن رجب القرية الفرعونية بهدف تجسيد الحياة المصرية القديمة من خلال ممثلين ونماذج مصغرة للمعابد، وتضم عدة متاحف توثق تاريخ مصر.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Giza Images/deer.jpg" class="Figure2">
+        <h1>  ديـــر مـــارمــــيـــنـــا</h1>
+        <p id="SeventhParagraph">هو أحد الأديرة القبطية الأرثوذكسية القديمة، يقع بمنطقة ميت رهينة بالقرب من منطقة سقارة. يعود تاريخه إلى أوائل العصر المسيحي، وقد أُنشئ تخليدًا للقديس مارمينا العجائبي، أحد أشهر القديسين في الكنيسة القبطية. كان الدير جزءًا من مجتمع رهباني كبير، واشتهر بكونه مركزًا دينيًا وروحيًا هامًا خلال القرون الأولى للمسيحية في مصر.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p>   مـحـمــود السـعـدنــي  </p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> الشـيــخ إمـــام </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> كـريــم عـبـد العـزيــز </p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> إسـماعـيــل ســراج الديــن </p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Giza Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">      مـحـمــود السـعـدنــي </div>
+                    <div class="swal-header2">(20 نـوفـمـبــر 1927م - 4 مــايـــو 2010م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+صحفي وكاتب مصري ساخر يعد من رواد الكتابة الساخرة في الصحافة العربية، وهو الشقيق الأكبر للفنان صلاح السعدني، شارك في تحرير وتأسيس عدد كبير من الصحف والمجلات العربية في مصر وخارجها، ترأس تحرير مجلة صباح الخير المصرية في الستينيات كما شارك في الحياة السياسية في عهد الرئيس جمال عبد الناصر. أصدر وترأس تحرير مجلة ٢٣ يوليو في منفاه في لندن، اعتزل العمل الصحفي والحياة العامة سنة ٢٠٠٦ بسبب المرض.</div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> الشـيــخ إمـــام  </div>
+                    <div class="swal-header2"> (2 يـولـيــو 1918م - 7 يـونـيــو 1995م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ولد في قرية أبو النمرس بمحافظة الجيزة لأسرة فقيرة وكان أول من يعيش لها من الذكور حيث مات منهم قبله سبعة ثم تلاه أخ وأخت. أصيب في السنة الأولى من عمره بالرمد الحبيبي وفقد بصره بسبب الجهل واستعمال الوصفات البلدية في علاج عينه، فقضى إمام طفولته في حفظ القرآن الكريم على يد الشيخ عبد القادر ندا رئيس الجمعية الشرعية بأبي النمرس وكانت له ذاكرة قوية.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> كـريــم عـبـد العـزيــز </div>
+                    <div class="swal-header2"> (17 أغـسـطــس 1975م - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+هو ممثل ومخرج أفلام مصري. ظهر في أول عمل سينمائي له وهو طفل في فيلم المشبوه سنة 1978، الذي كان من بطولة الفنان الكبير عادل إمام. في بدايته، اشتهر كريم عبد العزيز بدور الشاب الغني والوسيم، لكنه سرعان ما كسر هذا النمط من خلال أداءه لشخصيات مختلفة ومتنوعة، وغالبًا ما يلعب أدوار البطولة في الأعمال التي يشارك فيها، ما ساهم في جعله واحدًا من نجوم الصف الأول في مصر.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> إسـماعـيــل ســراج الديــن </div>
+                    <div class="swal-header2"> (09 مــايـــو 1944م - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+هو مدير مكتبة الإسكندرية الحديثة منذ افتتاحها في أكتوبر 2002 وحتى مايو 2017، قبل عمله بالمكتبة كان يعمل كنائب لرئيس البنك الدولي، تخرج بامتياز مع مرتبة الشرف الأولى في كلية الهندسة، جامعة القاهرة - قسم الهندسة المعمارية عام 1964. حصل على درجة الماجستير بامتياز في التخطيط الإقليمى من جامعة هارفارد بالولايات المتحدة الأمريكية عام 1968. نال درجة الدكتوراه من جامعة هارفارد عام 1972. (رسالة الدكتوراه: دور التعليم في التنمية). كتب أكثر من 45 كتابا في مختلف مجالات الثقافة والتنمية.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

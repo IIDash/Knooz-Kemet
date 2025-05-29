@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Alexandria Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Alexandria Governorate</title>
+        <link rel="icon" href="Alexandria Images/Alexandria Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Alexandria Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> الإســـكـــنـــدريــــــة </h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            تأسست الإسكندرية على جزيرة قديمة عرفت باسم "فارس"، وذلك بأمر من الإسكندر المقدوني أحد أشهر القادة العسكريين والفاتحين عبر التاريخ، حيث قرر ربط الممر الموجود في الساحل بأطراف جزيرة تسمى "بنو فنار"، وجاء الأمر بتأسيس هذه المدينة لعدة أسباب؛ تتلخص بأن الإسكندرية ستصبح مركزاً للتجارة، ومركزاً للحضارة الهلنستية، ودرعاً مساعداً للجيش المقدوني في غزواته في البحر الأبيض المتوسط. وأصبحت الإسكندرية في هذا الوقت عاصمة مصر وذلك منذ ما يقرب من ألف عام. وسميت مدينة الإسكندرية بعروس البحر الأبيض المتوسط، ويعود ذلك إلى إلى ما تحتوي عليه من مناظر ساحرة وأماكن سياحية جذابة، أنها مدينة السحر والجمال التي يقصدها الكثير من الناس لقضاء أجمل الأوقات على شواطئها الخلابة.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة  الإســـكــــنـــدريـــة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة  الإســـكــــنـــدريـــة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Alexandria Images/Alexandria Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>يجسد شعار المحافظة تاريخها العريق وهويتها الثقافية والجغرافية من خلال تصميم متكامل يبدأ بتاج حجري يرمز إلى مناعتها وسورها التاريخي، يتبعه اسم المدينة بالخط العربي دلالة على الأصالة، ثم درع رئيسي يتوسطه مشهد لآلهة النصر المجنّحة "نيكي" ترمز إلى الجذور اليونانية والرومانية، وبجوارها منارة الإسكندرية كرمز للحضارة والعلوم، وخلفية زرقاء وأمواج ترمز إلى البحر المتوسط ومكانة المدينة كميناء عالمي، ويتوّج الشعار بشريط أزرق يحمل اسم "ALEXANDRIA" بالإنجليزية تعبيرًا عن انفتاحها العالمي وتعددها الثقافي.
+        </p>
+       
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Alexandria Images/mktba.jpg" class="Figure1">
+        <h1> 	   مـكـتـبــة الإســكــنـدريــة  </h1>
+        <p>تُعد مكتبة الإسكندرية من أهم الصروح الثقافية في مصر والعالم. أُعيد افتتاحها عام ٢٠٠٢م تخليدًا للمكتبة القديمة التي كانت منارة للعلم في العصور القديمة. تضم المكتبة ملايين الكتب بعدة لغات مختلفة، بالإضافة إلى عدد من المتاحف، وقاعات العرض، ومراكز الأبحاث العلمية. وتتميز المكتبة بتصميم معماري فريد يعكس ارتباطها بالعلم والثقافة.  </p>
+    </section>
+    <section class="Blob2">
+        <img src="Alexandria Images/castle.jpeg" class="Figure2">
+        <h1> قـــلــعــة قــايــتــبــاي</h1>
+        <p>
+            بناها السلطان المملوكي الأشرف أبو النصر قايتباي على انقاض فنار الإسكندرية القديم لتحصين مدينة الإسكندرية وحمايتها من الغزوات البحرية. تتميز القلعة بتصميمها الدفاعي القوي وأبراجها العالية وأسوارها المتينة، وهي تُعتبر رمزًا لمكانة الإسكندرية العسكرية عبر العصور، كما أنها أصبحت اليوم مزارًا سياحيًا هامًا يجذب الزوار من مختلف أنحاء العالم.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Alexandria Images/jewelry.png" class="Figure1">
+        <h1>    مــــتــــحـــــف <br> المـجـوهـــرات المـلـكـيـــة</h1>
+        <p id="FourthParagraph"> يضم المتحف المعروف "قصر الأميرة فاطمة الزهراء" مجموعة نادرة من المجوهرات والتحف الخاصة بأسرة محمد علي باشا، حيث يحتوي على أكثر من ١١ ألف قطعة من الذهب والأحجار الكريمة والتيجان والأوسمة. يتميز القصر بتصميمه الأوروبي الفاخر وزخارفه الرائعة، وقد تحول إلى متحف عام ١٩٨٦م، ليصبح شاهدًا على تاريخ العائلة المالكة في مصر. </p>
+    </section>
+    <section class="Blob2">
+        <img src="Alexandria Images/museum.png" class="Figure2">
+        <h1>  	  مــــتــــحـــــف <br> الإســكــنـدريــة القــومــــي</h1>
+        <p id="ThirdParagraph"> يقع متحف الإسكندرية القومي في قصر إيطالي الطراز بوسط المدينة، وتم افتتاحه عام ٢٠٠٣م. يضم المتحف أكثر من ١٨٠٠ قطعة أثرية تروي تاريخ الإسكندرية ومصر عبر العصور المختلفة، من العصر الفرعوني والبطلمي والروماني حتى العصر الإسلامي والحديث. يتميز المتحف بعرض القطع الأثرية بشكل يحكي قصة تطور الحضارة المصرية بأسلوب شيق ومثير.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Alexandria Images/montaza.png" class="Figure1">
+        <h1>	 قـــصـــر الـــمـــنــتــزة</h1>
+        <p id="SixthParagraph"> 
+            أحد أهم وأجمل المعالم السياحية في مصر. شُيّد القصر عام ١٨٩٢م بأمر من الخديوي عباس حلمي الثاني ليكون استراحة صيفية له ولعائلته. يتميز القصر بتصميمه الذي يجمع بين الطرازين العثماني والإيطالي، ويحيط به حدائق واسعة تطل على البحر. شهد القصر العديد من التطورات في عهد الملوك الذين جاءوا بعد الخديوي عباس حلمي الثاني، وهو اليوم مقصد للسياح لما يحمله من جمال معماري وتاريخي فريد.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="Alexandria Images/qsr.jpg" class="Figure2">
+        <h1>  قــصــر رأس الـــتــيــن</h1>
+        <p id="FifthParagraph">يُعد قصر رأس التين من أقدم القصور الملكية في مصر، وتم تشييده في عهد محمد علي باشا في أوائل القرن التاسع عشر. يقع القصر على ساحل البحر الأبيض المتوسط بمدينة الإسكندرية، وكان مقرًا للحكم خلال فترات حكم أسرة محمد علي. يتميز بطرازه المعماري الكلاسيكي الفاخر ويجمع بين الطراز الأوروبي والطابع الشرقي. شهد القصر أحداثًا تاريخية مهمة، منها مغادرة الملك فاروق لمصر بعد إعلان الجمهورية. </p> 
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Alexandria Images/swary.png" class="Figure1">
+            <h1>عــمــود الــســواري</h1>
+            <p id="EighthParagraph"> يُعد عمود بومبي، المعروف بعمود السواري، من أشهر المعالم الأثرية في الإسكندرية، ويقع في منطقة كوم الشقافة. أُقيم هذا العمود تخليدًا للإمبراطور الروماني دقلديانوس في القرن الثالث الميلادي. يبلغ ارتفاعه حوالي ٢٧ مترًا، وهو مصنوع من حجر الجرانيت الأحمر المستورد من أسوان. يُعتبر العمود من أضخم الأعمدة الرومانية القائمة في العالم، ورغم تسميته بعمود بومبي، إلا أنه لا علاقة له بالقائد الروماني بومبيوس.
+
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Alexandria Images/msgd.jpeg" class="Figure2">
+        <h1>  مــســجــد أبــو الــعــبــاس </h1>
+        <p id="SeventhParagraph"> يُعد مسجد أبو العباس المرسي من أقدم وأشهر المساجد في الإسكندرية، ويقع في منطقة بحري بحي الأنفوشي. بُني المسجد تخليدًا لذكرى العارف بالله الشيخ أبو العباس المرسي، أحد كبار رجال الصوفية في القرن السابع الهجري. تم تأسيس المسجد عام ٧٠٦هـ (١٣٠٧م)، ثم أُعيد بناؤه عام ١٩٤٣م بطراز إسلامي أندلسي مميز، ويشتهر بمآذنه العالية وقبابه المزخرفة، ويعد من أهم المعالم الدينية والسياحية بالمدينة. </p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p>  ســــيـــد درويــــش  </p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> قـــاسم أمـــيــــن </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>هـــنــــد رســـتــــم</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> كــيــرلـــس الســـادس </p></div>
+    </section>
+    
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Alexandria Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">       ســــيـــد درويــــش </div>
+                    <div class="swal-header2">(17 مـــارس 1892 - 15 ســبــتــمــبــر 1923)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    يُعتبر سيد درويش رائد الموسيقى العربية الحديثة وأحد أهم الملحنين في تاريخ مصر. ولد في الإسكندرية، ونجح في إدخال الموسيقى الشعبية إلى المسرح الغنائي، حيث لحن العديد من الأناشيد الوطنية والأغاني التي لا تزال خالدة مثل "بلادي بلادي". ساهم بشكل كبير في تطوير الأغنية المصرية وأثرى التراث الفني برصيد ضخم رغم وفاته المبكرة في سن ٣١ عامًا.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> قـــاسم أمـــيــــن </div>
+                    <div class="swal-header2"> (01 ديسمبر 1863 – 23 أبريل 1908)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ هو فيلسوف مصرى ومصلح وقاضٍ وشخصية مركزية فى حركة النهضة،  وقد حفزت دعوته لحقوق المرأة النقاش حول قضاياها فى العالم العربى، وينظر إليه تاريخيًا على أنه واحد من "النسويين الأوائل" في العالم العربي، على الرغم من أنه انضم إلى الحديث حول حقوق المرأة في وقت متأخر جدًا من تطوره.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">هـــنــــد رســـتــــم</div>
+                    <div class="swal-header2"> (12 نــوفــمــبــر 1931  - 08 أغــســطــس 2011 )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                   تُعد واحدة من أبرز نجمات السينما المصرية، لُقبت بـ"مارلين مونرو الشرق" لجمالها وأدائها المميز. بدأت مشوارها الفني بأدوار صغيرة حتى تألقت في أدوار البطولة خلال الخمسينيات والستينيات. شاركت في العديد من الأفلام الناجحة مثل "باب الحديد" و"شفيقة القبطية"، وقدمت شخصيات متنوعة أظهرت موهبتها الكبيرة قبل أن تعتزل التمثيل في أوائل السبعينيات.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> كــيــرلـــس الســـادس </div>
+                    <div class="swal-header2"> (02 أغسطس 1902 - 09 مارس 1971)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+ترك البابا كيرلس السادس بصمة كبيرة في تاريخ الكنيسة القبطية الأرثوذكسية من خلال العديد من الإنجازات الدينية والإدارية التي أثرت في حياة الأقباط في مصر وحول العالم. ومن أبرز تلك الأعمال ترميم الكاتدرائية المرقسية، إقامة الميرون المقدس، استعادة جسد مار مرقس، وأحداث تاريخية أخرى جعلت من فترة رئاسته مرحلة هامة في تاريخ الكنيسة.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

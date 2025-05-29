@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RedSea Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Red Sea Governorate</title>
+        <link rel="icon" href="ReadSea Images/redsea logo.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="ReadSea Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br>البـــحـــــــر الأحـــمـــــــر</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            هي إحدى محافظات مصر الحدودية، وترجع أهميتها الاستراتيجية إلى امتدادها على ساحل البحر الأحمر مما يجعلها ذات موقع محوري في تأمين الحدود الشرقية لمصر، ويمنحها أهمية خاصة في منظومة الأمن القومي المصري والعربي. تُعد المحافظة منفذًا حيويًا للصادرات والواردات لمحافظات الصعيد، كما تضم عددًا من الموانئ الهامة. وتُعد محافظة البحر الأحمر من أغنى محافظات مصر من حيث الثروات الطبيعية، إذ تحتوي على معظم الخامات الفلزية واللافلزية، وأحجار الزينة مثل الجرانيت والبازلت والرخام، مما يجعلها مركزًا هامًا لأنشطة التعدين. بالإضافة إلى ذلك، تُعد من الوجهات السياحية العالمية، حيث تضم شعابًا مرجانية خلابة، ومواقع غوص تعد من الأجمل على مستوى العالم، إلى جانب كونها مقصدًا لرياضات مثل الغوص وركوب الأمواج والصيد البحري.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــه الـــبــحر الأحـــمر</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة الــــبحر الأحــــمــــر </h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="ReadSea Images/redsea logo.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>لا تخل محافظات مصر من الجانب الأسطورى المثير؛ فتتخذ محافظة البحر الأحمر، الملقبة بـ"عروس البحر الأحمر"، شعارها باللون الأزرق الدال على طابعها المميز لوقوعها على سواحل البحر الأحمر حيث المياه الصافية والشعاب المرجانية المتنوعة. وفي قلب شعار المحافظة نجد ثمثالًا من اللون الذهبى يعبر عن احتوائها على أكبر مناجم الذهب فى العالم المعروف بمنجم السكرى، الذي يعد من أقدم وأشهر المناجم التي تستقطب الأنظار بفضل احتياطات الذهب الهائلة التي تحتويها المحافظة.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="ReadSea Images/remal.jpg" class="Figure1">
+        <h1>مـتــحــف الرمــــال</h1>
+        <p>
+            يعد متحف الرمال بمدينة الغرقة من المتاحف الفريدة من نوعها في الشرق الأوسط وقارة أفريقيا، حيث يضم أكثر من ٤٠ تمثالًا رمليًا لشخصيات أسطورية من الحضارات المختلفة، منها الفرعونية والإغريقية، بالإضافة إلى مجسمات لعجائب الدنيا مثل الأهرامات وأبو الهول، نحتها فنانون عالميون، ويضم تماثيل لنابليون، كليوباترا، محمد الفاتح، وشخصيات كرتونية مثل باتمان وسبايدرمان.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="ReadSea Images/mini.jpg" class="Figure2">
+        <h1> مـتـحـف مـيـنـي ايـجـيـبـت</h1>
+        <p>
+            صُمم في البداية لتعريف الزوار بمناطق الجذب السياحي والمعالم التاريخية في محافظات ومدن مصر، ثم أصبح من المزارات السياحية الشهيرة، خاصة للأطفال. يضم المتحف مجسمات مصغرة لمعالم مصرية بارزة شيدها فنانون مختارون بعناية، مثل مكتبة الإسكندرية، برج القاهرة، أهرامات الجيزة، أبو الهول، قلعة محمد علي، معبد أبو سمبل، السد العالي، ومعابد البر الغربي بمدينة الأقصر.
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="ReadSea Images/mmsha.jpg" class="Figure1">
+        <h1>مـــمــشى مـــكــادى</h1>
+        <p id="FourthParagraph">
+            يوفر ممشى مكادي فرصة استجمام رائعة بمحاذاة مجموعة من أرقى فنادق ساحل البحر الأحمر، كما يقع في الجهة المقابلة شاطئ ومنتزه خليج مكادي اللذان يُعدان من أشهر أماكن الغوص ومشاهدة الشعاب المرجانية والأسماك الملونة فضلاً عن وجود البازارات السياحية والمقاهي ذات المناطق المفتوحة على البحر مباشرةً حيث الهواء الطلق.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="ReadSea Images/aq.jpg" class="Figure2">
+        <h1> الـــمــتــحف الــمائـــي</h1>
+        <p id="ThirdParagraph">
+            يحظى متحف الغردقة المائي بشعبية بالغة بين رواد وقاطني المدينة، حيث يحاكي الأكواريوم المائي عالم البحر الأحمر من أسماك، وشعاب مرجانية، وحفريات، يتم عرضها للزوار من خلال نفق زجاجي ضخم للأسماك بطول ٢٤ متر وكهف مائي مخصص للأطفال وعروض لمشاهدة أسماك القرش والمشاركة في إطعامهم ورحلات غوص مع القرش بحضور المدربين.
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="ReadSea Images/mag.jpg" class="Figure1">
+        <h1>جــــزيــره مـــجاويـــش</h1>
+        <p id="SixthParagraph">
+            جزيرة مجاويش هي أحد أكبر جزر مدينة الغردقة، فضلاً عن كونها من أكثر الأماكن جذبا للسياح في مختلف الفصول.
+            وتكمن مميزات تلك الجزيرة في احتوائها على العديد من القرى السياحية، إلى جانب توافر مختلف العناصر الترفيهية كالملاهي المائية، وعروض الدلافين، ورحلات الغوص، ومجموعات استكشاف الشعاب المرجانية.
+            
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="ReadSea Images/gfton (1).jpg" class="Figure2">
+        <h1>جــزيـــره الجــــفــتون</h1>
+        <p id="FifthParagraph">
+            تُعد جزر الجفتون من أبرز وجهات الغردقة، وتتميز برمالها البيضاء ومياهها الصافية، مع وجود ١٤ موقعًا مميزًا للغوص وسط الشعاب المرجانية والأسماك الملونة، كما تنتشر طيور النورس في أرجائها، وتوفر رحلات بحرية ممتعة تُمكّنك من تناول الطعام وسط البحر على متن المراكب بمنتصف مياه البحر الأحمر. 
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="ReadSea Images/dir.jpg" class="Figure1">
+        <h1>ديــر الانـبـا انـطـونـيـوس</h1>
+        <p id="EighthParagraph">
+            يُعد دير الأنبا أنطونيوس من أقدم أديرة العالم، ويقع تحت سفح جبل الجلالة القبلي قرب الزعفرانة بمحافظة البحر الأحمر. أسسه الأنبا أنطونيوس مؤسس الرهبنة القبطية في نهاية القرن الرابع الميلادي، ويُعد أول دير للرهبنة في العالم، ويضم كنيسة أثرية ومغارة القديس أنطونيوس، على مساحة تُقدّر بنحو ١٨ فدانًا.
+        </p>
+            </section>
+    <section class="Blob2">
+        <img src="ReadSea Images/tabia.png" class="Figure2">
+        <h1>طــــابــيه القــصير</h1>
+        <p id="SeventhParagraph">
+            تُعرف طابية القصير، أو قلعة القصير، بأنها بُنيت في عهد السلطان العثماني سليم الأول عام ١٥٧١م لحماية الميناء وتأمين قوافل الحجاج. تقع القلعة على هضبة من الحجر الجيري وتضم أربعة أبراج مراقبة ومدافع على أسوارها، وقد استُخدمت في الدفاع عن مصر من الهجمات البحرية، وتُنظم لها اليوم رحلات سياحية يومية.
+        </p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> هــمــام ابــو عــلـــي</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p>  عــمــــرو حــنــفـــــي </p></div>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="ReadSea Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">   المؤرخ همام ابو علي </div>
+                    <div class="swal-header2"> (١٩ يناير ١٩٢٣ـ ٣١ أكتوبر ١٩٩٨) </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+مقتطفات من حياة العالم اثبت همام في دراسة تاريخية قيمة أن مدينة حلايب مصرية في ضوء وثائق بذل جهداً كبيراً فى دراستها والإطلاع عليها ، كذلك لفت الأنظار إلى أهمية هذا الإقليم – البحر الأحمر- التاريخية والحضارية، كما أرخ لمدن البحر الأحمر والف العديد من الكتب منها ”أبوالحسن الشاذلي”، و”بونابرت والقصير”، و”مدينة القصير، و”حلايب مصرية”، كان همام ملاذاً لطلاب الدراسات العليا من أقسام التاريخ بالجامعات المصرية، الذين يعدون رسائل ماجستير ودكتوراه، يطلبون مشورته وخبرته الواسعة
+: المناصب التى تقلدها
+- اختير كمال الدين حسين " همام " عضواً في الجمعية المصرية للدراسات التاريخية بالقاهرة
+- عضو بالجمعية الجغرافية المصرية بالقاهرة
+- عضوا بالمجمع العلمى بالقاهرة
+- انتخب همام بمجلس الشعب لدورات عدة
+- تبنى إصدار قانون يسمح بمساواة طلاب البحر الأحمر بطلاب محافظات القناة وسيناء في شرط المجموع لدخول الكليات الجامعية والمدن الجامعية ، و سعى في افتتاح كلية التربية بالغردقة
+- استطاع أن يحصل على موافقة وزارة الإسكان بمد خط مياه الشرب (قنا- سفاجا)، ثم ( سفاجا – القصير) بقرار وزارة الإسكان 197لسنة 1969م
+- استطاع بجهوده ضم قلعة القصير العثمانية إلى هيئة الآثار المصرية كما كان له الفضل في الدعوة إلى إنشاء البنوك بمدن البحر الأحمر ومد الإرسال التليفزيوني ببرنيس، والشلاتين، ومرسى علم
+:المشاركات الدولية
+- شارك الوفد البرلماني الثلاثي في جمهورية غينيا عام 1982م
+ - مؤتمر اللجنة التنفيذية لاتحاد برلمانات إفريقيا - مؤتمر الحوار البرلماني العربي الأفريقي في الصومال، وتونس، والجزائر، والمغرب - مؤتمر الحوار البرلماني العربي الأوربي في باريس عام 1994م
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">     اللواء عمرو حنفي</div>
+                    <div class="swal-header2">     ( ٢ مارس ١٩٦٣ ــ الآن)  </div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+محافظ البحر الأحمر منذ عام ٢٠١٩ وحتى الآن، من مواليد المحافظة. حصل اللواء عمرو حنفي على ليسانس الحقوق وبكالريوس العلوم الشرطية من الاكاديمية الشرطية في عام ١٩٨٤. وبعد عامين التحق بجهاز المخابرات العامة، حيث تدرج بالعمل داخل وحدات العمليات المختلفة. كما عمل كمستشار في السفارة المصرية بالرباط ومن ثم كان قنصل جمهودية مصر العربية بجدة ثم عاد وتدرج في المناصب القيادية بجهاز المخابرات العامة حتى اصبح وكيلا للجهاز في يناير ٢٠١٥
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

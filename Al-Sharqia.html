@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Al-Sharqia Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Al-Sharqia Governorate</title>
+        <link rel="icon" href="Al-Sharqia Images/Sharqia Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Al-Sharqia Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> الشــــــرقــــــيـــــــــــة</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            تعتبر الشرقية من أهم محافظات مصر تاريخياً وقد أكسبتها ظروفها التاريخية وموقعها الهام مكانة فريده على إمتداد التاريخ القديم والحديث فموقعها الهام جعل منها الحارس للمدخل الشرقى لمصر ذلك الباب الوحيد تقريباً الذى إجتازه الغزاه عبر التاريخ منذ أيام الهكسوس . كانت محافظة الشرقية قديما هي المقاطعة رقم ١٢ من مقاطعات الوجه البحري وعاصمتها القديمة (بوباستيس) والتي أصبحت في فترة من التاريخ عاصمة لمصر كلها. وقد تكون إقليم الشرقية باسمه الحالي في عهد الدولة الفاطمية وكان قبل ذلك مقسما إلى عدة " كور" صغيرة كل كورة قائمة بذاتها ثم تم ضمها معا وسميت بالشرقية لوقوعها في الجهة الشرقية من الوجه البحري وفي عام ١٣١٥م أطلق عليها اسم الأعمال الشرقية، وفي سنة ١٥٢٧م أطلق عليها اسم ولاية الشرقية.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة الـشـرقـيـة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة الـشـرقـيـة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Al-Sharqia Images/Sharqia Icon.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>أتخذت المحافظة الحصان الابيض الجامح الذى يتصدر الشعار في صورة ظلية وفي وضعية قفز أو وثب، مما يوحي بالقوة، والنشاط، والأصالة. اختيار الحصان الأبيض الجامح تحديدًا يعكس شهرة المحافظة واعتزازها بتربية الخيول العربية الأصيلة. كما يحتوي على بساط اخضر يمثل الخلفية التي يرتكز عليها الحصان الأبيض. ويرمز إلى الخصوبة والنماء والخير، ويعكس الطبيعة الزراعية الغالبة في محافظة الشرقية. فالمحافظة تشتهر باتساع رقعتها الزراعية وإنتاجها الوفير من المحاصيل المتنوعة، مما يجعل الزراعة دعامة أساسية لاقتصادها وهويتها .</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Al-Sharqia Images/Second Place.jpeg" class="Figure1">
+        <h1>منــطـقـــة تـل بـســطــا</h1>
+        <p>كانت تعد مركزًا دينيًا وعاصمة قديمة لمصر، وبسبب موقعها الشرقي، شهدت مرور العديد من الغزاة. كما أنها حظيت بزيارة السيدة مريم العذراء والسيد المسيح عليهما السلام. تقع أطلال مدينة بوباستيس القديمة بالقرب من الزقازيق، وكانت مدينة كبيرة تُعبد فيها الإلهة باستيت، إلهة الحب والخصوبة، وكانت مهرجاناتها تجذب مئات الآلاف كانوا يفدون إليهل ويغنون ويحتفلون.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Al-Sharqia Images/First Place.jpg" class="Figure2">
+        <h1>منــطـقـــة صـان الـحـجـــر</h1>
+        <p>
+            عرفت في العصور القديمة باسم تانيس وكانت مدينة ذات أهمية تاريخية كبيرة في شرق دلتا النيل، حيث عملت كعاصمة لمصر خلال الأسرتين ٢١ و ٢٣. يزخر هذا الموقع الأثري بآثار متنوعة تعود للعصور الفرعونية واليونانية والرومانية. وتشتهر بشكل خاص بكمية مسلاتها الضخمة المنقوشة باسم رمسيس الثاني وإنجازاته، مما يجعلها من أغنى مناطق الوجه البحري بالآثار الملكية.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Al-Sharqia Images/Third Place.jpg" class="Figure1">
+        <h1>متـحـــف هـريــة رزنــة</h1>
+        <p id="ThirdParagraph">
+            مسقط رأس الزعيم أحمد عرابي، ولهذا السبب اختيرت لتكون مقرًا لمتحف الشرقية القومي الذي افتتح عام ١٩٧٣م. يضم المتحف أربع مجموعات: الأولى عن أحمد عرابي ورفاقه، والثانية عن التراث الشعبي للشرقية، والثالثة تخلد ذكرى شهداء بحر البقر، أما الرابعة فتعرض آثارًا اكتُشفت في المحافظة.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Al-Sharqia Images/Fourth Place.jpg" class="Figure2">
+        <h1> منــطـقـــة تـل نـبـيـشـــة </h1>
+        <p id="FourthParagraph">تل نبيشة، أو تل فرعون، هو موقع أثري في شرق دلتا النيل، يقع جنوب تانيس. كانت العاصمة القديمة للمقاطعة التاسعة عشرة "أميت"، حيث عُبدت الإلهة وازيت. اكتُشف فيه تمثال أهداه رمسيس الثاني لوايت. لاحقًا، في الفترة الآشورية، أصبحت تانيس عاصمة للمقاطعة بدلًا من تل نبيشة.
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Al-Sharqia Images/Sixth Place.jpg" class="Figure1">
+        <h1>بــئــر يــوســـــف</h1>
+        <p id="SixthParagraph">  
+            يعتبر بئر يوسف من اهم آثار العائلة المقدسة وتم اطلاق الاسم عليه نسبه إلي يوسف النجارالذى رافق السيدة العذراء مريم والمسيح عيسي فى رحلتهم الى مصر ومازالت البئر موجوده حتي هذه اللحظة ، ويعد هذا المكان من الأماكن "المباركة" التي يزورها المسيحيون والمسلمين حتى الأن ليروا أماكن إقامه العائلة المقدسة.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="Al-Sharqia Images/Fifth Place.png" class="Figure2">
+        <h1>مـعـبــد الإلـه آمـــــون</h1>
+        <p id="FifthParagraph">من أكبر المعابد بالوجه البحري ومازالت أحجاره من لوحات وتماثيل مختلفة الأحجام والأشكال موجودة ويشمل المعبد بوابة جيرانيتية ضخمة يتقدمها تماثيل ضخمة لرمسيس الثاني، كذلك هناك تمثال علي شكل أبو الهول. ويوجد بالمعبد البحيرة المقدسة والتي تلي في أهميتها بحيرة الكرنك بالأقصر وهناك أسوار لبنية ضخمة يرجع تاريخها لسنة ١٠٧٠ ق.م تقريبا.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Al-Sharqia Images/Eighth Place.jpg" class="Figure1">
+            <h1>مســـجــــد عـبـــد العــزيـــز رضـــــوان</h1>
+            <p id="EighthParagraph">يتبع تخطيط هذا المسجد طراز المساجد التى تتكون من بيت صلاة بدون صحن مكشوف، وأهم ما يميز هذا المسجد هو وجود سور يلتف حوله من الجهتين الشمالية الغربية والشمالية الشرقية، والمسجد بصفة عامة يتبع  الطراز اللملوكى فى عمارته نظرا لبنائه فى عهد أسرة محمد على، وهذة سمة عامة للمساجد التى أنشات ذلك العصر.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Al-Sharqia Images/Seventh Place.jpg" class="Figure2">
+        <h1>كــنــيــســــة المـــلاك مــيــخــائــيـــــل</h1>
+        <p id="SeventhParagraph">من أهم المزارات القبطية التي حازت علي اهتمام الأقباط والذين يحرصون علي التوافد إليها من مختلف المحافظات وليس الشرقية فحسب، فهي واحده من أقدم الكنائس المصرية والتي تميزت عنهم بظاهره فلكيه وهي تعامد أشعه الشمس علي مذابح الملائكة " ميخائيل " مارجرجس " السيدة العذراء " في عيدهم.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> احـمـد عـرابـى</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> عـبـد الـحـلـيـم حـافـظ</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>احـمـد زكـى</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مـجـدى يـعـقـوب</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Al-Sharqia Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> احـمـد عـرابـي</div>
+                    <div class="swal-header2">( ٣١ مارس ١٨٤١ - ٢١ سبتمبر ١٩١١ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    قائد عسكري وزعيم وطني، وُلد في قرية "هرية رزنة" بمركز الزقازيق عام 1841. قاد الثورة العرابية ضد الخديوي توفيق مطالبًا بالعدالة والدستور وحقوق الجيش والشعب، وهو أول من قال أمام الخديوي: "لقد خلقنا الله أحرارًا ولن نُستعبد بعد اليوم."
+                    </div>
+                  
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> عـبـد الـحـلـيـم حـافـظ</div>
+                    <div class="swal-header2"> ( ٢١ يونيو ١٩٢٩ - ٣٠ مارس ١٩٧٧  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+            مطرب مصري شهير، وُلد عام 1929 في قرية الحلوات. يُعد من أعمدة الغناء العربي، قدم العديد من الأغاني الوطنية والرومانسية، ولقب بـ"العندليب الأسمر".
+                    </div>
+                  
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> احـمـد زكـى</div>
+                    <div class="swal-header2"> (    ١٨ نوفمبر ١٩٤٦ - ٢٧ مارس ٢٠٠٥ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    
+واحد من أعظم ممثلي مصر، وُلد في الزقازيق عام 1949. جسّد شخصيات الزعماء في أفلامه مثل جمال عبد الناصر وأنور السادات. عرف بأدائه القوي وتنوع أدواره.
+
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـجـدى يـعـقـوب</div>
+                    <div class="swal-header2"> (   ١٦ نوفمبر ١٩٣٥ - إلى الآن   )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    جراح قلب عالمي، وُلد عام 1935 في بلبيس. يُعتبر من الرواد في زراعة القلب، وأسس مركزًا لجراحات القلب في أسوان، ويقدم خدمات مجانية للمرضى.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

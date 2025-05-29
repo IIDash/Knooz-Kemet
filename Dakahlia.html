@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Dakahlia Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Dakahlia Governorate</title>
+        <link rel="icon" href="Dakahlia Images/Dakahlia Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Dakahlia Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> الدقــــهــــلــــيـــــــة</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            الدقهلية هي إحدى محافظات جمهورية مصر العربية، وتُعد من أكثر المحافظات كثافة سكانية، وتقع في منطقة دلتا النيل شمال البلاد، كما تُطل على شريط ساحلي من البحر الأبيض المتوسط. تتميز المحافظة بتنوع أنشطتها الاقتصادية، حيث تُعد من أبرز المحافظات الزراعية بفضل وفرة الأراضي الخصبة، كما تشتهر بزراعة الأرز والقمح والقطن والخضروات. وتُعرف أيضًا بنشاطها في تربية الدواجن وصناعة الألبان. تعد مدينة المنصورة عاصمة المحافظة وأكبر مدنها، وهي مركز إداري وثقافي وتعليمي مهم، تضم جامعة المنصورة، التي تُعد من أبرز الجامعات في مصر، إضافة إلى عدد كبير من المستشفيات التعليمية المتقدمة. وتشتهر المحافظة كذلك بتاريخها الوطني، فقد كان لأبنائها دور بارز في المقاومة الشعبية خلال الاحتلال الإنجليزي.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة الـدقــهــلــيــة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــةالـدقــهــلــيــة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Dakahlia Images/Dakahlia Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p> يتكون شعار محافظة الدقهلية من مجموعة من الرموز التي تعبر عن خصائصها التاريخية والاقتصادية. يتوسط الشعار رأس فرعونية تعبر عن أصالة وعراقة المحافظة وجذورها الضاربة في أعماق التاريخ المصري القديم. يحيط بالرأس الفرعونية ترس، في إشارة إلى أهمية الصناعة في المحافظة ودورها في دعم الاقتصاد المحلي. كما يظهر صنارة صيد ترمز إلى نشاط الصيد والثروة السمكية المنتشرة خاصة في المناطق القريبة من فرع دمياط للنيل. وأخيرًا، تحيط بالشعار سنابل القمح، في دلالة على أهمية الزراعة في المحافظة وخصوبة أرضها التي تشتهر بإنتاج المحاصيل الزراعية المتنوعة. يعكس الشعار تنوع مصادر الدخل في الدقهلية، ويجسد مزيجًا فريدًا من التاريخ والحضارة والعمل والإنتاج.        </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Dakahlia Images/loqman.webp" class="Figure1">
+        <h1>دار ابـن لـقـمـان</h1>
+        <p>تقع بجوار مسجد الموافي وسط مدينة المنصور وقد آخذت شهرتها بعد أن سجن فيها لويس التاسع ملك فرنسا وقائد الحملة الصليبية على مصر لمدة شهر حيث فدته زوجته وأطلق سراحه في ٧ مايو ١٢٥٠م. وقد أنشئ بالدار متحف تاريخي يحوي الكثير من اللوحات والمعلومات والصور التي توضح دور الشعب المصري في تحطيم قوات الصليبين بجنب بعض الملابس والأسلحة التي استخدمت في المعركة.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Dakahlia Images/Tall.jpg" class="Figure2">
+        <h1> تـــــل الربــــــــع </h1>
+        <p> مدينة تاريخية تقع في شرق دلتا النيل كانت عاصمة مقاطعة "لخا" وهي المقاطعة السادسة عشر في مصر السفلى حتى نُقلت العاصمة في عصر مصر اليونانية الرومانية إلى مدينة ثمويس والتي تسمى اليوم "تل التيماي". لا تبعد المدينتان عن بعضهما سوى عدة مئات من الأمتار فقط. كانت منديس أيضًا عاصمة مصر القديمة خلال حكم الأسرة التاسعة والعشرين التي حكمت مصر قرابة العشرين عامًا. </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Dakahlia Images/Ward.png" class="Figure1">
+        <h1> جــزيـــرة الـورد </h1>
+        <p id="FourthParagraph"> 
+            مدينة أنشئت في عصر الدولة المملوكية، سميت بجزيرة الورد وكانت مصدر فخر لسكانها، ولكن سرعان ما عانقت اسم المنصورة بفضل انتصاراتها على الحملات الصليبية، وبفضل نهر النيل الذي يتوسطها ويرسم أجمل المناظر بها. يأتيها الزوار من كل مصر للتمتع بمناظرها وسط نهر النيل، وهي شبه جزيرة مليئة بالحدائق الخضراء، كانت في القديم من أكبر حدائق الورود في مصر، وهي اليوم لا تزال وجهة سياحية عالمية.
+        </p>
+    </section>
+    <section class="Blob2">
+        <img src="Dakahlia Images/Behira.png" class="Figure2">
+        <h1> بــحــيـــرة المــنــزلــة  </h1>
+        <p id="ThirdParagraph">
+            تتميز بحيرة المنزلة بانتشار مجموعة من الجزر أهمها جزيرة ابن سلام وتضم ضريح الصحابي الجليل عبد الله ابن سلام حيث يفد إليها أعداد كبيرة من الزائرين كما تتميز البحيرة بغناها بالثروة السمكية والطيور المهاجرة إليها من مختلف الأنواع ويتم الآن دراسة استغلالها سياحياً.تتميَّز البحيرة بتنوُّع مناطقها؛ حيث تحتوي على مناطق ضحلة، ومناطق تتميَّز باتِّساع السطح فيها، وتنطلق أهمّية البحيرة من كونها موطناً للطيور المهاجرة.
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Dakahlia Images/dimiana.jpg" class="Figure1">
+        <h1>ديـر القـديـســة دمـيـانــة</h1>
+        <p id ="SixthParagraph">من أهم المزارات المسيحية. يضم الدير خمس كنائس، من بينها كنيسة أثرية، ويُعد مكانًا مميزًا للخلوة والتكريس الروحي. كما يحتوي على دير للراهبات وبيت للأساقفة، بالإضافة إلى مقبرة على الطراز القبطي تم اكتشافها في أواخر الأربعينيات. يحتفل بمولد القديسة دميانة سنويًا في النصف الأول من شهر مايو، ويستقطب الاحتفال نحو مئة ألف زائر.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Dakahlia Images/Mwafy.jpg" class="Figure2">
+        <h1> مــســجـــد المــوافـــي </h1>
+        <p id="FifthParagraph"> 
+            يعد مسجد الموافى من المساجد التاريخية بمحافظة الدقهلية وهو المسجد الذى أنشأه المللك الصالح نجم الدين أيوب فى مدينة المنصورة، وقد عُرف قديما بالمسجد الصالحى الكبير.ويتوافد على المسجد العديد من المواطنين خلال شهر رمضان المبارك كل عام، وتقام فيه صلاة التراويح والحلقات الدينية ويتسع لمئات المصلين ويتضمن مصلى سيدات.
+        </p>
+    </section>
+</main>
+
+
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p>   فـــاروق الـبـــاز  </p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> أم كــلــثـــوم </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> أحــمــد لـطـفــي الســيـــد </p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مـحـمــد حـسـيــن هـيـكــل </p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Dakahlia Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>      
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  فـــاروق الـــبــاز </div>
+                    <div class="swal-header2">(2 يـنـايــر 1938م - الآن)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    فاروق الباز عالم مصري أمريكي متخصص في علوم الفضاء والجيولوجيا. لعب دورًا بارزًا في برنامج أبولو لاستكشاف القمر مع وكالة ناسا، وشارك في تدريب رواد الفضاء على اختيار عينات القمر وتحليلها.                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">  أم كــــلــــثــوم </div>
+                    <div class="swal-header2"> (31 ديـسـمـبــر 1898م - 3 فـبـرايــر 1975م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    أم كلثوم كانت مغنية وممثلة مصرية وتُعتبر واحدة من أعظم الفنانين في العالم العربي. بصوتها القوي وأسلوبها المؤثر، أصبحت رمزًا للهوية العربية والفن الأصيل، وما زالت أغانيها تحظى بشعبية واسعة حتى اليوم.                    </div>
+
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـحـمــد حـسـيــن هـيـكــل </div>
+                    <div class="swal-header2"> (20 أغـسـطــس 1888م - 8 ديـسـمـبــر 1956م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+هو شاعر وأديب وسياسي مصري بارز، وُلد في قرية كفر غنام بمحافظة الدقهلية، درس القانون في القاهرة ونال الدكتوراه من فرنسا، وعمل في المحاماة والصحافة، وتأثر بأفكار عدد من المفكرين، وشارك في وضع دستور مصر، وتولى مناصب وزارية متعددة منها وزارة المعارف والشؤون الاجتماعية، كما ترأس حزب الأحرار الدستوريين ومجلس الشيوخ، ومثّل مصر والسعودية في محافل دولية كجامعة الدول العربية والأمم المتحدة.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> أحــمــد لـطـفــي الســيـــد </div>
+                    <div class="swal-header2"> (15 يـنـايــر 1872م - 5 مــارس 1963م)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+هو مفكر وفيلسوف مصري بارز وُصف بأنه رائد النهضة والتنوير وأطلق عليه لقب أستاذ الجيل وأبو الليبرالية المصرية، وُلد في محافظة الدقهلية وتخرج في الحقوق، تأثر بأفكار محمد عبده وجمال الدين الأفغاني، وعُرف بترجمته لكتب أرسطو، وتولى مناصب رفيعة مثل وزير المعارف والخارجية ونائب رئيس الوزراء ورئاسة مجمع اللغة العربية والجامعة المصرية ودار الكتب، ورفض عرض الضباط الأحرار لتولي رئاسة الجمهورية بعد ثورة يوليو.
+                    </div>
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob3', {
+        distance: '40px',
+        reset: true,
+        origin: 'bottom',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

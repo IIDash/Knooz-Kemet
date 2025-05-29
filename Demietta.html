@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Demietta Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Demietta Governorate</title>
+        <link rel="icon" href="Demietta Images/Demietta Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Demietta Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br>دمــــــــــــــــيــــــــــــاط</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            تقع محافظة دمياط في موقع متميز على ساحل البحر الأبيض المتوسط، في أقصى شمال دلتا النيل، على الضفة الشرقية للنهر، وهي شبه جزيرة يحيط بها البحر من الشمال وبحيرة المنزلة من الشرق، ويشطرها نهر النيل إلى شطرين في مشهد جغرافي فريد. وتُعد دمياط من المحافظات ذات الأهمية الاستراتيجية والاقتصادية الكبرى، حيث تمتلك ميناءً بحريًا نشطًا يسهم في حركة التجارة والصادرات. تشتهر المحافظة بالعديد من الصناعات التقليدية والحديثة، وعلى رأسها صناعة الأثاث التي تُعد من أشهر وأهم الصناعات على مستوى الجمهورية، لما تتميز به من دقة وجودة عالية جعلت منتجاتها مطلوبة في الأسواق المحلية والعالمية. كما تشتهر دمياط بصناعة الحلويات الشرقية، والأجبان بأنواعها، وصناعة الصابون، والملابس الجاهزة، وصيد الأسماك.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة دمــــيـــــاط</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة دمــــيـــــاط</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Demietta Images/Demietta Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>يعكس شعار محافظة دمياط، الذي يتضمن مركبًا بشراعين على خلفية زرقاء، هوية المحافظة الساحلية وارتباطها العميق بالبحر والنيل، حيث تمثل الأشرعة البيضاء رمزًا للصفاء والطموح والتقدم، وتشير إلى اعتماد المحافظة تاريخيًا وحاضرًا على الملاحة والصيد كمصدر رئيسي للرزق والثقافة. أما المركب الأصفر، فيرمز إلى المهارة الحرفية والتميز في صناعة السفن الخشبية، وهي من أقدم وأهم الصناعات التقليدية التي تشتهر بها دمياط. كما يشير تكامل الشراعين إلى التضامن ووحدة الهدف والعمل الجماعي بين أبناء المحافظة. وتشير الدائرة الزرقاء المحيطة بالشعار إلى المسطحات المائية التي تحيط بالمحافظة.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Demietta Images/مسجد عمرو بن العاص.jpg" class="Figure1">
+        <h1>مسجد عمرو بن العاص</h1>
+        <p>يعد مسجد عمرو بن العاص بدمياط أحد أهم المساجد الأثرية فى محافظة دمياط، بأكملها ويحظى بمكانة كبيرة فى نفوس أبناء دمياط ومقصد العابدين فى شهر رمضان خاصة صلاة الفجر والتراويح على مدار الشهر الكريم. وبه كتابات كوفية وأعمدة يعود تاريخها إلى العصر الرومانى. يطلق عليه أيضاً مسجد الفتح نسبه إلى الفتح العربى.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Demietta Images/مسجد البحر.jpg" class="Figure2">
+        <h1>مــسـجــد البـحـــر</h1>
+        <p>أحد أشهر وأجمل مساجد دمياط ويقع على الضفة الشرقية للنيل، وقد تم تجديده للمرة الأولى فى عهد الحكم العثماني وبنى على مساحة ١٢٠٠ متر مربع على الطراز الأندلسى ثم أعيد بناؤه للمرة الثانية عام ١٩٦٧م على ذات الطراز أيضاً، وجدرانه مزينة بأروع النقوش الإسلامية وله خمسة قباب ومئذنتان وملحق به مكتبة ثقافية ودينية.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Demietta Images/قبة الدياسطى.jpg" class="Figure1">
+        <h1>قـبــة الديـاســطــي   </h1>
+        <p id="ThirdParagraph">فى فارسكور توجد قبة الدياسطى المضلعة الشكل وهى مقامة على حجرة مرتفعة وترجع إلى العصر العثمانى، وقبة الدياسطى من القباب الإسلامية المهمة وقد بنيت خلال العصر العثمانى وهى ذات قيمة فنية عالية، وتنسب القبة إلى حسن الدياسطى بن جابر الأنصارى وهى قبة بصلية الشكل مقامة على حجرة مربعة ومنطقة الانتقال من مربع إلى مثمن عبارة عن مربعات ومقامة على أربع مقرنصات على شكل عقد ثلاثى.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Demietta Images/مسجد و ضريح شطا.jpg" class="Figure2">
+        <h1>مـسـجــد وضـريــح شــطـا</h1>
+        <p id="FourthParagraph"> أحد أقدم المزارات الدينية، حيث ينسب إلى الشيخ شطا الذى أعلن إسلامه وقت الفتح العربى لمصر بقيادة عمرو بن العاص وانضم إلى لواء المقتداد بن الأسود وشارك معه فى عدة معارك خلال زحفه نحو البرلس والدميرة وأشموم طناح وغيرها، واستشهد عام ٦٤٢م فى الموقعة التى دارت حول صان الحجر وقت الفتح العربى وحمل جثمانه ودفن فى شطا التى سميت باسمه ولا يزال الناس يزورون ضريحه حتى يومنا هذا.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Demietta Images/بحيرة المنزلة.jpg" class="Figure1">
+        <h1>بــحـيــرة المـنـزلـة</h1>
+        <p id="SixthParagraph">تتميز بحيرة المنزلة بانتشار مجموعة من الجزر أهمها جزيرة ابن سلام وتضم ضريح الصحابي الجليل عبد الله ابن سلام حيث يفد إليها أعداد كبيرة من الزائرين كما تتميز البحيرة بغناها بالثروة السمكية والطيور المهاجرة إليها من مختلف الأنواع. تتميَّز البحيرة بتنوُّع مناطقها؛ حيث تحتوي على مناطق ضحلة، ومناطق تتميَّز باتِّساع السطح فيها، وتنطلق أهمّية البحيرة من كونها موطناً للطيور المهاجرة.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Demietta Images/كنيسة السيدة العذراء.jpeg" class="Figure2">
+        <h1>كنيـسـة السـيـدة العـذراء</h1>
+        <p id="FifthParagraph">يرجع تاريخ إنشاء الكنيسة إلى عام ١٧٤٥م وكانت ملكًا للموازنة التابعين لروما وعرفت آنذاك بـــ"كنيسة البارحة"، وبانقراض العائلات الكاثوليك من دمياط آلت الكنيسة إلى الأقباط الأرثوذكس ويوجد بها جسد القديس مار سيدهم بشاي والذي استشهد فى هذه البقعة ، كما يوجد قطعة من خشب الصليب الذي صلب عليه السيد المسيح مهداه من نيافة الأنبا مرقس أسقف مرسيليا عام ١٩٧٤م.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> عـلــي مـصـطـفــى مـشـرفــة</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p>زاهــــي حــــواس</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>رأفـــت الهــجـــان</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p>فـــاروق شــوشــــة</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Demietta Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p>نـقــدم تـجـربــة ثـقـافـيــة مـتـكـامـلــة تـربــط المـواطـنـيــن بـجـذورهــم وتـذكـرهــم بـعـراقــة بـلادهــم، عــن طـريــق تـسـلـيــط الضــوء عـلــى كـنــوز مـصـــر المـجـهـولــة مــن خــلال مـحـتــوى تـفـاعـلــي مـمـيــز.
+            <br>
+            <span>مـــن قــلـــــب المــحــافــظـــات إلـــى صــفــحـــات الويــــب. </span></p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href=""> Designed By: Knooz Kemet's Team </a></p>
+        </div>
+    </div>
+</footer>  
+
+<a href="#" class="up-btn"><i class="fas fa-arrow-up"></i></a>
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">د. علي مصطفى مشرفة</div>
+                    <div class="swal-header2">(١١ يـولـيــو ١٨٩٨– ١٥يـنـايــر ١٩٥٠)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    عالم فيزياء شهير، لقبوه بأينشتاين العرب، تخرج فى مدرسة المعلمين العليا عام 1917، وحصل على دكتوراه فلسفة العلوم من جامعة لندن عام 1923، وكان أول مصرى يحصل على درجة الدكتوراه فى العلوم من إنجلترا عام 1924، ومنح لقب أستاذ من جامعة القاهرة وهو دون الثلاثين من عمره، كما انتخب عام 1936 عميداً لكلية العلوم فى لندن، ليصبح أول عميد مصرى لها.
+                    </div>
+                    <div class="swal-paragraph">
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">زاهي حواس</div>
+                    <div class="swal-header2">(٢٨ مـايــو ١٩٤٧– الان )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    هو عالم آثار وعالم مصريات مصري، ووزير دولة سابق لشؤون الآثار. عمل في المواقع الأثرية في دلتا النيل، والصحراء الغربية، ووادي النيل و مشهور بالكثير من الإكتشافات الحديثة، بما في ذلك مقابر بناة الهرم في الجيزة ووادي المومياوات الذهبية في الواحات البحرية. في الجيزة، كشف الهرم الساتلي من خوفو. في عام 2005، كجزء من مشروع المومياء المصرية 
+                    </div>
+                    <div class="swal-paragraph">
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">رأفت الهجان</div>
+                    <div class="swal-header2">(١ يـولـيــو ١٩٢٧ - ٣٠ يـنـايــر ١٩٨٢)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    هو رفعت على سليمان الجمال،رحل إلى إسرائيل بتكليف من المخابرات المصرية فى إطار خطة منظمة فى يونيو عام 1956، وتمكن من إقامة مصالح تجارية واسعة وناجحة فى تل أبيب، وأصبح شخصية بارزة فى المجتمع الإسرائيلى، وتجسس الهجان لسنوات طويلة على الموساد وقام بإمداد جهاز المخابرات المصرى بمعلومات مهمة تحت ستار شركة سياحية داخل إسرائيل، من بينها موعد حرب يونيو لسنة 1967، وكان له دور فعال فى الإعداد لحرب أكتوبر سنة 1973.
+                    </div>
+                    <div class="swal-paragraph">
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">فاروق شوشة</div>
+                    <div class="swal-header2">(٩ يـنـايــر ١٩٣٦ - ١٤ أكـتـوبــر ٢٠١٦)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    كاتب وأديب، تخرج فى كلية دار العلوم 1956، وفى كلية التربية من جامعة عين شمس 1957 وأصبح رئيساً للإذاعة المصرية عام 1994، كما عمل أستاذاً للأدب العربى فى الجامعة الأمريكية بالقاهرة، ومن أهم برامجه الإذاعية برنامج لغتنا الجميلة، وأمسية ثقافية، شغل منصب الأمين العام لمجمع اللغة العربية فى مصر ورئيس لجنة النصوص بالإذاعة والتليفزيون المصرى، ورئيس اتحاد كتاب مصر
+                    </div>
+                    <div class="swal-paragraph">
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

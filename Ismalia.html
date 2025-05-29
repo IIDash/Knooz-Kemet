@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Ismalia Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Ismailia Governorate</title>
+        <link rel="icon" href="Ismalia Images/Ismailia Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Ismalia Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> الإســمــاعــيــلــيــة</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            هي إحدى المحافظات البحرية بجمهورية مصر العربية وعاصمتها مدينة الإسماعيلية، وتعتبر البوابة الشرقية لمصر. يقع قسمها الغربي في قارة إفريقيا، والقسم الشرقي بقارة آسيا. ترجع نشأتها إلى عصر ما قبل الأسرات، وكانت من أكبر المقاطعات في هذا العصر، وعاصمتها تسمى "برأتوم" بمنطقة تل المسخوطة، التي تعرف بمدينة أبو صوير حاليا.  تتميز محافظة الإسماعيلية بموقع استراتيجي هام حيث تحتضن قناة السويس شريان التجارة العالمي الذي يربط بين الشرق والغرب. وقد شهدت أرض الإسماعيلية أحداثًا تاريخية هامة عبر العصور، تاركة بصمات واضحة في آثارها المتنوعة التي تتضمن مواقع أثرية فرعونية ورومانية وإسلامية. كما تشتهر الإسماعيلية بحدائقها الغناء وبساتينها الخضراء وهوائها النقي، مما يكسبها طابعًا مميزًا كمدينة تجمع بين التاريخ والطبيعة.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة الإســمــاعــيــلــيــة</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة الإســمــاعــيــلــيــة</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Ismalia Images/Ismailia Icon.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p>هي الراية الرسمية لمحافظة الإسماعيلية في مصر، وهي راية مستطيلة خضراء ترمز إلى خصوبة الأراضي الزراعية في محافظة الإسماعيلية. ويتوسط العلم شعار النبالة الخاص بالمحافظة. ويتكون الشعار من غصنا زيتون يدلان على السلام ويتوسطهما من الأعلى نسر الجمهورية وفي المنتصف عوامة ومياه وسفينة وذلك بسبب موقع المحافظة الاستراتيجي على قناة السويس والذي أكسبها أهمية تاريخية واقتصادية كبيرة، وهو ما يعكسه وجود السفينة في الشعار كرمز لحركة التجارة والنقل المائي.</p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Ismalia Images/Second Place.jpg" class="Figure1">
+        <h1>مـتــحـــف ديـلـيـســبــــس</h1>
+        <p>يضم المتحف المقتنيات الخاصة بالمهندس الفرنسى "فرديناند ديليسبس" صاحب مشروع قناة السويس وبها مذكراته اليومية وعربته الخاصة التى كان يستقلها فى تحركاته كما يعرض المتحف مجموعة من الخرائط والرسومات والمخططات الأصلية التي توثق مراحل حفر قناة السويس وتطورها.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Ismalia Images/First Place.jpg" class="Figure2">
+        <h1>قـنـاة السـويــس الجـديــدة</h1>
+        <p>
+            تمثل قناة السويس معلما سياحيا مهما لضيوف محافظة الإسماعيلية وخاصة قناة السويس الجديدة ومنطقتها التجارية والتى تم افتتاحها فى أغسطس من عام ٢٠١٥، وهى تقع بموازاة المجرى القديم على مسافة ٧٢كم بداية من منطقة الرياح شمال غرب الإسماعيلية حتى منطقة الدفرسوار جنوب القناة.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Ismalia Images/Fourth Place.jpg" class="Figure1">
+        <h1>النــصـــب التــذكـــاري للــجــنـــدي المــجـــهــــول</h1>
+        <p id="SixthParagraph">يبعد عن مدينة الإسماعيلية بنحو ٧كم جنوبا، حيث شهدت مدينة الإسماعيلية جانبا من أحداث الحرب العالمية الأولى وتم إقامة النصب التذكاري للجندي المجهول الذى يرمز لضحايا الحرب من الحلفاء بمنطقة جبل مريم التي تطل على قناة السويس.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Ismalia Images/Third Place.png" class="Figure2">
+        <h1>مـتـحـــف آثـار الإســمــاعــيــلــيــــة</h1>
+        <p id="ThirdParagraph">ويعد أقدم متحف اقليمى فى مصر وطابع المتحف المعمارى يأخذ شكل المعبد او الصرح العملاق، ويتميز بندرة ما يحتويه من قطع أثرية حيث يضم قطع أثرية لكل العصور بداية من العصر الفرعونى الى عصر محمد على وقد تم افتتاح المتحف للزيارة عام ١٩١٣.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Ismalia Images/Sixth Place.jpg" class="Figure1">
+        <h1>تـبـة الـشـجـرة</h1>
+        <p id="FourthParagraph"> أهم نقطة حصينة أنشأتها إسرائيل على طول خط بارليف عقب حرب ١٩٦٧م، وتضم قاعدة عسكرية إسرائيلية انسحب منها الجنود اثناء الحرب، وتركوا كل شيء كما هو، الى أن قامت الكتائب المصرية بدخولها، والآن تعتبر المنطقة متحف في الهواء الطلق، حيث يستطيع الزوار التجول ومشاهدة الدبابات وغرف القيادة والمبيت والاتصالات وغيرها من المرافق بالمكان.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Ismalia Images/Fifth Place.jpg" class="Figure2">
+        <h1>بـحـيـرة الـتـمـسـاح</h1>
+        <p id="FifthParagraph">
+             واحدة من أجمل البحيرات الطبيعية فى مصر وتبلغ مساحتها الكلية ١٤كم مربع، وتعتبر بحيرة التمساح بحيرة معتدلة الملوحة، إلا أنها تعاني من اختلافات كبيرة في نسب الملوحة. حيث أثرت مشاريع الهندسة البشرية على نسبة ملوحة البحيرة، مما أدى إلى تغيرات في الحياة البيولوجية بالبحيرة. كما لوحظ انخفاض في نسب الملوحة بالبحيرة منذ عام ١٨٧١ بعد إنشاء قناة السويس. 
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Ismalia Images/Eighth Place.jpg" class="Figure1">
+        <h1>الـكـنـيـسـة الـفـرنـسـاوي</h1>
+        <p id="SeventhParagraph">كاتدرائية القديس مارمرقس التابعة للأقباط الكاثوليك، ويطلق عليها الكنيسة الكاثوليكية مارمرقس "الفرنساوى"، وتعد واحدة من أشهر الكنائس على مستوى العالم، ومن أقدم الكنائس الموجودة فى محافظة الإسماعيلية.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Ismalia Images/Seventh Place.png" class="Figure2">
+        <h1>الـجـامـع الـعـبـاسـي</h1>
+        <p id="EighthParagraph">من اقدم المساجد فى مصر واحد المعالم الاثرية الهامة بمحافظة الاسماعيلية والذى قام بانشائه الخديوى عباس حلمى الثانى فى عام ١٨٩٨م بعد حفر قناة السويس، وأهم ما يميز المسجد سقفه الخشبى المزين بزخارف الأرابيسك.</p>
+</section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup2()" data-sr-id="legend-1"><p> رجــاء الجـــداوى</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup1()" data-sr-id="legend-2"><p> تـحـيــة كـاريــوكـا </p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> أحـمـــد حــجـــازى</p></div>
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p> عـثـمـان أحـمــد عـثـمـان</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Ismalia Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> تـحـيـة كـاريـوكـا</div>
+                    <div class="swal-header2">( ٢٢ فبراير ١٩١٩ - ٢٠ سبتمبر ١٩٩٩  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    فنانة وراقصة مصرية شهيرة، وُلدت في الإسماعيلية عام 1915. بدأت مسيرتها الفنية في الرقص الشرقي ثم انتقلت إلى التمثيل، وأصبحت من أبرز نجمات السينما المصرية في القرن العشرين
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> رجـاءالـجـداوى</div>
+                    <div class="swal-header2"> ( ٦ سبتمبر ١٩٣٤ - ٥ يوليو ٢٠٢٠  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+     ممثلة وعارضة أزياء مصرية، وُلدت في الإسماعيلية عام 1938. بدأت حياتها المهنية كعارضة أزياء ثم انتقلت إلى التمثيل، وشاركت في العديد من الأفلام والمسلسلات التلفزيونية.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header">   عـثـمـان احـمـد عـثـمـان</div>
+                    <div class="swal-header2"> (  ٦ ابريل ١٩١٧ - ١ مايو ١٩٩٩   )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    هو مهندس ومقاول مصري، مؤسس شركة "المقاولون العرب" التي تعد من أكبر شركات المقاولات في العالم العربي. وُلد في الإسماعيلية وتخرج من كلية الهندسة بجامعة القاهرة عام 1940. في عام 1955، أسس شركته التي أصبحت لاحقًا من أبرز الشركات في مجال البناء. اشتهر بمشاركته في مشاريع ضخمة مثل السد العالي.
+
+شغل عثمان عدة مناصب هامة، منها وزير الإسكان والتعمير في السبعينيات، وكان عضوًا في البرلمان المصري. ساهم بشكل كبير في تطوير البنية التحتية لمصر والعالم العربي. ألف كتابًا بعنوان "صفحات من تجربتي" الذي يعرض فيه مسيرته وتجربته المهنية. توفي في 1999، تاركًا إرثًا كبيرًا في مجالي الهندسة والمقاولات.
+                    </div>
+                  
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> احـمـد حـجـازى</div>
+                    <div class="swal-header2"> (     ٢٥ يناير ١٩٩١ - إلى الآن )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                     هو لاعب كرة قدم مصري وُلد في 25 يناير 1991 بالإسماعيلية. بدأ مسيرته في نادي الإسماعيلي، ثم انتقل إلى فيورنتينا الإيطالي، وبعدها لعب للأهلي المصري حيث حقق العديد من البطولات. في 2017، انتقل إلى الدوري الإنجليزي مع وست بروميتش ألبيون، قبل أن ينضم إلى الاتحاد السعودي في 2021 حيث أصبح قائد الفريق. حجازي أيضًا لاعب دولي مع المنتخب المصري منذ 2011، ويمتاز بصلابة دفاعية وقوة بدنية.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

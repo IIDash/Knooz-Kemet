@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Minya Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Minya Governorate</title>
+        <link rel="icon" href="Minya Images/Minya Icon.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Minya Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> المــــــنـــــــيـــــــــــا</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            محافظة المنيا هي إحدى محافظات مصر. عاصمتها مدينة المنيا. هي واحدة من أهم محافظات صعيد مصر وذلك بسبب موقعها المتوسط وما تضمه من مواقع أثرية فريدة، و تشتهر بأنها عروس الصعيد الجميلة .
+            تتميز محافظة المنيا بالزراعة ومن أهم المحاصيل الزراعية فيها: القطن والقمح والذرة والبطاطس وقصب السكر والموز، كما تتميز بالصناعة ويوجد فيها مصانع إسمنت أبيض وأسود بسمالوط ومحاجر الحديد والصلب ومحاجر الرمال ومحاجر الرخام ومحاجر الحجر الجيري ومحطات تعبئة الغاز الطبيعي ومصانع المياه الغازية بمركز سمالوط، ومصانع الزيوت ومحالج الأقطان ومحطات تعبئة الغاز الطبيعي ومصانع المياه الغازية بمركز المنيا ومصانع السكر بمركز أبو قرقاص ومصانع البلاط والطوب الرملي بمركز مغاغة .
+            
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة المـــنـــيــــا</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة المـــنـــيــــا</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Minya Images/Minya Icon.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p> شعار محافظة المنيا يبرز نسر الجمهورية في الأعلى، وتحيط به سنابل القمح الخضراء رمزًا للخصب الزراعي. في المنتصف، تتألق صورة الملكة نفرتيتي دلالة على مدينة أخناتون الأثرية وعراقة تاريخ المنيا. الشعار يجمع بين الانتماء الوطني، وأهمية الزراعة، وعمق التاريخ الفرعوني للمحافظة. يمكن اعتبار اختيار الملكة نفرتيتي تحديدًا في الشعار إشارة إلى فترة ازدهار فني وثقافي وديني مميز شهدته مصر القديمة في عهد أخناتون، والذي دعا إلى عبادة إله واحد هو آتون. هذا الاختيار يضفي على الشعار بعدًا ثقافيًا وفنيًا رفيعًا، ويذكر بأهمية الإرث الحضاري الذي تحتضنه محافظة المنيا. كما أن التوازن بين الرموز المختلفة يعكس تكامل هوية وتاريخ تلك المحافظة. </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Minya Images/Second Place.jpg" class="Figure1">
+        <h1>مـديـنـــة هـيـرمـوبـولـيــس</h1>
+        <p>  
+            تقع هذه المدينة الأثرية شمال ملوى بالقرب من الأشمونين، وتحوي آثارًا من الدولتين الوسطى والحديثة، وساحة رومانية وبازيليكا مسيحية. كانت مركزًا لعبادة الإله المصري القديم "توت" (إله الحكمة والسحر والزمن والقمر)، الذي صُور برأس الإيبيس أو البابون. عُرفت فرعونيًا باسم "خمونو"، بينما سماها اليونانيون "هيرموبوليس" (مدينة هيرمس) لاعتقادهم بموازاة "توت" وإلههم.
+    </section>
+    <section class="Blob2">
+        <img src="Minya Images/First Place.jpg" class="Figure2">
+        <h1>قــريــــة الأشــمــونــيــــن</h1>
+        <p>تقع هذه المنطقة الأثرية غرب مدينة ملوى في جنوب محافظة المنيا، حيث  كانت عاصمة الإقليم الحادي عشر في مصر القديمة، وتحتوي على آثار متنوعة من العصور الفرعونية واليونانية والرومانية والمسيحية والإسلامية، مثل تماثيل الإله تحوت وبقايا السوق اليوناني وكنيسة بازيليكية. كما لعبت دورًا هامًا في حرب التحرير ضد الهكسوس بقيادة رئيس المدينة "بعنخي".
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Minya Images/Fourth Place.jpg" class="Figure1">
+        <h1>الـبـهـنـســــا</h1>
+        <p id="ThirdParagraph">تقع البهنسا على بعد ١٥كم شمال غرب بني مزار وقريبة من الطريق الصحراوي الغربي، ويُقال أن اسمها مشتق من "بهاء النساء". تضم آثارًا إسلامية هامة منها مسجد الحسن بن صالح ذو القبلتين، وضريح سيدي فتح الباب بطل الفتح الإسلامي، ومسجد سيدي علي الجمام قاضي قضاة البهنسا، بالإضافة إلى عدة قباب ومزار السبع بنات.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Minya Images/Third Place.jpg" class="Figure2">
+        <h1>تــل العــمــارنـــة</h1>
+        <p id="FourthParagraph">تقع منطقة تل العمارنة الأثرية شمال شرق ديرمواس، وقد اختارها إخناتون ونفرتيتي لتكون عاصمة مملكتهما "أخت آتون" لعبادة الإله الواحد "آتون" (قرص الشمس). كانت "أخت آتون" عاصمة مصر في عصر الدولة الحديثة، وشهدت ظهور أول مدرسة للفن الواقعي المعروفة بفن العمارنة، حيث منح إخناتون الفنانين حرية التعبير.
+            </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Minya Images/Sixth Place.jpg" class="Figure1">
+        <h1>مـقـبــرة مــاهــــو</h1>
+        <p id="SixthParagraph">
+            تتميز المقبرة بألوانها الزاهية وتفاصيلها الدقيقة التي تصور جوانب مختلفة من حياة "ماهو" ودوره الهام كرئيس للشرطة في مدينة "أخت آتون". يمكن للزائر أن يرى مشاهد تصور استقباله للزوار الأجانب، والإشراف على نقل القرابين إلى معبد "آتون"، بالإضافة إلى لقطات من الحياة اليومية في تلك الفترة. هذه الصور تعتبر مصدرًا قيمًا لفهم التنظيم الإداري والاجتماعي والديني في عهد "أخناتون".
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Minya Images/Fifth Place.jpg" class="Figure2">
+        <h1>مـقـبــــرة ازادورا </h1>
+        <p id="FifthParagraph">تتميز مقبرة إزادورا ببنائها المعماري الذي يعكس التأثر بالفن الروماني في تلك الفترة. كما أن الكتابات اليونانية التي تحمل الرثاء تقدم لمحة مؤثرة عن مشاعر الحزن والألم التي انتابت والد الفتاة الفقيدة، وتُعد شاهدًا على التقاليد الجنائزية في العصر الروماني وتأثير الثقافة اليونانية في مصر آنذاك. زيارة هذه المقبرة تمنح الزائر فرصة للتأمل في قصص إنسانية عابرة للزمن.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Minya Images/Eighth Place.jpg" class="Figure1">
+            <h1>اســطــبـــل عــنــتــــر</h1>
+            <p id="EighthParagraph">
+                يقع هذا المعبد المنحوت في الصخر على بعد ٢كم جنوب شرق بني حسن، وقد شيده كل من حتشبسوت وتحتمس الثالث لعبادة الإلهة "باخت". كانت ردهته تحمل ثمانية أعمدة لم يتبق منها سوى ثلاثة. عرفه اليونانيون باسم "كهف أرتميس"، ولكنه يُعرف محليًا باسم "إسطبل عنتر". يتميز المعبد بنقوش تسجل قيام حتشبسوت بترميم الأضرار التي أحدثها الهكسوس خلال فترة احتلالهم لمصر.
+            </p>
+    </section>
+    <section class="Blob2">
+        <img src="Minya Images/Seventh Place.jpg" class="Figure2">
+        <h1>مـقـبــــرة بــيــتــوســريـــس</h1>
+        <p id="SeventhParagraph">
+            تعود هذه المقبرة إلى العصر البطلمي، وهي تجمع بين المقبرة والمصلى.وهي تعود لـ"بيتوسريس"، الكاهن الأكبر للإله "تحوت"، وتتميز بمدخل ذي أعمدة. تحمل جدرانها صورًا فريدة تمزج بين الفن المصري القديم واليوناني بشكل يعكس طبيعة العصر البلطمي، حيث تصور مشاهد زراعية بالطريقة المصرية التقليدية لكن بشخصيات ترتدي ملابس يونانية تقليدية قديمة.
+            </p>
+    </section>
+</main>
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Minya Images/Tenh Place.jpg" class="Figure1">
+            <h1>ديــر الســـيـــدة الـعــــذراء</h1>
+            <p id="TenhParagraph">على بعد حوالى ٢٥كم شمال شرق مدينة المنيا، يعد دير السيدة العذراء بالمنيا محطة بارزة في رحلة العائلة المقدسة إلى مصر، ويحتضن كنيسة فريدة منحوتة في الصخر أمر بإنشائها الإمبراطورة هيلانة في القرن الرابع الميلادي. الكنيسة تزخر بمجموعة قيمة من الأيقونات التي تعود إلى بدايات العصر المسيحي في مصر، مما يجعله موقعًا دينيًا وتاريخيًا هامًا.
+                
+                </p>
+    </section>
+    <section class="Blob2">
+        <img src="Minya Images/Ninth Place.png" class="Figure2">
+        <h1>متــحــــف مــلــــوى</h1>
+        <p id="NinthParagraph">افتُتح متحف آثار ملوي الإقليمي بالمنيا عام ١٩٦٣م، ليضم الآثار المتنوعة التي عُثر عليها في منطقة ملوي الأثرية الهامة، والتي شهدت حضارات فرعونية وإغريقية ورومانية. يعرض المتحف في قاعاته الأربعة مكتشفات من مناطق تونا الجبل والأشمونين ومير، ليعكس تاريخ المنطقة في العصرين اليوناني والروماني، بالإضافة إلى بعض القطع من عصري الدولة القديمة والعمارنة.
+        </p>
+    </section>
+</main>
+
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> عـمـار الـشـريـعـي</p></div>
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> طـه حـسـيـن</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>مـيـرفـت الـتـلاوى</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> احـمـد حـسـن</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Minya Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> طـه حـسـيـن</div>
+                    <div class="swal-header2">(  ١٥ نوفمبر ١٨٨٩ - ٢٨ اكتوبر ١٩٧٣ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    أديب وناقد مصري، لُقّب بعميد الأدب العربي. غيّر الرواية العربية، مبدع السيرة الذاتية في كتابه "الأيام" الذي نشر عام 1929. يعتبر من أبرز الشخصيات في الحركة العربية الأدبية الحديثة. ،يراه البعض من أبرز دعاة التنوير في العالم العربي ، في حين يراه آخرون رائداً من رواد التغريب في العالم العربي. كما يعتقد البعض أن الغرب هو من خلع عليه لقب عميد الأدب العربي.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> عـمـار الـشـريـعـي</div>
+                    <div class="swal-header2"> (    ١٦ ابريل ١٩٤٨ - ٧ ديسمبر ٢٠١٢ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    موسيقي ومؤلف وناقد مصري. أحد اعمدة الموسيقي في مصر، له علامات وبصمات في الموسيقى الآلية والغنائية المصرية، بالإضافة إلى الموسيقى التصويرية للكثير من الأفلام والمسلسلات التليفزيونية وذلك رغم أنه كفيف.
+                    </div>
+                                       
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مـيـرفـت الـتـلاوى</div>
+                    <div class="swal-header2"> (  ١ ديسمبر ١٩٣٧ - إلى الآن )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    
+الوكيل السابق لمنصب الأمين العام للأمم المتحدة والأمينة التنفيذية للأسكوا في عام 2001، وأيضا الأمين العام السابق للمجلس القومي للمرأة في مصر(2000-2001). وشغلت منصب وزير التأمينات والشئون الاجتماعية المصرية (1997-1999). وشغلت منصب سفيرة لمصر في اليابان والنمسا، وانضمت مؤخرا كعضو مؤسس للحزب المصري الديموقراطي.
+
+                    </div>
+                  
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> احـمـد حـسـن</div>
+                    <div class="swal-header2"> (    ٢ مايو ١٩٧٥ - إلى الآن  )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    
+لاعب كرة قدم مصري معتزل والمدير الفني السابق لنادي بتروجيت. يُعد أكثر لاعبي منتخب مصر والدول الأفريقية والعالم مشاركة في المباريات الدولية برصيد 184 مباراة. لعب سابقًا لأندية الزمالك والأهلي و الإسماعيلي في مصر فضلاً عن مسيرته الاحترافية في بشكتاش التركي و أندرلخت البلجيكي. حصل الصقر مع المنتخب المصري بطولة أمم أفريقيا أربع مرات ، ويشغل منصب سفير للنوايا الحسنة منظمة الصحة العالمية وسفير للطفولة ومكافحة أطفال الشوارع
+
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

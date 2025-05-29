@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Asyut Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <title>Asyut Governorate</title>
+        <link rel="icon" href="Asyut Images/Asyut Crest.png">
+    </head>
+<body>
+    <div class="BackGround">
+    <header>
+        <nav>
+            <ul class="Sidebar">
+                <li onclick=hideSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+                <li> <a class="Hover" href="Egyptian Folklore.html"><b>الفـلـكـلــور المــصــري </b></a></li>
+                <li> <a class="Hover" href="AI ChatBot.html"><b>المــســاعـــد الذكـــي </b></a></li>
+            </ul>
+            <ul>
+              <li> <a href="Index.html" class="logo"> <img class="Logo" src="Asyut Images/Logo.png" width="180x" height="75px" alt="Our Logo" /> </a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="AI ChatBot.html"><b> المــســاعـــد الذكـــي </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Egyptian Folklore.html"><b>الفــلــكــلـــور المــصــري </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Modern Achievements.html"><b>الانــجــازات الحــديـــثــة </b></a></li>
+              <li class="hideOnMobile"> <a class="Hover" href="Index.html"><b>الرئــيـــســيـــة</b></a></li>
+                <li class="Menu-Button" onclick=showSidebar()> <a class="Hover" href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Welcome" data-sr-id="welcome">
+        <h2 class="Welcome-Text"> محـــافـــظـــــة<br> أســــــــــيـــــــــــــوط</h2>
+    </section>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.Sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="TheStory" data-sr-id="story">
+        <p>
+        <b>
+            محافظة أسيوط هي واحدة من أعرق محافظات مصر و أكبرها وتتوسط محافظات الصعيد، واسمها مشتق من الكلمة الفرعونية "سيوت" أي الحارس. وتعد المحافظة العاصمة التجارية للصعيد كونها تتوسط محافظات الاقليم، كما انها تحتضن أول جامعة إقليمية, وهى جامعة أسيوط. تشتهر محافظة أسيوط بصناعة الأقمشة والمفروشات والأثاث منذ القدم ،كما بها عدد من الصناعات الكبرى والمتطورة مثل الأسمنت والأسمدة وتكرير البترول والأدوية وحلج وغزل الأقطان والأغذية حيث تم إنشاء 6 مناطق صناعية بمراكز محافظة أسيوط. كما تتميز المحافظة بتاريخها العظيم في القدم وبآثارها الفرعونية والرومانية والقبطية والإسلامية الشاهدة على حضارات متعاقبة فكانت وما زالت تحتضن آثارًا مهمة. الى جانب كونها لا تزال تحتفظ بملامح معمارية فريدة.
+        </b>
+        </p>
+    </section>
+
+    <section class="Information_Container" data-sr-id="info-container">
+        <section class="Information">
+            <h1>المــعــلــومـــات الأســاســيـــة عــن محـــافـــظـــــة أســـــيــــــوط</h1>
+        </section>
+    </section>
+    <main class="Second-Section" data-sr-id="second-section">
+        <div class="Grid-Container">
+        <div class="Box" id="BoxOne" style="grid-area: Box-1"></div>
+        <div class="Box" id="BoxTwo" style="grid-area: Box-2" ></div>
+        <div class="Box" id="BoxThree" style="grid-area: Box-3"></div>
+        <div class="Box" id="BoxFour" style="grid-area: Box-4"></div>
+        <div class="Box" id="BoxFive" style="grid-area: Box-5"></div>
+        </div>
+    </main>
+            
+    <section class="Third_Container" data-sr-id="third-container">
+        <section class="Crest">
+            <h1>دلالات شـــعـــــار محـــافـــظـــــة أســـــيــــــوط</h1>
+        </section>
+    </section>
+    <div class="Filler"></div>
+<main class="Third-Section" data-sr-id="third-section">
+    <section class="Flag-Blob">
+        <img src="Asyut Images/Asyut Crest.png" class="Flag">
+        <h1>شــعـــار المــحــافــظـــة</h1>
+        <p> يظهر شعار المحافظة وهو يضم دائرة مكونة من غصنى الزيتون تعبيرا عن السلام وبداخله العقاب الذهبى لصلاح الدين الأيوبى رمزا للقوة وبداخلة قناطر أسيوط باللونين الأزرق والبنى تعبيرا عن نهر النيل ومبنى القناطر وتوجد أعلاهم كلمة محافظة أسيوط، بحيث يعبر الرمز عن أهم أهم ما يميز المحافظة وما يمثل مصدر قوتها ليكون ذلك الشعار خير تعبيرا عن عراقة المحافظة. </p>
+    </section>
+</main>
+
+<section class="Fourth_Container" data-sr-id="fourth-container">
+    <section class="Crest">
+        <h1> المـعـالــم الأثـريـــة والمـزارات السيــاحـيـــة </h1>
+    </section>
+</section>
+<div class="Filler2"></div>
+<main class="Fourth-Section1" data-sr-id="fourth-section-1">
+    <section class="Blob1">
+        <img src="Asyut Images/Second Place.jpeg" class="Figure1">
+        <h1> الوكـــالات الاسـلامــيـــــة</h1>
+        <p>هي مدينة تجارية ترجع بتاريخها إلى العصر العثماني، وتقع في شارع محمد محمود باشا، وتضم العديد من المساجد؛ كمسجد سيدي جلال الدين السيوطي، والحوانيت لتجارة النحاس والخردة والأقمشة اليدوية، والوكالات كوكالة شلبي ووكالة لطفي المشيدات على الطراز العثماني.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Asyut Images/First Place.jpg" class="Figure2">
+        <h1>المــســجــــد الأمــــــــوي</h1>
+        <p>
+            المسجد الأموي الكبير هو من أقدم المساجد التي ترجع إلى العصر الأموي وتم تطويره في العصر المملوكي مرتين وأعيد بناؤه وتجديده في عهد الملك فؤاد الأول، ويعد هذا المسجد من المساجد التاريخية الكبرى ومن المزارات السياحية الهامة فى محافظة أسيوط.
+        </p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-2">
+    <section class="Blob1">
+        <img src="Asyut Images/Third Place.jpg" class="Figure1">
+        <h1>ديـــــر الســـيــــدة العـــــذراء</h1>
+        <p id="ThirdParagraph">    يعتبر دير السيدة العذراء بمدينة أسيوط واحدا من أهم الأماكن المقدسة بالنسبة للمسيحيين فى مصر وخارجها، يقع الدير بالجبل الغربى لمدينة أسيوط، وعلى ارتفاع مائة متر من سطح البحر، ويبعد عن مدينة أسيوط نحو عشرة كيلو مترات فى قرية تسمى "درنكة" واستمد هذا الدير شهرته ومكانته من زيارة السيدة مريم العذراء خلال رحلة العائلة المقدسة إلى مصر.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Asyut Images/Fourth Place.jpg" class="Figure2">
+        <h1>الديـــــر المــــحــــــرق</h1>
+        <p id="FourthParagraph">دير السيدة العذراء المُحرّق بجبل قُسقام، ويُعرف مختصراً بـدير المُحرّق، هو دير مسيحي تابع للكنيسة القبطية الأرثوذكسية، ويعد اقدم كنيسة دشنت في العالم المسيحي حيث يتميز ببساطة بنائه كما  انه احد الاديرة التاريخية القليلة التي تقام فيها الصلوات باللغة القبطية القديمة. وهو مزار سياحي ديني عالمي يفد اليه السياح من جميع انحاء العالم للسياحة الدينية.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-3">
+    <section class="Blob1">
+        <img src="Asyut Images/Sixth Place.jpg" class="Figure1">
+        <h1>مــقــابــر مــيــر الأثــريــة</h1>
+        <p id="SixthParagraph">تقع غرب قرية مير مركز القوصية والتى تبعد ٦٥كم شمال غرب أسيوط. وتضم مجموعة من المقابر المنحوتة في جسم الجبل لتكون جبانة عاصمة الإقليم القديم لأمراء وحكام المقاطعة الرابعة عشرة التي كانت تعرف باسم "كيس" وفي العصور الرومانية كانت تعرف باسم "كوساي" وكان معبودها الإله حتحور.</p>
+    </section>
+    <section class="Blob2">
+        <img src="Asyut Images/Fifth Place.jpg" class="Figure2">
+        <h1>قــصــر الــكــســان بــاشــا</h1>
+        <p id="FifthParagraph">يعتبر قصر الكسان باشا واحدا من أهم الأماكن الأثرية في محافظة اسيوط والوحيد المسجل كقصر أثرى بالمحافظة، وكان قديما من أهم الأماكن لاستقبال الزيارات الملكية حيث استقبل الملك فؤاد الأول عام 1935م والعديد من الوفود الأجنبية المهمة ،ويتميز القصر بموقعه المميز على الضفة الغربية لنهر النيل.</p>
+    </section>
+</main>
+
+<main class="Fourth-Section1" data-sr-id="fourth-section-4">
+    <section class="Blob1">
+        <img src="Asyut Images/Seventh Place.jpg" class="Figure1">
+            <h1>مــحــمــيـــة وادي الأسـيـوطــي الطـبـيـعـيــة</h1>
+            <p id="EighthParagraph">
+                تختلف محمية الوادي الأسيوطي عن باقي المحميات المصرية في أنها الوحيدة التي تعتبر بالدرجة الأولي بمثابة محطة لتربية إكثار الحيوان والنبات البري المهدد بالانقراض المتواجد بالصحاري المصرية بجانب احتوائها علي الأصول الوراثية التي لها أهميتها بالنسبة لتحديث الزراعة.
+                </p>
+    </section>
+    <section class="Blob2">
+        <img src="Asyut Images/Eighth Place.jpg" class="Figure2">
+        <h1>مــتــحــــف الآثـار بـــمــدرســـة الســــلام</h1>
+        <p id="SeventhParagraph">يوجد هذا المتحف بمدرسة السلام بميدان الحرب والسلام بمدينة أسيوط ويضم المتحف مجموعة كبيرة من القطع الأثرية من مختلف العصور حيث يشتمل على آثار من عصر ما قبل الأسرات، العصر الفرعوني، القبطي والإسلامي هذا بالإضافة إلى آثار سودانية وآثار من الحبشة.</p>
+    </section>
+</main>
+
+<main class="Fifth-Section" data-sr-id="fifth-section">
+    <div class="Fifth-Section-Title"> 
+        <h1>الشــخــصــيـــات العـــامــــة والبــــارزة</h1>
+    </div>
+    <section class="Legends1">
+        <div class="Legend Legend-Small" id="One" onclick="showLegendPopup1()" data-sr-id="legend-1"><p> جــمــال عــبــد الــنــاصــر</p></div>
+        <div class="Legend Legend-Small" id="Two" onclick="showLegendPopup2()" data-sr-id="legend-2"><p> ســمــيــر غــانــم</p></div>
+    </section>
+    <section class="Legends2">
+        <div class="Legend Legend-Small" id="Three" onclick="showLegendPopup3()" data-sr-id="legend-3"> <p>البــابــا/ شــنــودة الــثــالــث</p></div>
+        <div class="Legend Legend-Small" id="Four" onclick="showLegendPopup4()" data-sr-id="legend-4"><p> مــحــمــد رضــا</p></div>
+    </section>
+</main>
+
+<footer data-sr-id="footer">
+    <div class="footer-content">
+        <h3> <a href="Index.html" class="logo"> <img class="Logo" src="Asyut Images/Logo.png" width="350x" height="90px" alt="Our Logo"/> </a></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique, minima sunt facere quo optio consequatur necessitatibus ullam laudantium qui aspernatur, odio quis atque ad molestias repellat quos accusantium. Possimus.</p>
+        <div class="Row">
+            <div class="Column">
+            </div>
+            <div class="Social">
+                <a href="https://www.facebook.com/manchesterunited" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/manchesterunited" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ManUtd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/manutd" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="">العصابة الخارقة</a></p>
+        </div>
+    </div>
+</footer>      
+
+        <!--JavaScript for Presidents PopUps-->
+<script>
+        
+        function showLegendPopup1() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> جــمــال عــبــد الــنــاصــر</div>
+                    <div class="swal-header2">(١٥ يناير ١٩١٨ - ٢٨ سبتمبر ١٩٧٠ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    رغم أن مولده كان في الإسكندرية، إلا أن جذوره من أسيوط، وهو ثاني رئيس لجمهورية مصر العربية وقائد ثورة 23 يوليو 1952.
+                    </div>
+
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+            
+        function showLegendPopup2() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> ســمــيــر غــانــم</div>
+                    <div class="swal-header2"> ( ١٥ يناير ١٩٣٧ - ٢٠ مايو ٢٠٢١)</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    فنان كوميدي كبير، وُلد في أسيوط عام 1937، واشتهر من خلال فرقة "ثلاثي أضواء المسرح" وأعماله المسرحية والسينمائية.
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }
+                    
+        function showLegendPopup3() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> البــابــا شــنــودة الــثالــث</div>
+                    <div class="swal-header2"> (  ٣ اغسطس ١٩٢٣ - ١٧ مارس ٢٠١٢ )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    شنودة الثالث: بابا الكنيسة القبطية الأرثوذكسية، وُلد في أسيوط عام 1923، وتولى البابوية من 1971 حتى 2012.
+                    </div>
+                   
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+                            
+        function showLegendPopup4() {
+            Swal.fire({
+                html: `
+                    <button class="swal2-close-x" onclick="Swal.close()">X</button>
+                    <div class="swal-header"> مــحــمــد رضــا</div>
+                    <div class="swal-header2"> (  ٢١ ديسمبر ١٩٢١ - ٢١ فبراير ١٩٩٥    )</div>
+                    <div class="swal-paragraph2">
+                    <div class="swal-header3">النــبــذة التــعــريــفــيــــة</div>
+                    فنان مصري من أسيوط، اشتهر بأداء دور الصعيدي الطيب والعمدة بخفة ظل مميزة. تخرج من كلية الهندسة ثم معهد الفنون المسرحية. شارك في عشرات الأفلام والمسلسلات مثل "30 يوم في السجن"، وترك بصمة خالدة في السينما المصرية بشخصيته المحبوبة القريبة من الناس
+                    </div>
+                    
+                `,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'custom-swal-popup'
+                }
+            });
+        }   
+</script>     
+
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('nav > ul > li', {
+        reset:true,
+        distance: '30px',
+        origin: 'right',
+        duration: 800,
+        delay: 300,
+        interval: 50,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('.Information', {
+        distance: '9px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 300,
+        interval: 100,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.Crest', {
+        distance: '80px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 250,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Welcome-Text', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Grid-Container', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id="third-section"] .Flag-Blob', {
+        distance: '50px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1000,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.Flag', {
+        distance: '40px',
+        reset:true,
+        origin: 'right',
+        duration: 1400,
+        delay: 300,
+        easing: 'ease-in-out',
+        opacity: 0
+    });
+
+    ScrollReveal().reveal('[data-sr-id="fourth-container"]', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob1', {
+        distance: '40px',
+        reset: true,
+        origin: 'left',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('[data-sr-id*="fourth-section"] .Blob2', {
+        distance: '40px',
+        reset: true,
+        origin: 'right',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+            
+
+    ScrollReveal().reveal('[data-sr-id="fifth-section"] .Fifth-Section-Title', {
+        distance: '30px',
+        reset: true,
+        origin: 'top',
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.Legends1', {
+    distance: '90px',
+    reset:true,
+    origin: 'left',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+ScrollReveal().reveal('.Legends2', {
+    distance: '90px',
+    reset:true,
+    origin: 'right',
+    duration: 1800,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+    ScrollReveal().reveal('.footer-content > h3', {
+        distance: '150px',
+        reset: true,
+        origin: 'bottom',
+        duration: 1800,
+        delay: 300,
+        easing: 'ease-in-out'
+    });
+    
+    ScrollReveal().reveal('.footer-content > p', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+        
+    ScrollReveal().reveal('.Social', {
+        reset: true,
+        origin: 'bottom',
+        duration: 3000,
+        delay: 600,
+        easing: 'ease-in-out'
+    });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93624f5dcf8c6fb3',t:'MTc0NTYzMDk3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
